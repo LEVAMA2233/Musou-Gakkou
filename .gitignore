@@ -1,0 +1,53 @@
+# --- Dependencias (Lo más pesado) ---
+# Ignora las carpetas de librerías en cualquier subcarpeta (frontend o backend)
+node_modules/
+/node_modules
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# --- Variables de Entorno y Seguridad (CRÍTICO) ---
+# NUNCA subas esto, aquí van las contraseñas de tu base de datos y API keys
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.pem
+
+# --- Builds de Producción (React/Frontend) ---
+# Estas carpetas se generan solas, no se versionan
+build/
+dist/
+.next/
+out/
+
+# --- Archivos del Sistema Operativo (Basura) ---
+# Mac
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+# --- IDEs y Editores de Código ---
+# Configuraciones personales de cada desarrollador que no deben compartirse
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# --- Base de Datos (SQL) ---
+# Ignoramos backups pesados o archivos de base de datos locales
+*.sqlite
+*.sqlite3
+*.db
+*.sql.gz
+# (OJO: No ignores *.sql si son tus scripts de creación de tablas, esos SÍ se suben)
+dump.rdb
