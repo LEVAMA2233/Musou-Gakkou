@@ -86,16 +86,16 @@ Nota: Nunca realices push hacía develop ni a main directamente.
 ## ISSUES
 Los "Issues" serán generados por el Product Owner, Scrum Master y Líder Técnico unicamente siguiendo la siguiente plantilla:
 
----
+```text
 nombre: nueva funcionalidad o refactorizacion
 descripcion: proponer o reportar una nueva funcionalidad a desarrollar, breve
 titulo: "[FEAT] "
 etiquetas: mejora o propuesta, pagina o general o script, front o back o bbdd
 asignaciones: se asignará acorde a metrica y patrones de trabajo 
----
+```
 
 ### Tareas
-El asignado deberá copiar esta lista de tareas y pegarla posteriormente en su Pull Request
+El asignado deberá copiar esta lista de tareas especificas como se indica más adelante para subir Pull Requests:
 
 - [ ] Crear rama feature/...
 - [ ] Implementar funcionalidad
