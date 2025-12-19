@@ -1,0 +1,12 @@
+.navbar{
+   border-width: 50px thick 20px;
+   border-color:black; 
+   background-color: rgb(75% 5% 98%/60%);
+}
+
+.navbar-nav .nav-item {
+    margin-left: 15px;
+    margin-right: 15px;
+    border-left: 2px solid #e7e748;
+    padding-bottom: 2px; 
+}
