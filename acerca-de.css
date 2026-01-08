@@ -20,7 +20,26 @@ header {
  }.nav-link{
     color:var(--blanquino);
  }
+
+ .Titulo-acercade{
+    font-family: var(--Tittle-and-subtitles);
+    color:var(--rojo);
+    background-color: var(--blanquino);
+    padding-top: 25px;
+    padding-bottom: 25px;
+ }
  
+ .Quienes-somos{
+    font-family: var(--Tittle-and-subtitles);
+    color:var(--rojo);
+    padding-top: 15px;
+    padding-bottom: 20px;
+ }.Quienes-somos p{
+    font-family: var(--Content);
+    color:black;
+    text-align: center;
+    font-size: x-large;
+ }
 
 body {
     text-align: center;
@@ -34,7 +53,7 @@ footer {
     display:flex;
     flex-direction: column;
     align-items: center;
-    background-color: var(--blanquino);
+    background-color: white;
 }
 
 .panal-grid {
@@ -81,10 +100,41 @@ footer {
     transform:translateY(15px);
 }
 
-.hexagon:hover{
+.hexagon:hover{/*hover indica lo que le pasa a un elemento cuando le pasamos el mouse por encima*/
     transform: translateY(-15px);
 }
 
+.Nuestros-Docentes{
+    font-family: var(--Tittle-and-subtitles);
+    color: black;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--rojo);
+    padding-top: 35px;
+}
+
+.Nuestros-Docentes-grid{
+    display: flex;
+    justify-content: center;
+    max-width: 900px;   
+    
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.tarjeta-docente{
+    border-radius: 25px;
+    background: #ffffff;
+    box-shadow: inset -6px -6px 21px #d9d9d9,
+            inset 6px 6px 21px #ffffff;
+    height: 50px;
+    margin: 15px;
+    width: 100%;         
+    max-width: 400px;    
+    box-sizing: border-box;
+
+}
 
 @media screen and (max-width: 835px) {
     
