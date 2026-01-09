@@ -9,16 +9,9 @@
     --Content:"Source Sans 3", sans-serif;
 }
 
-header {
-    text-align: center;
-}
-.navbar-brand{
-    margin: 15px;
-}
 
 .navbar{
     background-color: black;
-    position: fixed;
     max-width: 100%;
  }
  .navbar-brand{
