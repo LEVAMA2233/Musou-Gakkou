@@ -1,0 +1,229 @@
+/*La forma del hexagono: fue fusilada de: https://css-shape.com/ hay otro tipo de figuras en este sitio*/
+/*Para aprender como modificar los contenedores flex en: https://www.w3schools.com/css/css3_flexbox_container.asp*/
+
+:root{/*Variables fusiladas de la identidad visual*/
+    --rojo:#c91f13;
+    --gris:#D9D9D9;
+    --blanquino:#f5f3ec;
+    --Tittle-and-subtitles:"El Messiri", sans-serif;
+    --Content:"Source Sans 3", sans-serif;
+}
+
+header {
+    text-align: center;
+}
+.navbar-brand{
+    margin: 15px;
+}
+
+.navbar{
+    background-color: black;
+    position: fixed;
+    max-width: 100%;
+ }
+ .navbar-brand{
+    color:var(--blanquino);
+ }
+ .nav-link{
+    color:var(--blanquino);
+ }
+ .navbar-brand:hover{
+    color:var(--rojo);
+ }
+.nav-link:hover{
+     color:black;
+     background-color: #f5f3ec;
+     border-radius: 10px;
+}
+#logo-muso:hover{
+    transform: scale(1.3);
+}
+#logo-carrito:hover{
+    transform: scale(1.5);
+}
+
+.btn{
+    background-color: #2C2C2C;
+    color: var(--blanquino);
+    font-family: var(--Tittle-and-subtitles);
+    margin: 10px;
+ }
+ #btn-Log-in{
+    background-color: #D9D9D9;
+    color: black;
+ }
+
+ .btn:hover{
+    background-color: #D9D9D9;
+    color: var(--rojo);
+ }
+ #btn-Log-in:hover{
+    background-color: var(--rojo);
+    color: var(--blanquino);
+ }
+ .navbar-toggler:hover{
+    color: var(--blanquino);
+    background-color: var(--rojo);
+ }
+
+ .Titulo-acercade{
+    font-family: var(--Tittle-and-subtitles);
+    color:var(--rojo);
+    background-color: var(--blanquino);
+    padding-top: 35px;
+    padding-bottom: 35px;
+    margin-top: 30px;
+    display:flex;
+ }
+ 
+ .Quienes-somos{
+    font-family: var(--Tittle-and-subtitles);
+    color:var(--rojo);
+    padding-top: 25px;
+    padding-bottom: 30px;
+    margin: 10px;
+ }.Quienes-somos p{
+    font-family: var(--Content);
+    color:black;
+    text-align: center;
+    font-size: x-large;
+    padding-top: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+ }
+
+body {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+}
+
+.Panal-section{/*Acá están contenidos los hexagonos*/
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+
+.panal-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1000px; /* Limita el ancho que pueden ocupar los hexagonos para que el tercero no quepa, jugando con esto podemos formar un panal con el número de hexágonos que queramos e.e*/
+}
+
+.hexagon {/*Diseño de cada hexagono*/
+    display: flex;
+    align-items: center;
+    height: 250px;
+    aspect-ratio: cos(30deg);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    width: 400px;
+    height: 480px;
+    background: linear-gradient(300deg, var(--rojo),#ed333b);
+    margin: 5px;
+    position:relative;
+
+    /* Centrar y dar color al contenido */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    transition: transform 0.3s ease
+}
+
+.hexagon h3{
+    font-family: var(--Tittle-and-subtitles);
+    font-size: xx-large;
+}
+
+.hexagon p{
+    font-family: var(--Content);
+    font-size: large;
+}
+
+.hexagon:nth-child(3){/*nth-child es una pseudoclase que indica que el tercer hijo (en este caso porque pusimos el 3 dentro de paréntesis) de la clase hexagono lo vamos a mover hacia arriba(con una posición negativa en realidad "sube")*/
+    top: -120px;
+}.hexagon:nth-child(3):hover{
+    transform:translateY(15px);
+}
+
+.hexagon:hover{/*hover indica lo que le pasa a un elemento cuando le pasamos el mouse por encima*/
+    transform: translateY(-15px);
+}
+
+.Nuestros-Docentes{
+    font-family: var(--Tittle-and-subtitles);
+    color: black;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--rojo);
+    padding-top: 35px;
+}
+
+.Nuestros-Docentes-grid{
+    display: flex;
+    justify-content: center;
+    max-width: 900px;   
+    
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.tarjeta-docente{
+    border-radius: 25px;
+    background: #ffffff;
+    box-shadow: inset -6px -6px 21px #d9d9d9,
+            inset 6px 6px 21px #ffffff;
+    height: 50px;
+    margin: 15px;
+    width: 100%;         
+    max-width: 400px;    
+    box-sizing: border-box;
+
+}
+
+@media screen and (max-width: 835px) {
+    
+    /* 1. Cambiamos el contenedor para que sea una columna vertical */
+    .panal-grid {
+        flex-direction: column;
+        width: 100%; /* Asegura que no se salga de la pantalla */
+    }
+
+    /* 2. Redimensionamos los hexágonos para que quepan en el celular */
+    .hexagon {
+        width: 300px; /* Un ancho seguro para móviles */
+        height: 346px; /* Ajustamos la altura proporcionalmente */
+        /* Quitamos el margin lateral de 5px para centrar mejor */
+        margin: 0 auto; 
+        
+        /* Hacemos que se "conecten" verticalmente con un margen negativo */
+        margin-top: -60px; 
+    }
+
+    /* 3. ¡IMPORTANTE! Reseteamos la regla del 3er hijo */
+    /* Como ahora están en columna, ya no necesitamos subir el tercero específicamente */
+    .hexagon:nth-child(3) {
+        top: 0; /* Quitamos el -120px que tenías */
+    }
+
+    /* 4. El primer hexágono no debe tener margen negativo arriba */
+    .hexagon:first-child {
+        margin-top: 0;
+    }
+
+    /* 5. Ajustar el tamaño del texto */
+    /* Como el hexágono es más chico, reducimos la letra para que no se salga */
+    .hexagon h3 {
+        font-size: 1.2rem;
+    }
+    .hexagon p {
+        font-size: 0.9rem;
+        padding: 0 15px; /* Un poco de aire a los lados */
+    }
+}
