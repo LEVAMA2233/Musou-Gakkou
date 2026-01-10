@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*Para aprender como modificar los contenedores flex en: https://www.w3schools.com/css/css3_flexbox_container.asp*/
 
 :root{/*Variables fusiladas de la identidad visual*/
@@ -58,3 +59,17 @@
     color: var(--blanquino);
     background-color: var(--rojo);
  }
+=======
+.navbar{
+   border-width: 50px thick 20px;
+   border-color:black; 
+   background-color: rgb(75% 5% 98%/60%);
+}
+
+.navbar-nav .nav-item {
+    margin-left: 15px;
+    margin-right: 15px;
+    border-left: 2px solid #e7e748;
+    padding-bottom: 2px; 
+}
+>>>>>>> 188dd2cb753a1368e5e7f8266438b0d2e4dcc3b7
