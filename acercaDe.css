@@ -198,9 +198,21 @@ footer {
 /*     width: 100%;         
     max-width: 400px;    
     box-sizing: border-box; */
-
+}
+.tarjeta-ittai h3{
+    font-family: var(--Tittle-and-subtitles);
+    color: black;
+}
+.tarjeta-ittai{
+    background-color: var(--gris);
+    border-radius: 25px;
+    margin: 1px;
+    max-width: 250px;
 }
 
+h2{
+    font-family: var(--Tittle-and-subtitles);
+}
 @media screen and (max-width: 835px) {
 
 /*Hacemos que cada elemento del navbar ocupe el renglón completo cuando la pantalla es pequeña*/
