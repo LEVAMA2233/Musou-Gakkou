@@ -73,3 +73,17 @@ Nota: Nunca realices push hacía develop ni a main directamente.
 7. Una vez aprobado, se realiza merge a develop
 8. La rama main se actualizará desde develop cuando se apruebe por parte del Product Owner.
 9. Elimina el contenido de tu rama (Nada se pierde ya que la eliminación de archivos no es más que un triste commit más).
+
+
+# Definición de ramas
+
+```text
+main          → versión estable (producción)
+develop       → rama de integración del equipo
+Rama con tu nombre/nickname   → Rama donde vas a trabajar en las implementaciones
+documentacion → rama de registros
+feature/*     → desarrollo de nuevas funcionalidades
+hotfix/*      → correcciones urgentes en producción
+```
+
+
