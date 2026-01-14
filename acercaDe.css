@@ -222,9 +222,8 @@ footer {
 .logo-linkedin{
     height:20px;
     width:20px;
-    align-self: self-end;
+    align-self: start;
     margin-bottom: 5px;
-    z-index: 1;
 }
 h2{
     font-family: var(--Tittle-and-subtitles);
