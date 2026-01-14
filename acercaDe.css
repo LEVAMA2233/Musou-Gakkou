@@ -206,10 +206,26 @@ footer {
 .tarjeta-ittai{
     background-color: var(--gris);
     border-radius: 25px;
-    margin: 1px;
-    max-width: 250px;
+    margin: 10px;
+    max-width: 270px;
 }
 
+.tarjeta-ittai p{
+    font-family: var(--Content);
+    text-align: justify;
+}
+
+.foto-perfil{
+    height: 150px; width: 150px; margin-top:10px; border-radius: 150px;
+}
+
+.logo-linkedin{
+    height:20px;
+    width:20px;
+    align-self: self-end;
+    margin-bottom: 5px;
+    z-index: 1;
+}
 h2{
     font-family: var(--Tittle-and-subtitles);
 }
@@ -267,4 +283,24 @@ h2{
         font-size: 0.9rem;
         padding: 0 15px; /* Un poco de aire a los lados */
     }
+}
+@media screen and (max-width: 1200px){
+    .tarjeta-ittai{
+        max-width: 45%;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .tarjeta-ittai{
+        width: 40vw;
+    }
+    .foto-perfil{
+        width: 35vw;
+        height: 35vw;
+        border-radius:35vw;
+    }
+    .tarjeta-ittai h3{
+        font-size: 5vw;
+    }
+
 }
