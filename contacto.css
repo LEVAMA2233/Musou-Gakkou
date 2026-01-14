@@ -1,0 +1,157 @@
+:root{/*Variables fusiladas de la identidad visual*/
+    --rojo:#c91f13;
+    --gris:#D9D9D9;
+    --blanquino:#f5f3ec;
+    --Tittle-and-subtitles:"El Messiri", sans-serif;
+    --Content:"Source Sans 3", sans-serif;
+}
+
+
+.navbar{
+    background-color: black;
+    width: 100vw;
+ }
+
+#logo-muso{
+     height: 70px;
+}
+ .navbar-brand{
+    color:var(--blanquino);
+ }
+ .nav-item{
+    margin-right: 10px;
+ }
+ .nav-link{
+    color:var(--blanquino);
+    font-family:var(--Tittle-and-subtitles);
+    /* font-size: 1.5vw; */
+    font-size: x-large;
+    border-radius: 10px;
+ }
+ .navbar-brand:hover{
+    color:var(--rojo);
+ }
+.nav-link:hover{
+     color:black;
+     background-color: #f5f3ec;
+
+}
+#logo-muso:hover{
+    transform: scale(1.3);
+}
+#logo-carrito{
+    max-height: 60%;
+}
+#logo-carrito:hover{
+    transform: scale(1.3);
+}
+
+.btn{
+    background-color: #2C2C2C;
+    color: var(--blanquino);
+    font-family: var(--Tittle-and-subtitles);
+    margin: 10px;
+    font-size: x-large;
+ }
+ #btn-Log-in{
+    background-color: #D9D9D9;
+    color: black;
+ }
+
+ .btn:hover{
+    background-color: #D9D9D9;
+    color: var(--rojo);
+ }
+ #btn-Log-in:hover{
+    background-color: var(--rojo);
+    color: var(--blanquino);
+ }
+ .navbar-toggler:hover{
+    color: var(--blanquino);
+    background-color: var(--rojo);
+ }
+
+ .Titulo-contactanos{
+    font-family: var(--Tittle-and-subtitles);
+    color:var(--rojo);
+    background-color: white;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    
+ }
+ .Contactanos-seccion{
+    /* Aqui es donde tiene que ir la imagen de fondo */
+    background-color: var(--gris); /* Esto lo hice como prueba antes de colocar la imagen*/
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 20px;
+    align-items: center; 
+ }
+ .Formulario{
+    width: 60%;
+    font-family: var(--Content);
+    background-color: var(--blanquino);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px grey;
+    margin-bottom: 30px;
+    justify-content: center;
+ }
+.Campos-formulario{
+    display: block;
+    margin: 15px;
+    font-size: large;
+ }
+ .Label-formulario{
+    display: block; /* (salto de linea) Hace que el label ocupe todo el ancho disponible/renglon */
+    margin-top: 15px; /* Separacion entre labels */
+    
+}
+
+.Input-formulario{
+    border: 10px solid var(--blanquino); ; 
+    border-radius: 15%;
+    width: 70%;
+}
+#mensaje{
+    height: 100px;
+}
+.Button-enviar{
+    background-color: var(--rojo);
+    color: var(--blanquino);
+    font-family: var(--Tittle-and-subtitles);
+    font-size: large;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    width: 70%;
+    display: inline-block;
+}
+
+body {
+    text-align: center;
+}
+
+footer {
+    border-top: 8px solid var(--rojo);
+}
+
+@media screen and (max-width: 835px) {
+
+/*Hacemos que cada elemento del navbar ocupe el renglón completo cuando la pantalla es pequeña*/
+.nav-item{
+    width:100%;
+}
+/*Ahora cambia de color el renglón completo al seleccionar*/
+.nav-item:hover{
+    color:black;
+    background-color: white;
+}
+/*Ajustamos el tamaño de fuente para que sea responsivo*/
+.nav-link{
+    font-size: large;
+    border-radius: 0px;
+ }
+    
+}
