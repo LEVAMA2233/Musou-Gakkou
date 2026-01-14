@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&display=swap" rel="stylesheet">
+
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+			</style>
+
+			<!--Importación de librerias de bootstrap para la navbar-->
+			<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+			<link rel="stylesheet" href="./contacto.css">
+		
+	</head>
+
+
+  <!--Inicia la navbar-->
+<nav class="navbar navbar-expand-lg custom-navbar sticky-top " data-bs-theme="dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="./img-acercade/logo-muso.png" id="logo-muso" alt="Logo de Musou" class="img-fluid">
+              </a>
+              <button class="navbar-toggler" style="color:#e6e6ff; margin-right: 20px;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon  mr-4"></span>
+              </button>
+              <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto align-items-center">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#" >Cursos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">Recursos educativos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#" >Cultura</a>
+                  </li>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#" >Acerca de nosotros</a>
+                  </li>
+                  <!-- Solo se muestran cuando la navbar colapsa -->
+                  <li class="nav-item d-lg-none ms-1" >
+                    <a class="nav-link" href="#">Carrito</a>
+                  </li>
+                  <li class="nav-item d-lg-none ms-1" >
+                    <a class="nav-link" href="#">Log in</a>
+                  </li>
+                  <li class="nav-item d-lg-none ms-1">
+                    <a class="nav-link" href="#">Regístrate</a>
+                  </li>
+                  <!-- Solo se muestran como botones en  caso de pantallas grandes-->
+                  <li class="nav-item d-none d-lg-block">
+                    <a class="navbar-brand" href="#">
+                        <img src="./img-acercade/carrito-logo.png" id="logo-carrito" alt="Logo de carrito" class="img-fluid">
+                    </a>
+                  </li>
+                  <li class="nav-item d-none d-lg-block">
+                    <button class="btn " id="btn-Log-in" type="submit">Log in</button>
+                  </li>
+                  <li class="nav-item d-none d-lg-block">
+                    <button class="btn " type="submit">Regístrate</button>
+                  </li>
+                </ul>                
+              </div>
+            </div>
+          </nav>
+        <!--  **********   Aqui termina la navbar  ************ -->
+
+        <section class="Titulo-contactanos">
+            <h1>Contáctanos</h1>
+        </section>
+
+        <title>Contacto Musō夢想</title>
+    
+	<body>
+
+		<section class="Contactanos-seccion"style="background-image: url('https://res.klook.com/images/fl_lossy.progressive,q_65/c_fill,w_640,h_427/w_39,x_7,y_7,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/cqgviahpclqm3nw5i5o9/PICAFujiyamaFujiFiveLakesGlampingRentalCarPackageinKawaguchiko.jpg'); background-size: cover; background-repeat: no-repeat;">
+        <!-- Aqui va el fondo de la imagen  -->
+
+        <div class="Formulario">
+            <form action="https://formsubmit.co/hibeth.torres@gmail.com" method="post"></form>
+            <fieldset> <!-- Organizar en campos las cosas de un formulario -->
+                    
+                    <label for="nombre" class="Label-formulario"> <!-- Atributo for conecta la etiqueta con el input, debe tener el mismo nombre --> 
+                        Nombre(s): <br> <input class="Input-formulario"
+                                    id="nombre" 
+                                    type="text"  
+                                    placeholder="Blanca" 
+                                    name="nombre"
+                                    required> <!-- Input es elemento de autocierre -->
+                    </label> 
+                    
+                    <label for ="apellidos" class="Label-formulario">
+                        Apellidos: <br> <input class="Input-formulario"
+                                    id="apellidos" 
+                                    type="text" 
+                                    placeholder="Perez" 
+                                    name="apellidos"
+                                    required>
+                    </label> 
+                    
+                    <label for="correo" class="Label-formulario">
+                        Correo electronico: <br> <input class="Input-formulario"
+                                            id="correo" 
+                                            type="text" 
+                                            placeholder="blanca@gmail.com"
+                                            name="correo"
+                                            required>
+                    </label> 
+
+                    <label for="mensaje" class="Label-formulario">
+                        Mensaje: <br> <input class="Input-formulario"
+                                  type="text" 
+                                  id="mensaje" 
+                                  placeholder="Escribe tu mensaje aquí"
+                                  name="mensaje">
+                    </label>
+                </fieldset>
+
+                <!-- Etiqueta semantica para boton -->
+                <button class="Button-enviar"> Enviar </button>
+                
+
+        </div>
+
+        </section>
+
+        
+        
+<!-- ********** AQUI INICIA EL FOOTER ******* -->
+      <footer>
+		<div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          Logo y redes sociales
+        </div>
+        <div class="col-md-2 text-center text-md-start">
+          <p class="fw-bold">Acerca de nosotros</p>
+        </div>
+        <div class="col-md-2 text-center text-md-start">
+          <p class="fw-bold">Cursos</p>
+          <p class="text-md-start">Clases</p>
+          <p class="text-md-start">Paquetes</p>
+          <p class="text-md-start">Recursos</p>
+        </div>
+        <div class="col-md-2 text-center">
+          <p class="fw-bold">Cultura/Galeria</p>
+        </div>
+        <div class="col-md-2 text-center">
+          <p class="fw-bold">Preguntas frecuentes</p>
+        </div>
+      </div>
+    </div>
+	</footer>
+		<!--Importación de librerias de bootstrap-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+	</body>
+</div>
+
+
+<!-- Test de procedimientos de commit 1:
+  -->
+</html>

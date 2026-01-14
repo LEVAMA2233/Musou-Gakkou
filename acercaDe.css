@@ -10,7 +10,7 @@
 }
 
 
-.navbar{
+/* .navbar{
     background-color: black;
     width: 100vw;
  }
@@ -27,7 +27,7 @@
  .nav-link{
     color:var(--blanquino);
     font-family:var(--Tittle-and-subtitles);
-    /* font-size: 1.5vw; */
+    /* font-size: 1.5vw; 
     font-size: x-large;
     border-radius: 10px;
  }
@@ -72,7 +72,7 @@
  .navbar-toggler:hover{
     color: var(--blanquino);
     background-color: var(--rojo);
- }
+ } */
 
  .Titulo-acercade{
     font-family: var(--Tittle-and-subtitles);
@@ -195,9 +195,7 @@ footer {
             inset 6px 6px 21px #ffffff;
 /*     height: 50px; */
 /*     margin: 15px; */
-/*     width: 100%;         
-    max-width: 400px;    
-    box-sizing: border-box; */
+/*     width: 100%;    */     
 }
 .tarjeta-ittai h3{
     font-family: var(--Tittle-and-subtitles);
@@ -206,8 +204,20 @@ footer {
 .tarjeta-ittai{
     background-color: var(--gris);
     border-radius: 25px;
-    margin: 1px;
-    max-width: 250px;
+    margin: 10px;
+    max-width: 270px;
+}
+
+.tarjeta-ittai p{
+    font-family: var(--Content);
+    text-align: justify;
+}
+
+.foto-perfil{
+    height: 150px;
+    width: 150px;
+    margin-top:10px;
+    border-radius: 150px;
 }
 
 h2{
@@ -216,19 +226,19 @@ h2{
 @media screen and (max-width: 835px) {
 
 /*Hacemos que cada elemento del navbar ocupe el renglón completo cuando la pantalla es pequeña*/
-.nav-item{
+/* .nav-item{
     width:100%;
-}
+} */
 /*Ahora cambia de color el renglón completo al seleccionar*/
-.nav-item:hover{
+/* .nav-item:hover{
     color:black;
     background-color: white;
-}
+} */
 /*Ajustamos el tamaño de fuente para que sea responsivo*/
-.nav-link{
+/* .nav-link{
     font-size: large;
     border-radius: 0px;
- }
+ } */
 
     /* 1. Cambiamos el contenedor para que sea una columna vertical */
     .panal-grid {
@@ -267,4 +277,24 @@ h2{
         font-size: 0.9rem;
         padding: 0 15px; /* Un poco de aire a los lados */
     }
+}
+@media screen and (max-width: 1200px){
+    .tarjeta-ittai{
+        max-width: 45%;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .tarjeta-ittai{
+        width: 40vw;
+    }
+    .foto-perfil{
+        width: 25vw;
+        height: 25vw;
+        border-radius:25vw;
+    }
+    .tarjeta-ittai h3{
+        font-size: 5vw;
+    }
+
 }
