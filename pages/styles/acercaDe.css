@@ -35,6 +35,20 @@
     padding-right: 50px;
  }
 
+ .equipo-Ittai{
+    margin-top: 20px;
+    
+ }
+ .equipo-Ittai > p{
+    font-family: var(--Content);
+    color:black;
+    text-align: center;
+    font-size: large;
+    padding-top: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+ }
+
 body {
     text-align: center;
 }
