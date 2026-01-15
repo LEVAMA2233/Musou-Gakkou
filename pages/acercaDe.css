@@ -157,38 +157,6 @@ h2{
     font-family: var(--Tittle-and-subtitles);
 }
 
-/*Estilos del footer*/
-.flama-footer{
-    margin-top: 10px;
-    width: 90%;
-    max-width:400px;
-}
-.logo-footer{
-    width:25px;
-    margin-top: 20px;
-}
-button{
-    background-color: #2C2C2C;
-    color: var(--blanquino);
-    font-family: var(--Tittle-and-subtitles);
-    margin: 10px;
-    font-size: x-large;
-    border-radius: 10px;
- }
- footer p{
-    text-align: center;
-    font-family: var(--Content);
- }
- footer a{
-    text-align: center;
-    font-family: var(--Content);
-    color: black;
-    text-decoration: none;
- }
-
- .fw-bold{
-    margin-top: 20px;
- }
 @media screen and (max-width: 835px) {
 
     /* 1. Cambiamos el contenedor para que sea una columna vertical */
