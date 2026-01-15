@@ -39,9 +39,7 @@ body {
     text-align: center;
 }
 
-footer {
-    border-top: 8px solid var(--rojo);
-}
+
 
 .Panal-section{/*Acá están contenidos los hexagonos*/
     display:flex;
