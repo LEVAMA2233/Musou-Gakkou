@@ -1,6 +1,7 @@
 // Import our custom CSS
 //import '../scss/styles.scss'
 import { initApp } from './initApp.js';
+import { validacionFormulario } from './components/validacionFormsContactanos.js';
 //import {initApp} from './initApp';
 // Import all of Bootstrap’s JS
 //import * as bootstrap from 'bootstrap'
@@ -26,7 +27,10 @@ import { initApp } from './initApp.js';
  */
 
 
-//window.addEventListener("load",()=>);
+window.addEventListener("load",()=>{
+  initApp();
+  validacionFormulario();
+});
 
 /*
      Ciclo de vida: DOMContentLoaded asegura que los elementos existan
@@ -36,4 +40,4 @@ import { initApp } from './initApp.js';
         DOMContentLoaded: Se activa tan pronto como el DOM esté completamente 
         cargado y parseado, sin esperar a que se carguen imágenes u otros recursos externos.  
   */
-window.addEventListener("DOMContentLoaded",initApp);
+//window.addEventListener("DOMContentLoaded",initApp);

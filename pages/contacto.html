@@ -32,13 +32,13 @@
         <!-- Aqui va el fondo de la imagen  -->
 
         <div class="Formulario">
-            <form action="https://formsubmit.co/hibeth.torres@gmail.com" method="post"></form>
+            <form action="https://formsubmit.co/4c6170eb8d5a4e76d1fe85174cb3ab9f" method="post" id="Formulario">
             <fieldset> <!-- Organizar en campos las cosas de un formulario -->
                     
                     <label for="nombre" class="Label-formulario"> <!-- Atributo for conecta la etiqueta con el input, debe tener el mismo nombre --> 
                         Nombre(s): <br> <input class="Input-formulario"
                                     id="nombre" 
-                                    type="text"  
+                                    type=""  
                                     placeholder="Blanca" 
                                     name="nombre"
                                     required> <!-- Input es elemento de autocierre -->
@@ -56,10 +56,10 @@
                     <label for="correo" class="Label-formulario">
                         Correo electronico: <br> <input class="Input-formulario"
                                             id="correo" 
-                                            type="text" 
+                                            type="email" 
                                             placeholder="blanca@gmail.com"
                                             name="correo"
-                                            required>
+                                            required><!--con type=email la validación es directa-->
                     </label> 
 
                     <label for="mensaje" class="Label-formulario">
@@ -72,9 +72,9 @@
                 </fieldset>
 
                 <!-- Etiqueta semantica para boton -->
-                <button class="Button-enviar"> Enviar </button>
+                <button class="Button-enviar" type="submit"> Enviar </button>
                 
-
+            </form>   
         </div>
 
         </section>
