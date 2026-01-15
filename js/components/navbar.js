@@ -92,6 +92,13 @@ const navbar = () =>{
  body {
     text-align: center;
 }
+/* Solo para pantallas grandes (lg) */
+@media (min-width: 992px) {
+  .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; /* Evita que se cierre al mover el mouse al menú */
+  }
+}
 @media screen and (max-width: 991px) {
 
 /*Hacemos que cada elemento del navbar ocupe el renglón completo cuando la pantalla es pequeña*/
@@ -116,7 +123,7 @@ const navbar = () =>{
     </style>
     <nav class="navbar navbar-expand-lg custom-navbar sticky-top" data-bs-theme="dark">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#">
+              <a class="navbar-brand" href="/">
                 <img src="/img-acercade/logo-muso.png" id="logo-muso" alt="Logo de Musou" class="img-fluid">
               </a>
               <button class="navbar-toggler" style="color:#e6e6ff; margin-right: 20px;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -125,20 +132,20 @@ const navbar = () =>{
               <div class="collapse navbar-collapse " id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto align-items-center">
                   <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#" >Cursos</a>
+                    <a class="nav-link" aria-current="page" href="/pages/cursos.html" >Cursos</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#">Recursos</a>
+                    <a class="nav-link" aria-current="page" href="/pages/recursos.html">Recursos</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#" >Cultura</a>
+                    <a class="nav-link" aria-current="page" href="/pages/cultura.html">Cultura</a>
                   </li>
                   </li>
                   <!-- Menú dropdown solo se muestra en pantallas grandes -->
                   <li class="nav-item dropdown d-none d-lg-block">
-                    <a class="nav-link dropdown-toggle" aria-current="page" href="/pages/acercaDe.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Acerca de nosotros</a>
-                    <ul class="dropdown-menu"
-                        <li><a class="dropdown-item" href="#">Preguntas frecuentes</a></li>
+                    <a class="nav-link dropdown-toggle" aria-current="page" href="/pages/acercaDe.html" role="button"  aria-expanded="false">Acerca de nosotros</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="/pages/preguntasFrecuentes.html">Preguntas frecuentes</a></li>
                         <li><a class="dropdown-item" href="/pages/contacto.html">Contáctanos</a></li>
                     </ul>
 
@@ -148,31 +155,31 @@ const navbar = () =>{
                     <a class="nav-link" href="/pages/acercaDe.html">Acerca de nosotros</a>
                   </li>
                   <li class="nav-item d-lg-none ms-1" >
-                    <a class="nav-link" href="#">Preguntas frecuentes </a>
+                    <a class="nav-link" href="/pages/preguntasFrecuentes.html">Preguntas frecuentes </a>
                   </li>
                   <li class="nav-item d-lg-none ms-1" >
                     <a class="nav-link" href="/pages/contacto.html">Contáctanos</a>
                   </li>
                   <li class="nav-item d-lg-none ms-1" >
-                    <a class="nav-link" href="#">Carrito</a>
+                    <a class="nav-link" href="/pages/carrito.html">Carrito</a>
                   </li>
                   <li class="nav-item d-lg-none ms-1" >
-                    <a class="nav-link" href="#">Log in</a>
+                    <a class="nav-link" href="/pages/logIn.html">Log in</a>
                   </li>
                   <li class="nav-item d-lg-none ms-1">
-                    <a class="nav-link" href="#">Regístrate</a>
+                    <a class="nav-link" href="/pages/registro.html">Regístrate</a>
                   </li>
                   <!-- Solo se muestran como botones en  caso de pantallas grandes-->
                   <li class="nav-item d-none d-lg-block">
-                    <a class="navbar-brand" href="#">
+                    <a class="navbar-brand" href="/pages/carrito.html">
                         <img src="/img-acercade/carrito-logo.png" id="logo-carrito" alt="Logo de carrito" class="img-fluid">
                     </a>
                   </li>
                   <li class="nav-item d-none d-lg-block">
-                    <button class="btn " id="btn-Log-in" type="submit">Log in</button>
+                    <a class="btn" id="btn-Log-in"  href="/pages/logIn.html">Log in</a>
                   </li>
                   <li class="nav-item d-none d-lg-block">
-                    <button class="btn " type="submit">Regístrate</button>
+                    <a class="btn" href="/pages/registro.html">Regístrate</a>
                   </li>
                 </ul>
                 
