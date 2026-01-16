@@ -1,0 +1,50 @@
+:root{/*Variables fusiladas de la identidad visual*/
+    --rojo:#c91f13;
+    --gris:#D9D9D9;
+    --blanquino:#f5f3ec;
+    --Tittle-and-subtitles:"El Messiri", sans-serif;
+    --Content:"Source Sans 3", sans-serif;
+}
+body{
+    font-family: var(--Content);
+}
+h1{
+    font-family: var(--Tittle-and-subtitles);
+    color: black;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    margin-top: 30px;
+}
+
+.lateral{
+    background-color: var(--rojo);
+    margin: 0px;
+}
+
+.contenedor-busqueda{
+/* Caja redondeada */
+            display: flex;
+            align-items: center;
+            border: 1px solid #ccc;
+            border-radius: 50px; /* Hace que los bordes sean circulares */
+            padding: 5px 20px;
+            width: 300px;
+            background-color: white;
+}
+.input-busqueda{
+/* Quitar el estilo por defecto del input */
+            font-family: var(--Content);
+            border: none;
+            outline: none;
+            flex-grow: 1; /* El input toma todo el espacio disponible */
+            font-size: 18px;
+            color: #999;
+            padding: 8px 0; 
+}
+.logo-lupa{
+/* Estilo para tu imagen */
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+            margin-left: 10px;
+}

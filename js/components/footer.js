@@ -8,6 +8,9 @@ const footer = () =>{
     --Tittle-and-subtitles:"El Messiri", sans-serif;
     --Content:"Source Sans 3", sans-serif;
 }
+    footer {
+    border-top: 8px solid var(--rojo);
+}
     .flama-footer{
     margin-top: 10px;
     width: 90%;
