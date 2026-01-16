@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&display=swap" rel="stylesheet">
+
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+			</style>
+			<!--Importación de librerias de bootstrap para la navbar-->
+			<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+			<link rel="stylesheet" href="/pages/styles/contacto.css">
+		  <script type="module" src="/js/main.js"></script>
+	</head>
+
+
+  <!--Inicia la navbar-->
+<header id="barra-navegacion"></header> <!-- HTML Modularizado -->
+        <!--  **********   Aqui termina la navbar  ************ -->
+
+        <section class="Titulo-contactanos">
+            <h1>Contáctanos</h1>
+        </section>
+
+        <title>Contacto Musō夢想</title>
+    
+	<body>
+
+		<section class="Contactanos-seccion">
+        <!-- Aqui va el fondo de la imagen  -->
+
+        <div class="Formulario">
+            <form action="https://formsubmit.co/4c6170eb8d5a4e76d1fe85174cb3ab9f" method="post" id="Formulario">
+            <fieldset> <!-- Organizar en campos las cosas de un formulario -->
+                    
+                    <label for="nombre" class="Label-formulario"> <!-- Atributo for conecta la etiqueta con el input, debe tener el mismo nombre --> 
+                        Nombre(s): <br> <input class="Input-formulario"
+                                    id="nombre" 
+                                    type=""  
+                                    placeholder="Blanca" 
+                                    name="nombre"
+                                    required> <!-- Input es elemento de autocierre -->
+                    </label> 
+                    
+                    <label for ="apellidos" class="Label-formulario">
+                        Apellidos: <br> <input class="Input-formulario"
+                                    id="apellidos" 
+                                    type="text" 
+                                    placeholder="Perez" 
+                                    name="apellidos"
+                                    required>
+                    </label> 
+                    
+                    <label for="correo" class="Label-formulario">
+                        Correo electronico: <br> <input class="Input-formulario"
+                                            id="correo" 
+                                            type="email" 
+                                            placeholder="blanca@gmail.com"
+                                            name="correo"
+                                            required><!--con type=email la validación es directa-->
+                    </label> 
+
+                    <label for="mensaje" class="Label-formulario">
+                        Mensaje: <br> <input class="Input-formulario"
+                                  type="text" 
+                                  id="mensaje" 
+                                  placeholder="Escribe tu mensaje aquí"
+                                  name="mensaje">
+                    </label>
+                </fieldset>
+
+                <!-- Etiqueta semantica para boton -->
+                <button class="Button-enviar" type="submit"> Enviar </button>
+                
+            </form>   
+        </div>
+
+        </section>
+
+        
+        
+<!-- ********** AQUI INICIA EL FOOTER ******* -->
+<footer id = "footer"> </footer> <!-- Footer Modularizado -->
+		<!--Importación de librerias de bootstrap-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+	</body>
+</div>
+
+
+<!-- Test de procedimientos de commit 1:
+  -->
+</html>

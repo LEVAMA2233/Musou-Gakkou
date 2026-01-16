@@ -5,79 +5,26 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&display=swap" rel="stylesheet">
-
+    <title>Acerca de Musō夢想</title>
 		<style>
 			@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
 			</style>
 
 			<!--Importación de librerias de bootstrap para la navbar-->
 			<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-			<link rel="stylesheet" href="./acercaDe.css">
-		
+			<link rel="stylesheet" href="/pages/styles/acercaDe.css">
+      <script type="module" src="/js/main.js"></script>
 	</head>
 
 
   <!--Inicia la navbar-->
-<nav class="navbar navbar-expand-lg custom-navbar sticky-top " data-bs-theme="dark">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">
-                <img src="./img-acercade/logo-muso.png" id="logo-muso" alt="Logo de Musou" class="img-fluid">
-              </a>
-              <button class="navbar-toggler" style="color:#e6e6ff; margin-right: 20px;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon  mr-4"></span>
-              </button>
-              <div class="collapse navbar-collapse " id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto align-items-center">
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#" >Cursos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#">Recursos educativos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#" >Cultura</a>
-                  </li>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#" >Acerca de nosotros</a>
-                  </li>
-                  <!-- Solo se muestran cuando la navbar colapsa -->
-                  <li class="nav-item d-lg-none ms-1" >
-                    <a class="nav-link" href="#">Carrito</a>
-                  </li>
-                  <li class="nav-item d-lg-none ms-1" >
-                    <a class="nav-link" href="#">Log in</a>
-                  </li>
-                  <li class="nav-item d-lg-none ms-1">
-                    <a class="nav-link" href="#">Regístrate</a>
-                  </li>
-                  <!-- Solo se muestran como botones en  caso de pantallas grandes-->
-                  <li class="nav-item d-none d-lg-block">
-                    <a class="navbar-brand" href="#">
-                        <img src="./img-acercade/carrito-logo.png" id="logo-carrito" alt="Logo de carrito" class="img-fluid">
-                    </a>
-                  </li>
-                  <li class="nav-item d-none d-lg-block">
-                    <button class="btn " id="btn-Log-in" type="submit">Log in</button>
-                  </li>
-                  <li class="nav-item d-none d-lg-block">
-                    <button class="btn " type="submit">Regístrate</button>
-                  </li>
-                </ul>
-                
-                  
-                  
-                
-              </div>
-            </div>
-          </nav><!--Termina la navbar-->
+  <header id="barra-navegacion" class="sticky-top"></header> <!-- HTML Modularizado -->
 
         <section class="Titulo-acercade">
             <h1>Acerca de Nosotros</h1>
         </section>
 
-        <title>Acerca de Musō夢想</title>
-	<link rel="stylesheet" href="./css/Hexagon.css">
+  
     <section class="Quienes-somos">
         <h1>¿Quiénes somos?</h1>
         <p>
@@ -113,7 +60,7 @@
                   <h3>Yasuhito Hisaki</h3>
                   <div class="row">
                     <div class="col-sm-4">
-                      <img src="./img-acercade/img-docentes/YasutoHisaki.jpeg" style="width:100px; height:150px; border-radius:100%">
+                      <img src="https://github.com/LEVAMA2233/Musou-Gakkou/blob/imgs/img-acercade/img-docentes/YasutoHisaki.jpeg?raw=true" style="width:100px; height:150px; border-radius:100%">
                     </div>
                     <div class="col-sm-8">
                       <p>Profesores de Japonés con más de 10 años de experiencia y certificados. Enseñanza de idioma japonés tanto presencial como en línea.</p>
@@ -124,7 +71,7 @@
                   <h3>Eduardo Luque</h3>
                   <div class="row">
                     <div class="col-sm-4">
-                      <img src="./img-acercade/img-docentes/EduardoLuque.jpeg" style="width:100px; height:150px; border-radius:100%">
+                      <img src="https://github.com/LEVAMA2233/Musou-Gakkou/blob/imgs/img-acercade/img-docentes/EduardoLuque.jpeg?raw=true" style="width:100px; height:150px; border-radius:100%">
                     </div>
                     <div class="col-sm-8">
                       <p>Profesores de Japonés con más de 10 años de experiencia y certificados. Enseñanza de idioma japonés tanto presencial como en línea.</p>
@@ -137,10 +84,8 @@
         </section>
         <section class = "equipo-Ittai">
             <h2>Equipo Ittai 一体</h2>
-  <!-- Carrusel de imágenes de los integrantes del equipi -->
-   <!-- La fila contiene tanto el texto como las imágenes -->
-  <!-- <div class="row align-items-center carousel-container"> -->
-    <!-- Contenedor del texto -->
+            <p> Conoce a quienes desarrollaron este sitio web. Para saber más de nosotros, haz click en nuestras caras.</p>
+  <!-- Carrusel de imágenes de los integrantes del equipo Ittai 一体 -->
     <!-- Contenedor de las imágenes y botones -->
     <!-- <div class="col"> -->
             <div id="carouselExampleCaptions" class="carousel slide" style = "margin:2%;">
@@ -154,41 +99,49 @@
     <!-- La clase active es el conjunto de imágenes que se muestran por defecto -->
               <div class="carousel-item active align-items-center">
                <div class="row justify-content-around"> <!-- Cada fila contiene 3 imágenes, este es el primer conjunto-->
-                  <div class="col-3 tarjeta-ittai text-center"> <!-- Imagen 1 del primer conjunto -->
-                    <img src="https://raw.githubusercontent.com/LEVAMA2233/Musou-Gakkou/refs/heads/LEVAMA/Fuji.jpg" class="d-block mx-auto" alt="Mount Fuji" style="height: 150px; width: 150px; margin-top:10px;">
+                  <div class="col-6 col-md-3 tarjeta-ittai text-center"> <!-- Imagen 1 del primer conjunto -->
+                    <a href="https://www.linkedin.com/in/hilda-elizabeth-alcantar-guti%C3%A9rrez-ing-biomedico/"><img src="https://github.com/LEVAMA2233/Musou-Gakkou/blob/imgs/img-developers/itai-eli.png?raw=true" class="d-block mx-auto foto-perfil" alt="Picture of Hilda Elizabeth Alcantar"></a>
                     <h3>Hilda Elizabeth Alcantar</h3>
+                    <p class="d-none d-md-block">Desarrolladora Web en formación en Ingeniería Biomédica. Mi experiencia previa como Ingeniero de Servicio me dotó de una sólida capacidad para la resolución de problemas críticos, la diagnóstico rápido de fallas y la gestión efectiva con usuarios/clientes.</p>
                   </div>
-                  <div class="col-3 tarjeta-ittai"> <!-- Imagen 2 del primer conjunto -->
-                    <img src="https://raw.githubusercontent.com/LEVAMA2233/Musou-Gakkou/refs/heads/LEVAMA/Fuji.jpg" class="d-block mx-auto" alt="Mount Fuji" style="height: 150px; width: 150px; margin-top:10px;">
+                  <div class="col-6 col-md-3 tarjeta-ittai text-center"> <!-- Imagen 2 del primer conjunto -->
+                    <a href="https://www.linkedin.com/in/andreaestradafelix/overlay/about-this-profile/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BgGT%2BdFfnRmC%2BqYW%2Bgox%2BDQ%3D%3D"><img src="https://raw.githubusercontent.com/LEVAMA2233/Musou-Gakkou/refs/heads/LEVAMA/Fuji.jpg" class="d-block mx-auto foto-perfil" alt="Picture of Andrea Estrada Félix"></a>
                     <h3>Andrea Estrada Félix</h3>
                   </div>
-                  <div class="col-3 tarjeta-ittai"> <!-- Imagen 3 del primer conjunto -->
-                    <img src="https://raw.githubusercontent.com/LEVAMA2233/Musou-Gakkou/refs/heads/LEVAMA/Fuji.jpg" class="d-block mx-auto" alt="Mount Fuji" style="height: 150px; width: 150px; margin-top:10px;">
+                  <div class="w-100 d-block d-xl-none"></div> <!-- Salto de línea para forzar 2x2 -->
+                  <div class="col-6 col-md-3 tarjeta-ittai text-center"> <!-- Imagen 3 del primer conjunto -->
+                    <a href="https://www.linkedin.com/in/karla-iturbe"><img src="https://github.com/LEVAMA2233/Musou-Gakkou/blob/imgs/img-developers/kdip_imagen.png?raw=true" class="d-block mx-auto foto-perfil" alt="Picture of Karla Daniela Iturbe Piña"></a>
                     <h3>Karla Daniela Iturbe Piña </h3>
+                    <p class="d-none d-md-block">Ingeniera Química explorando el mundo del desarrollo web. Me gusta aprender cosas nuevas, combinar la lógica con la creatividad y transformar ideas en soluciones reales. Este espacio es parte de mi camino para crecer, experimentar y seguir desarrollándome.</p>
                   </div>
-                  <div class="col-3 tarjeta-ittai"> <!-- Imagen 4 del primer conjunto -->
-                    <img src="https://raw.githubusercontent.com/LEVAMA2233/Musou-Gakkou/refs/heads/LEVAMA/Fuji.jpg" class="d-block mx-auto" alt="Mount Fuji" style="height: 150px; width: 150px; margin-top:10px;">
+                  <div class="col-6 col-md-3 tarjeta-ittai text-center"> <!-- Imagen 4 del primer conjunto -->
+                    <a href="https://www.linkedin.com/in/luis-rdgz-alm/"><img src="https://raw.githubusercontent.com/LEVAMA2233/Musou-Gakkou/refs/heads/LEVAMA/Fuji.jpg" class="d-block mx-auto foto-perfil" alt="picture of Luis Rivaldo Rodriguez Almaraz"></a>
                     <h3>Luis Rivaldo Rodriguez Almaraz</h3>
                   </div>
                 </div>
               </div>
               <div class="carousel-item align-items-center"> <!-- Conjunto 2-->
                 <div class="row justify-content-around">
-                  <div class="col-3 tarjeta-ittai"> <!-- Imagen 1 del segundo conjunto -->
-                    <img src="./img-acercade/cherry.jpeg" class="d-block mx-auto" alt="Cherry-Blossom Trees" style="height: 150px; width: 150px; margin-top:10px;">
+                  <div class="col-6 col-md-3 tarjeta-ittai text-center"> <!-- Imagen 1 del segundo conjunto -->
+                    <a href="https://www.linkedin.com/in/jorge-tierrablanca-fullstack/"><img src="https://github.com/LEVAMA2233/Musou-Gakkou/blob/imgs/img-developers/jatl_imagen.jpg?raw=true" class="d-block mx-auto foto-perfil" alt=" Picture of Jorge Arturo Tierrablanca"></a>
                     <h3>Jorge Arturo Tierrablanca León </h3>
+                    <p class="d-none d-md-block">Desarrollador Java bilingüe con formación en Matemáticas Aplicadas y bases sólidas en algoritmos y estructuras de datos. Experiencia en comercio de activos digitales y orientación al cliente.</p>
                   </div>
-                  <div class="col-3 tarjeta-ittai"> <!-- Imagen 2 del segundo conjunto -->
-                    <img src="./img-acercade/cherry.jpeg" class="d-block mx-auto" alt="Cherry-Blossom Trees" style="height: 150px; width: 150px; margin-top:10px;">
+                  <div class="col-6 col-md-3 tarjeta-ittai text-center"> <!-- Imagen 2 del segundo conjunto -->
+                    <a href="https://www.linkedin.com/in/hibeth-torres/"><img src="https://github.com/LEVAMA2233/Musou-Gakkou/blob/imgs/img-developers/Ib.jpeg?raw=true" class="d-block mx-auto foto-perfil" alt="Picture of Cristel Hibeth Torres Grijalva"></a>
                     <h3>Cristel Hibeth Torres Grijalva</h3>
+                    <p class="d-none d-md-block">Desarrolladora Fullstack Java e Ingeniera en Mecatrónica. Base sólida en ingeniería y experiencia internacional en Japón dentro de proyectos de investigación tecnológica. Habilidades en Java, Spring, bases de datos y desarrollo Fullstack.</p>
                   </div>
-                  <div class="col-3 tarjeta-ittai"> <!-- Imagen 3 del segundo conjunto -->
-                    <img src="./img-acercade/cherry.jpeg" class="d-block mx-auto" alt="Cherry-Blossom Trees" style="height: 150px; width: 150px; margin-top:10px;">
+                  <div class="w-100 d-block d-xl-none"></div> <!-- Salto de línea para forzar 2x2 -->
+                  <div class="col-6 col-md-3 tarjeta-ittai text-center"> <!-- Imagen 3 del segundo conjunto -->
+                    <a href="https://www.linkedin.com/in/leopoldo-vargas-mauricio/"><img src="./img-acercade/cherry.jpeg" class="d-block mx-auto foto-perfil" alt="Picture of Leopoldo Vargas Mauricio"></a>
                     <h3>Leopoldo Vargas Mauricio</h3>
                   </div>
-                  <div class="col-3 tarjeta-ittai"> <!-- Imagen 4 del segundo conjunto -->
-                    <img src="./img-acercade/cherry.jpeg" class="d-block mx-auto" alt="Cherry-Blossom Trees" style="height: 150px; width: 150px; margin-top:10px;">
+                  <div class="col-6 col-md-3 tarjeta-ittai text-center"> <!-- Imagen 4 del segundo conjunto -->
+                    <a href="https://www.linkedin.com/in/josecarlos-velascolopez"><img src="https://github.com/LEVAMA2233/Musou-Gakkou/blob/imgs/img-developers/JCVL.jpg?raw=true" class="d-block mx-auto foto-perfil" alt="Picture of José Carlos Velasco López"></a>
                     <h3>José Carlos Velasco López</h3>
+<!--                <a href="https://www.linkedin.com/in/josecarlos-velascolopez"><img src="./LinkedIn_icon.svg.png" class="logo-linkedin"></a>  -->
+                    <p class="d-none d-md-block">Ingeniero Biomédico de profesión, desarrollador Java Full-Stack por decisión. Mi experiencia me ha dado una base sólida en pensamiento crítico, resolución de problemas y trabajo multidisciplinario.</p>
                   </div>
                 </div>
               </div>
@@ -208,30 +161,7 @@
   <!-- </div> -->
         </section>
 
-      <footer>
-		<div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          Logo y redes sociales
-        </div>
-        <div class="col-md-2 text-center text-md-start">
-          <p class="fw-bold">Acerca de nosotros</p>
-        </div>
-        <div class="col-md-2 text-center text-md-start">
-          <p class="fw-bold">Cursos</p>
-          <p class="text-md-start">Clases</p>
-          <p class="text-md-start">Paquetes</p>
-          <p class="text-md-start">Recursos</p>
-        </div>
-        <div class="col-md-2 text-center">
-          <p class="fw-bold">Cultura/Galeria</p>
-        </div>
-        <div class="col-md-2 text-center">
-          <p class="fw-bold">Preguntas frecuentes</p>
-        </div>
-      </div>
-    </div>
-	</footer>
+    <footer id="footer"></footer> <!-- Footer Modularizado -->
 		<!--Importación de librerias de bootstrap-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 	</body>
