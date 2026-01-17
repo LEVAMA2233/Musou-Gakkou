@@ -63,20 +63,21 @@ const navbar = () =>{
     transform: scale(1.3);
 }
 
-.btn{
+.boton{
     background-color: #2C2C2C;
     color: var(--blanquino);
     font-family: var(--Tittle-and-subtitles);
     margin: 5px;
     font-size: x-large;
     padding: 3px 6px;
+    border-radius: 10px;
  }
  #btn-Log-in{
     background-color: #D9D9D9;
     color: black;
  }
 
- .btn:hover{
+ .boton:hover{
     background-color: #D9D9D9;
     color: var(--rojo);
  }
@@ -176,10 +177,10 @@ const navbar = () =>{
                     </a>
                   </li>
                   <li class="nav-item d-none d-lg-block">
-                    <a class="btn" id="btn-Log-in"  href="/pages/logIn.html">Log in</a>
+                    <a class="boton" id="btn-Log-in"  href="/pages/logIn.html">Log in</a>
                   </li>
                   <li class="nav-item d-none d-lg-block">
-                    <a class="btn" href="/pages/registro.html">Regístrate</a>
+                    <a class="boton" href="/pages/registro.html">Regístrate</a>
                   </li>
                 </ul>
                 

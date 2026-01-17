@@ -20,7 +20,7 @@ h1{
     background-color: var(--rojo);
     margin: 0px;
 }
-
+.contenedor-mejor-valorados,
 .contenedor-busqueda{
 /* Caja redondeada */
             display: flex;
@@ -28,23 +28,61 @@ h1{
             border: 1px solid #ccc;
             border-radius: 50px; /* Hace que los bordes sean circulares */
             padding: 5px 20px;
-            width: 300px;
+            height: 55px;
             background-color: white;
+}
+.contenedor-busqueda{
+width: 100%;
 }
 .input-busqueda{
 /* Quitar el estilo por defecto del input */
             font-family: var(--Content);
             border: none;
             outline: none;
-            flex-grow: 1; /* El input toma todo el espacio disponible */
+            width:90%;
+            /*flex-grow: 1; *//* El input toma todo el espacio disponible */
             font-size: 18px;
             color: #999;
             padding: 8px 0; 
 }
 .logo-lupa{
 /* Estilo para tu imagen */
-            width: 20px;
-            height: 20px;
+            width: 10%;
+            height: auto;
             cursor: pointer;
             margin-left: 10px;
+}
+
+/* Estilo base del botón (Inactivo) */
+.btn-filter {
+  border-radius: 50px; /* Hace el botón tipo cápsula */
+  background-color: #f2f2f2; /* Gris claro */
+  color: #666;
+  border: none;
+  padding: 8px 20px;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+/* Ocultar el check de texto por defecto */
+.text-check {
+  display: none;
+  margin-right: 4px;
+  font-weight: bold;
+}
+
+/* Estilo cuando el input está seleccionado (Activo) */
+.btn-check:checked + .btn-filter {
+  background-color: #222 !important; /* Negro/Gris oscuro */
+  color: white !important;
+}
+
+/* Mostrar el icono solo cuando esté seleccionado */
+.btn-check:checked + .btn-filter .text-check {
+  display: inline-block;
+}
+
+/* Efecto hover opcional */
+.btn-filter:hover {
+  background-color: #e0e0e0;
 }
