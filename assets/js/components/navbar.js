@@ -121,7 +121,7 @@ const navbar = () =>{
     <nav class="navbar navbar-expand-lg custom-navbar sticky-top" data-bs-theme="dark" style="background-color: black; width: 100vw;">
             <div class="container-fluid">
               <a class="navbar-brand" href="/" style="    color:var(--blanquino); margin: 0px;">
-                <img src="/img-acercade/logo-muso.png" id="logo-muso" alt="Logo de Musou" class="img-fluid" style="max-height: 70px; max-width: 150px; margin-right: 0px;">
+                <img src="/assets/img/img-acercade/logo-muso.png" id="logo-muso" alt="Logo de Musou" class="img-fluid" style="max-height: 70px; max-width: 150px; margin-right: 0px;">
               </a>
               <button class="navbar-toggler" style="color:#e6e6ff; margin-right: 20px;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon  mr-4"></span>
@@ -169,7 +169,7 @@ const navbar = () =>{
                   <!-- Solo se muestran como botones en  caso de pantallas grandes-->
                   <li class="nav-item d-none d-lg-block">
                     <a class="navbar-link" href="/pages/carrito.html">
-                        <img src="/img-acercade/carrito-logo.png" id="logo-carrito" alt="Logo de carrito" class="img-fluid">
+                        <img src="/assets/img/img-acercade/carrito-logo.png" id="logo-carrito" alt="Logo de carrito" class="img-fluid">
                     </a>
                   </li>
                   <li class="nav-item d-none d-lg-block">
