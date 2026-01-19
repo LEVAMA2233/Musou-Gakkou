@@ -58,3 +58,14 @@
     min-height: 100vh;
   }
 }
+
+.principal{
+  font-family: var(--Content);
+  font-size: xx-large;
+}
+
+.tarjeta{
+  border-radius: 25px;
+  height: 200px;
+  background-color: var(--rojo);
+}
