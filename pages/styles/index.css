@@ -57,6 +57,10 @@
     color: white;
     min-height: 100vh;
   }
+
+  .contenedor{
+    font-size: small;
+  }
 }
 
 .principal{
@@ -68,4 +72,10 @@
   border-radius: 25px;
   height: 200px;
   background-color: var(--rojo);
+}
+
+.contenedor{
+  background-color: white;
+  color: black;
+  margin-bottom: 25px;
 }
