@@ -6,12 +6,12 @@
     --Content:"Source Sans 3", sans-serif;
 }
 
-.banner{
+/* .banner{
   width: 100%;
   padding: 160px;
   display: flex;
   text-align: left;
-  position: relative; /* Necesario para el posicionamiento absoluto del pseudo-elemento */
+  position: relative; /* Necesario para el posicionamiento absoluto del pseudo-elemento
 }
 
 .banner::before{
@@ -25,7 +25,58 @@
     right: 0;
     bottom: 0;
     z-index: -1;
+} */
+
+.banner {
+  width: 100%;
+  height: 350px; /* Mejor que padding fijo */
+  display: flex;
+  align-items: center;
+  padding: 4rem;
+  position: relative;
 }
+
+.banner-img{
+  display: none;
+}
+
+.banner::before {
+  content: "";
+  background-image: url('https://fotografias-neox.atresmedia.com/clipping/cmsimages01/2019/05/13/7A2B4217-677A-42A6-9E01-CF0BA7C49D75/97.jpg?crop=3000,1688,x0,y1&width=1600&height=900&optimize=high&format=webply');
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+
+@media (max-width: 767.98px) {
+  .banner {
+    height: 200px;
+    padding: 0;
+  }
+
+  .banner::before {
+    display: none;
+  }
+
+  .banner-img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .banner-title {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.2rem;
+    pointer-events: none;
+  }
+}
+
 
 .side-bar {
   background-color: var(--rojo);
