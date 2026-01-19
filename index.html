@@ -12,14 +12,63 @@
 
 			<!--Importación de librerias de bootstrap para la navbar-->
 			<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-			<link rel="stylesheet" href="/pages/acercaDe.css">
+			<link rel="stylesheet" href="/pages/styles/index.css">
       <script type="module" src="/js/main.js"></script>
 	</head>
-<body>
-    <header id="barra-navegacion" class="sticky-top"></header> <!-- HTML Modularizado -->
+	<header id="barra-navegacion" class="sticky-top"></header> <!-- HTML Modularizado -->
+	
+	<body>
+		
+		<div class="grid-container">
+			<div class="banner">
+				<img 
+					src="https://fotografias-neox.atresmedia.com/clipping/cmsimages01/2019/05/13/7A2B4217-677A-42A6-9E01-CF0BA7C49D75/97.jpg?crop=3000,1688,x0,y1&width=1600&height=900&optimize=high&format=webply"
+					alt="Banner"
+					class="banner-img"
+				/>
+				<h1 class="banner-title">こんにちは</h1>
+			</div>
+		</div>
+
+
+		<div class="container-fluid">
+			<div class="row min-vh-100 main-layout">
+
+				<div class="col-md-1 side-bar left-bar"></div>
+
+				<div class="col-md-10 col-ne12 content-area p-4">
+					<div class="contenedor">
+						<p class="principal">¿No sabes en qué nivel te encuentras? Realiza nuestro test de ubicación para conocer en que nivel te encuentras</p>
+						<button type="button" class="btn principal"><u>Realizar test -></u></button>
+					</div>
+
+					<div class="row row-cols-1 row-cols-md-3 g-4">
+						<div class="col">
+							<div class="card border-0 bg-transparent">
+								<img src="https://photos.smugmug.com/Osaka/Osaka-Photo-Of-The-Week-2019/i-83zQhbB/0/76b52db8/L/IO-2019-week-28-EDITORIAL-shutterstock_787582243-L.jpg" class="card-img-top tarjeta" alt="Comida callejera por la noche en Osaka, Japóm">
+							</div>
+						</div>
+						<div class="col">
+							<div class="card border-0 bg-transparent">
+								<img src="https://cdn.forbes.com.mx/2019/10/jezael-melgoza-CudNrzbsyZw-unsplash-1280x720.jpg" class="card-img-top tarjeta" alt="Icónico cruce de Shibuya en Tokio, Japón">
+							</div>
+						</div>
+						<div class="col">
+							<div class="card border-0 bg-transparent">
+								<img src="https://travelnation.co.uk/sites/default/files/styles/responsive_desktop/public/japan_tokyo_sensoji_temple_900.webp?itok=VatcRSl_" class="card-img-top tarjeta" alt="Templo Sensoji en Tokio, Japón">
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-1 side-bar right-bar"></div>
+
+			</div>
+		</div>
+
+
     <footer id="footer"></footer> <!-- Footer Modularizado -->
     		<!--Importación de librerias de bootstrap-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-
 </body>
 </html>
