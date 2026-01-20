@@ -32,7 +32,7 @@ body{
     margin-top: 1rem;
     text-align: justify;
 }
-.carrusel-texto-2{
+.carrusel-texto{
     box-shadow: 0 4px 8px var(--gris);
     font-family: var(--Content);
     margin-top: 1rem;
@@ -42,3 +42,39 @@ body{
 #carrusel-2{
     margin-top: 1rem;
 }
+ /* CARDS */
+    .museo-card {
+      height: 200px;
+      border-radius: 25px;
+      overflow: hidden;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+      margin-top: 1rem;
+    }
+
+    .museo-card img {
+      height: 100%;
+      object-fit: cover;
+    }
+    #carrusel-4 {
+        margin-top: 1rem ;
+        
+    }
+    .carrusel-5 {
+        margin-top: 1rem ;
+        box-shadow: 0 4px 8px var(--gris);
+        border-radius: 25px;
+        padding: 1rem;
+    }
+    h4 {
+        font-family: var(--Tittle-and-subtitles);
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    .museo-card-5 {
+      height: 120px;
+      border-radius: 25px;
+      overflow: hidden;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
