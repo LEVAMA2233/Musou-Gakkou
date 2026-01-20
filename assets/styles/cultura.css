@@ -5,3 +5,40 @@
     --Tittle-and-subtitles:"El Messiri", sans-serif;
     --Content:"Source Sans 3", sans-serif;
 }
+body{
+    background-color: white;
+}
+.contenedor-cultura{
+    background-color: var(--rojo);
+    width: 100%;
+    margin: auto;
+}
+.contenedor-central{
+    background-color: white;
+    width: 80%;
+    margin: auto;
+    text-align: left;
+    font-family: var(--Tittle-and-subtitles);
+    padding: 2rem;
+}
+.carrusel-1{
+    width: 100%;
+    padding: 2rem;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px var(--gris);
+}
+.carrusel-texto-1{
+    font-family: var(--Content);
+    margin-top: 1rem;
+    text-align: justify;
+}
+.carrusel-texto-2{
+    box-shadow: 0 4px 8px var(--gris);
+    font-family: var(--Content);
+    margin-top: 1rem;
+    text-align: justify;
+    padding: 2rem;
+}
+#carrusel-2{
+    margin-top: 1rem;
+}

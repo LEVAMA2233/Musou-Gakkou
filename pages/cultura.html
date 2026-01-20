@@ -1,29 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&display=swap" rel="stylesheet">
-    <title>Musou Cultura</title>
-		<style>
-			@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
-			</style>
 
-			<!--Importación de librerias de bootstrap para la navbar-->
-			<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-			<link rel="stylesheet" href="/assets/styles/cultura.css">
-      <script type="module" src="/assets/js/main.js"></script>
-	</head>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&display=swap" rel="stylesheet">
+	<title>Musou Cultura</title>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+	</style>
+
+	<!--Importación de librerias de bootstrap para la navbar-->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+	<link rel="stylesheet" href="/assets/styles/cultura.css">
+	<script type="module" src="/assets/js/main.js"></script>
+</head>
+
 <body>
-    <header id="barra-navegacion" class="sticky-top"></header> <!-- HTML Modularizado -->
-	
+	<header id="barra-navegacion" class="sticky-top"></header> <!-- HTML Modularizado -->
+
+	<section class="contenedor-cultura">
+		<div class="contenedor-central">
+			<h1>Cultura</h1>
+			<h2>Conoce un poco sobre la cultura japonesa</h2>
+			<!-- Carrusel de imágenes 1 -->
+			<div class="carrusel-1">
+				<div class="row align-items-center">
+					<div class="col-md-5 text-center">
+						<div class="museo-card ">
+							<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+								<div class="carousel-inner">
+									<div class="carousel-item active">
+										<img src="https://japon-secreto.com/wp-content/uploads/2023/01/itsukushima-jinja-miyajima02.jpg"
+											class="d-block w-100" alt="Isla de Miyajima">
+									</div>
+									<div class="carousel-item">
+										<img src="https://travel-japan-now.jp/wp-content/uploads/2024/05/kabuki1.jpg"
+											class="d-block w-100" alt="Teatro Kabuki">
+									</div>
+									<div class="carousel-item">
+										<img src="https://japon-secreto.com/wp-content/uploads/2017/05/sanja-matsuri01.jpg"
+											class="d-block w-100" alt="Festival del Yakusa">
+									</div>
+									<div class="carousel-item">
+										<img src="https://japon-secreto.com/wp-content/uploads/2024/08/kawaguchi-momiji01t-jpg.webp"
+											class="d-block w-100" alt="Monte Fuji">
+									</div>
+									<div class="carousel-item">
+										<img src="https://japon-secreto.com/wp-content/uploads/2019/01/JP2016P1020374a.jpg"
+											class="d-block w-100" alt="Castillo de Himeji">
+									</div>
+									<div class="carousel-item">
+										<img src="https://japon-secreto.com/wp-content/uploads/2025/08/comida-invierno-japon01_1200x824.jpg"
+											class="d-block w-100" alt="Comida tipica de invierno en Japon">
+									</div>
+									<div class="carousel-item">
+										<img src="https://live.staticflickr.com/65535/52736556229_cf99f1da7e_b.jpg"
+											class="d-block w-100" alt="Templo Kinkakuji de Kioto">
+									</div>
+									<div class="carousel-item">
+										<img src="https://live.staticflickr.com/65535/49127030928_fb764e87a1_b.jpg"
+											class="d-block w-100" alt="Gran Buda de Kamakura">
+									</div>
+									<div class="carousel-item">
+										<img src="https://d0626f1e44.clvaw-cdnwnd.com/efd82a4c10d67d793c62b322158b9943/200001690-1c3871c38b/mujer-vistiendo-kimono-tradicional-japones-paraguas-pagoda-yasaka-calle-sannen-zaka-kyoto-japon%20%282%29.webp?ph=d0626f1e44"
+											class="d-block w-100" alt="Kimono">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-7">
+						<p class="carrusel-texto-1">
+							La cultura japonesa es muy rica y diferente a la del resto de Asia y del mundo. Dicha
+							cultura se
+							manifiesta de múltiples maneras: música, cine, gastronomía y literatura, entre otras.
+							Además,
+							Japón es un país en el que se fusionan la modernidad y las tradiciones, que siguen muy
+							presentes
+							en su día a día, como puede verse en sus famosos matsuri (festivales).
+
+						</p>
+					</div>
+				</div>
+			</div>
+			<!-- Carrusel de imágenes 2 -->
+			<div class="row align-items-center">
+				<div class="col-md-6">
+					<p class="carrusel-texto-2">
+						Los japoneses siempre muestran modestia y humildad . La gente suele hacer reverencias para
+						transmitir el mensaje: "No estoy por encima de ti. Te respeto". Hacer una reverencia más larga
+						con un ángulo más alto significa más respeto. Además, los japoneses tienen dos religiones al
+						mismo tiempo: son budistas y sintoístas . Cuando nace un bebé japonés, la ceremonia se celebra
+						en el santuario sintoísta y cuando alguien muere, la ceremonia tiene lugar en un templo budista.
+					</p>
+				</div>
+				<div class="col-md-6" id="carrusel-2">
+					<div class="museo-card ">
+						<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+							<div class="carousel-inner">
+								<div class="carousel-item active">
+									<img src="https://japon-secreto.com/wp-content/uploads/2023/01/itsukushima-jinja-miyajima02.jpg"
+										class="d-block w-100" alt="Isla de Miyajima">
+								</div>
+								<div class="carousel-item">
+									<img src="https://travel-japan-now.jp/wp-content/uploads/2024/05/kabuki1.jpg"
+										class="d-block w-100" alt="Teatro Kabuki">
+								</div>
+								<div class="carousel-item">
+									<img src="https://japon-secreto.com/wp-content/uploads/2017/05/sanja-matsuri01.jpg"
+										class="d-block w-100" alt="Festival del Yakusa">
+								</div>
+								<div class="carousel-item">
+									<img src="https://japon-secreto.com/wp-content/uploads/2024/08/kawaguchi-momiji01t-jpg.webp"
+										class="d-block w-100" alt="Monte Fuji">
+								</div>
+								<div class="carousel-item">
+									<img src="https://japon-secreto.com/wp-content/uploads/2019/01/JP2016P1020374a.jpg"
+										class="d-block w-100" alt="Castillo de Himeji">
+								</div>
+								<div class="carousel-item">
+									<img src="https://japon-secreto.com/wp-content/uploads/2025/08/comida-invierno-japon01_1200x824.jpg"
+										class="d-block w-100" alt="Comida tipica de invierno en Japon">
+								</div>
+								<div class="carousel-item">
+									<img src="https://live.staticflickr.com/65535/52736556229_cf99f1da7e_b.jpg"
+										class="d-block w-100" alt="Templo Kinkakuji de Kioto">
+								</div>
+								<div class="carousel-item">
+									<img src="https://live.staticflickr.com/65535/49127030928_fb764e87a1_b.jpg"
+										class="d-block w-100" alt="Gran Buda de Kamakura">
+								</div>
+								<div class="carousel-item">
+									<img src="https://d0626f1e44.clvaw-cdnwnd.com/efd82a4c10d67d793c62b322158b9943/200001690-1c3871c38b/mujer-vistiendo-kimono-tradicional-japones-paraguas-pagoda-yasaka-calle-sannen-zaka-kyoto-japon%20%282%29.webp?ph=d0626f1e44"
+										class="d-block w-100" alt="Kimono">
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+
+	</section>
 
 
-	
-    <footer id="footer"></footer> <!-- Footer Modularizado -->
-    		<!--Importación de librerias de bootstrap-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+	<footer id="footer"></footer> <!-- Footer Modularizado -->
+	<!--Importación de librerias de bootstrap-->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+		crossorigin="anonymous"></script>
 
 </body>
+
 </html>
