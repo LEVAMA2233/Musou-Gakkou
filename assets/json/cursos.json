@@ -1,50 +1,62 @@
 [
-    {
-        "id": "1",
-        "name": "Curso N5",
-        "description": "Curso",
-        "imgRoute": "/assets/img/img-cursos/n5.jpeg",
-        "cost": "4000",
-        "stars": "4.5"
-    },
-    {
-        "id": "2",
-        "name": "Curso N4",
-        "description": "Curso",
-        "imgRoute": "/assets/img/img-cursos/n4.jpeg",
-        "cost": "4500",
-        "stars": "4"
-    },
-    {
-        "id": "3",
-        "name": "Curso N3",
-        "description": "Curso",
-        "imgRoute": "/assets/img/img-cursos/n3.jpeg",
-        "cost": "5000",
-        "stars": "3"
-    },
-    {
-        "id": "4",
-        "name": "Curso N2",
-        "description": "Curso",
-        "imgRoute": "/assets/img/img-cursos/n2.jpeg",
-        "cost": "5500",
-        "stars": "5"
-    },
-    {
-        "id": "5",
-        "name": "Curso N1",
-        "description": "Curso",
-        "imgRoute": "/assets/img/img-cursos/n1.jpeg",
-        "cost": "6000",
-        "stars": "2"
-    },
-    {
-        "id": "6",
-        "name": "Clase personalizada",
-        "description": "Curso",
-        "imgRoute": "/assets/img/img-cursos/clase-personalizada.jpeg",
-        "cost": "500",
-        "stars": "1"
-    }
+  {
+    "id": 1768868706812,
+    "tipo": "Curso",
+    "titulo": "N5 Principiante",
+    "descripcion": "Conoces los kanjis",
+    "precio": 2000,
+    "horario": "Sabatino",
+    "fechaInicio": "2026-01-23",
+    "imagenUrl": "https://i.ibb.co/dwbsg2Sp/N5curso.jpg",
+    "imagenUrl": "/assets/img/img-cursos/n5.jpeg",
+    "calificacion" : "5"
+  },
+  {
+    "id": 1768868745478,
+    "tipo": "Curso",
+    "titulo": "N4 Semi intermedio",
+    "descripcion": "Puedes escribir utilizando kanjis",
+    "precio": 1700,
+    "horario": "Sabatino",
+    "fechaInicio": "2026-01-23",
+    "imagenUrl": "https://i.ibb.co/dwbsg2Sp/N5curso.jpg",
+    "imagenUrl": "/assets/img/img-cursos/n4.jpeg",
+    "calificacion" : "4.3"
+  },
+  {
+    "id": 1768868777821,
+    "tipo": "Curso",
+    "titulo": "N3 Intermedio",
+    "descripcion": "Puedes entablar una conversación sencilla",
+    "precio": 1600,
+    "horario": "Intensivo",
+    "fechaInicio": "2026-01-23",
+    "imagenUrl": "https://i.ibb.co/dwbsg2Sp/N5curso.jpg",
+    "imagenUrl": "/assets/img/img-cursos/n3.jpeg",
+    "calificacion" : "3.8"
+  },
+  {
+    "id": 1768868869794,
+    "tipo": "Curso",
+    "titulo": "N2 Avanzado",
+    "descripcion": "Eres capaz de mantener una conversación y manejar textos complejos",
+    "precio": 1500,
+    "horario": "Intensivo",
+    "fechaInicio": "2026-01-26",
+    "imagenUrl": "https://i.ibb.co/dwbsg2Sp/N5curso.jpg",
+    "imagenUrl": "/assets/img/img-cursos/n2.jpeg",
+    "calificacion" : "4.7"
+  },
+  {
+    "id": 1768868937885,
+    "tipo": "Curso",
+    "titulo": "N1 Profesional",
+    "descripcion": "Puedes utilizar el idioma en cualquier contexto",
+    "precio": 1200,
+    "horario": "Intensivo",
+    "fechaInicio": "2026-01-26",
+    "imagenUrl": "https://i.ibb.co/dwbsg2Sp/N5curso.jpg",
+    "imagenUrl": "/assets/img/img-cursos/n1.jpeg",
+    "calificacion" : "4"
+  }
 ]

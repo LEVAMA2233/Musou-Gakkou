@@ -1,5 +1,5 @@
 //JSON improvisado para pruebas
-let cursos =  [
+/* let cursos =  [
     {
         "id": "1",
         "name": "Curso N5",
@@ -48,110 +48,86 @@ let cursos =  [
         "cost": "500",
         "stars": "1"
     }
-]
-document.addEventListener('DOMContentLoaded', () => {
-const contenedor = document.getElementById("contenedor-cursos"); // Id del contenedor del cursos
-const inputBusqueda = document.getElementById('input-busqueda'); // Para llamar el contenido de la barra de búsqueda
-const botonLupa = document.getElementById('boton-lupa'); //Para detectar cuando el usuario de clic en la lupa "buscar"
-
-//Revisar como llamar el JSON externo
-/*async function traerCursos() {
-  const requestURL =
-    "/assets/json/cursos.json";
-  const request = new Request(requestURL);
-
-  const response = await fetch(request);
-  let cursos = await response.json();
-}*/
-
-
-//console.log(cursos.items);
-//cursos = cursos.items;
-
-/*function ejecutarBusqueda() {
-    const textoBusqueda = inputBusqueda.value.toLowerCase();
-    console.log(textoBusqueda);
-}
-botonLupa.addEventListener('click', ejecutarBusqueda);*/
-
-//Reordena los objetos según la condicion especificada
-
-document.querySelectorAll('.btn-check').forEach(input => {
-  let contenido="";
-  input.addEventListener('change', (e) => {
-
-    console.log("Opción seleccionada:", e.target.id);
-    // Aquí puedes disparar tu función de filtrado
-    switch(e.target.id){
-      case "option1":  //Mejor valorados
-        cursos.sort((a, b) => b.stars - a.stars);
-        contenido= generarHTML(cursos);
-        //console.log(cursos);
-        break;
-      case "option2": //Menor precio
-        cursos.sort((a, b) => a.cost - b.cost);
-        contenido = generarHTML(cursos);
-        //console.log(cursos);
-        break;
-      case "option3": //Mayor precio
-      cursos.sort((a, b) => b.cost - a.cost);
-      contenido = generarHTML(cursos);
-      //console.log(cursos)
-        break;
-      default:
+] */
+// Funcion asíncrona para cargar info del JSON
+async function loadData() {
+    try {
+        const response = await fetch('/assets/json/cursos.json'); // Ubicación del JSON
+        if (!response.ok) throw new Error('Network response was not ok'); // Si por alguna razón falla
+        const data = await response.json(); //Esperar la respuesta
+        return data;  //Envia la información para trabajar con ella
+    } catch (error) {
+        console.error('There was a problem fetching the JSON:', error);//Mensaje de error
     }
-        contenedor.innerHTML = contenido;
-//console.log(contenido);
-});
-});
+}
 
-// --- Lógica de Búsqueda ---
-    botonLupa.addEventListener('click', () => {
-        let contenido = "";
-        const texto = inputBusqueda.value.toLowerCase().trim();
-        const filtrados = cursos.filter(c => c.name.toLowerCase().includes(texto));
-        if (filtrados.length == 0){
-          contenido = `
-            <div class="col-12 text-center mt-5">
-                <div class="alert alert-light" role="alert">
-                    <h4 class="alert-heading">¡Ups! No hay resultados</h4>
-                    <p>No encontramos ningún curso que coincida con "<strong>${inputBusqueda.value}</strong>".</p>
-                    <hr>
-                    <p class="mb-0">Prueba con otro término o revisa la ortografía.</p>
-                </div>
-            </div>`;
-        }
-        else{
-        contenido = generarHTML(filtrados);
-        }
-        contenedor.innerHTML = contenido;
+// Debemos esperar a que se reciba la información para después trabajar con ella
+async function init() {
+    const productos = await loadData(); // Esperamos la info
+    // console.log(productos); //Imprime para debug
+    if (!productos) return; // Si no carga la info, no hace nada
+    let cursos = productos.filter(item => item.tipo === "Curso"); // Separamos los cursos de los recursos
+
+    const contenedor = document.getElementById("contenedor-cursos"); // Referencia del contenedor para manipular HTML
+    const inputBusqueda = document.getElementById('input-busqueda'); // Referencia del buscador para filtrar input del usuario
+    const botonLupa = document.getElementById('boton-lupa'); // Referencia del botón buscar para cuando el usuario hace clic
+
+    //Display de los contenidos sin filtrar
+    contenedor.innerHTML = generarHTML(cursos);
+
+    // Filtrado 
+    document.querySelectorAll('.btn-check').forEach(input => { // Filtrado por mejor valorado o mayor/menor precio
+        input.addEventListener('change', (e) => {
+            switch(e.target.id){
+                case "option1": cursos.sort((a, b) => b.calificacion - a.calificacion); break; //Mejor valorados
+                case "option2": cursos.sort((a, b) => a.precio - b.precio); break; //Mayor precio
+                case "option3": cursos.sort((a, b) => b.precio - a.precio); break; //Menor precio
+            }
+            contenedor.innerHTML = generarHTML(cursos); //Llama a la función para desplegar contenido filtrado
+        });
     });
 
-});
+    // Evento para cuando dan clic en buscar
+    botonLupa.addEventListener('click', () => { 
+        const texto = inputBusqueda.value.toLowerCase().trim(); //trim borra los espacios en blanco
+        const filtrados = cursos.filter(c => c.name.toLowerCase().includes(texto)); //Filtra de acuerdo al input del usuario
+        
+        if (filtrados.length === 0) { //Desplegar mensaje en caso de que no haya ninguna respuesta compatible
+            contenedor.innerHTML = `<div class="alert alert-light">No results for ${texto}</div>`; 
+        } else {
+            contenedor.innerHTML = generarHTML(filtrados); //Despliega las coincidencias encontradas
+        }
+    });
+}
 
-
-
-    function generarHTML(lista){
-    let contenido = "";
+// Se asegura de que el js actúe DESPUES de haber cargado el HTML
+document.addEventListener('DOMContentLoaded', init);
+    function generarHTML(lista){ // Función para  generar y actualizar HTML según lo filtrado
+    let contenido = ""; //Inicializamos variable 
     //Reescribe el HTML con el contenido reordenado
-    lista.forEach( curso =>{
-      contenido = contenido + `
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-        <div class="card tarjeta-curso" id=${curso.name}>								
-          <img src=${curso.imgRoute} class="card-img-top imagen-curso" alt=${curso.name}>
+    lista.forEach( curso =>{ //for each para cada "tarjeta" o producto
+      contenido += `
+      
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3"> <!--Responsividad con Bootstrap-->
+      <a href="/pages/detalleCurso.html?id=${curso.id}"> <!--Para que al hacer clic en el curso correspondiente mande a detalles del curso-->
+        <div class="card tarjeta-curso" id=${curso.titulo}>	<!--Cada tarjeta tiene el id del curso para css o si se necesita acceder con js	-->						
+          <img src=${curso.imagenUrl} class="card-img-top imagen-curso" alt=${curso.titulo}> <!-- Llama a la imagen correspondiente del curso-->
           <div class="card-body">
-            <h5 class="card-title">${curso.name}</h5>
-            <p class="card-text fw-bold">$${curso.cost}</p>`;
-          for(let j = 1;j<=curso.stars;j++){
-            contenido = contenido + `<span class="fa fa-star checked"></span>`;
+            <h5 class="card-title">${curso.titulo}</h5> <!--Mostramos el nombre del curso-->
+            <p class="card-text"> Modalidad ${curso.horario}</p> <!--Despliega su modalidad (Intensivo o sabatino)-->
+            <p class="card-text fw-bold">$${curso.precio}</p> <!--Precio del curso-->
+            <p class="card-text">${curso.descripcion}</p>`; //Breve descripción
+          for(let j = 1;j<=curso.calificacion ;j++){ //Rellenar estrellas según su calificación
+            contenido += `<span class="fa fa-star checked"></span>`;
           }
-          for(let j = curso.stars;j<5;j++){
-            contenido = contenido + `<span class="fa fa-star"></span>`;
+          for(let j = curso.calificacion;j<5;j++){ // Mostrar estrellas faltantes
+            contenido += `<span class="fa fa-star"></span>`;
           }
-          contenido = contenido +`</div>
+          contenido +=`</div>
       </div>
+      </a>
     </div>`;
         });
-    return contenido;
+    return contenido; //devuelve todo el String de HTML relleno con los parámetros que van cambiando
 
 }
