@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1768868706812,
+    "titulo": "N5 Principiante",
+    "descripcion": "aprender kanjis",
+    "precio": 2000,
+    "horario": "sabatino",
+    "fechaInicio": "2026-01-23",
+    "imagenUrl": "https://i.ibb.co/dwbsg2Sp/N5curso.jpg"
+  },
+  {
+    "id": 1768868745478,
+    "titulo": "N4 Semi intermedio",
+    "descripcion": "escribes algunos kanjis",
+    "precio": 1700,
+    "horario": "sabatino",
+    "fechaInicio": "2026-01-23",
+    "imagenUrl": "https://i.ibb.co/dwbsg2Sp/N5curso.jpg"
+  },
+  {
+    "id": 1768868777821,
+    "titulo": "N3 Intermedio",
+    "descripcion": "puedes hablar de manera basica",
+    "precio": 1600,
+    "horario": "entre semana",
+    "fechaInicio": "2026-01-23",
+    "imagenUrl": "https://i.ibb.co/dwbsg2Sp/N5curso.jpg"
+  },
+  {
+    "id": 1768868869794,
+    "titulo": "N2 Avanzado",
+    "descripcion": "puedes mantener conversaciones escritas y habladas",
+    "precio": 1500,
+    "horario": "entre semana",
+    "fechaInicio": "2026-01-26",
+    "imagenUrl": "https://i.ibb.co/dwbsg2Sp/N5curso.jpg"
+  },
+  {
+    "id": 1768868937885,
+    "titulo": "N1 Profesional",
+    "descripcion": "puedes trabajar profesionalmente",
+    "precio": 1200,
+    "horario": "sabatino",
+    "fechaInicio": "2026-01-26",
+    "imagenUrl": "https://i.ibb.co/dwbsg2Sp/N5curso.jpg"
+  }
+]

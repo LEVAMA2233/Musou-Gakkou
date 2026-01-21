@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Panel Admin Cursos</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+    <header class="container my-5">
+        <h1>Registrar Curso</h1>
+    </header>
+
+    <main>
+        <form id="nuevoCursoFormulario">
+            <div class="form-group">
+                <label for="tituloCurso">Título</label>
+                <input type="text" id="tituloCurso" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="descripcionCurso">Descripción</label>
+                <textarea id="descripcionCurso" class="form-control" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="precioCurso">Precio</label>
+                <input type="number" id="precioCurso" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="horarioCurso">Horario</label>
+                <select id="horarioCurso" class="form-control">
+                    <option value="sabatino">Sabatino</option>
+                    <option value="entre semana">Entre semana</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="fechaInicioCurso">Fecha de inicio</label>
+                <input type="date" id="fechaInicioCurso" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="imagenCurso">Imagen (URL)</label>
+                <input type="url" id="imagenCurso" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Agregar Curso</button>
+        </form>
+        <hr>
+        <button id="exportarCursos" class="btn btn-success mb-3">Generar cursos.json</button>
+        <input type="file" id="importarArchivo" accept=".json" class="form-control">
+        <div id="mensaje" class="mt-2"></div>
+    </main>
+
+    <script src="js/cursosController.js"></script>
+    <script src="js/admin.js"></script>
+</body>
+
+</html>
