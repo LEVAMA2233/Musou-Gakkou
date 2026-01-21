@@ -68,6 +68,7 @@ body{
         box-shadow: 0 4px 8px var(--gris);
         border-radius: 25px;
         padding: 1rem;
+        cursor: pointer;
     }
     h4 {
         font-family: var(--Tittle-and-subtitles);
@@ -76,6 +77,9 @@ body{
     }
     a:hover {
         color: var(--rojo);
+    }
+    .museo-card:hover, .museo-card-5:hover {
+      transform: scale(1.01);
     }
     .museo-card-5 {
     width: 100%;
