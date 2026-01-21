@@ -1,29 +1,458 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&display=swap" rel="stylesheet">
-    <title>Musou Cultura</title>
-		<style>
-			@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
-			</style>
 
-			<!--Importación de librerias de bootstrap para la navbar-->
-			<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-			<link rel="stylesheet" href="/assets/styles/cultura.css">
-      <script type="module" src="/assets/js/main.js"></script>
-	</head>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&display=swap" rel="stylesheet">
+	<title>Musou Cultura</title>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+	</style>
+
+	<!--Importación de librerias de bootstrap para la navbar-->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+	<link rel="stylesheet" href="/assets/styles/cultura.css">
+	<script type="module" src="/assets/js/main.js"></script>
+</head>
+
 <body>
-    <header id="barra-navegacion" class="sticky-top"></header> <!-- HTML Modularizado -->
-	
+	<header id="barra-navegacion" class="sticky-top"></header> <!-- HTML Modularizado -->
+
+	<section class="contenedor-cultura">
+		<div class="contenedor-central">
+			<h1>Cultura</h1>
+			<h2>Conoce un poco sobre la cultura japonesa</h2>
+			<!-- Carrusel de imágenes 1 -->
+			<div class="carrusel-1">
+				<div class="row align-items-center">
+					<div class="col-md-5 text-center">
+						<div class="museo-card ">
+							<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+								<div class="carousel-inner">
+									<div class="carousel-item active">
+										<img src="https://japon-secreto.com/wp-content/uploads/2023/01/itsukushima-jinja-miyajima02.jpg"
+											class="d-block w-100" alt="Isla de Miyajima">
+									</div>
+									<div class="carousel-item">
+										<img src="https://travel-japan-now.jp/wp-content/uploads/2024/05/kabuki1.jpg"
+											class="d-block w-100" alt="Teatro Kabuki">
+									</div>
+									<div class="carousel-item">
+										<img src="https://japon-secreto.com/wp-content/uploads/2017/05/sanja-matsuri01.jpg"
+											class="d-block w-100" alt="Festival del Yakusa">
+									</div>
+									<div class="carousel-item">
+										<img src="https://japon-secreto.com/wp-content/uploads/2024/08/kawaguchi-momiji01t-jpg.webp"
+											class="d-block w-100" alt="Monte Fuji">
+									</div>
+									<div class="carousel-item">
+										<img src="https://japon-secreto.com/wp-content/uploads/2019/01/JP2016P1020374a.jpg"
+											class="d-block w-100" alt="Castillo de Himeji">
+									</div>
+									<div class="carousel-item">
+										<img src="https://japon-secreto.com/wp-content/uploads/2025/08/comida-invierno-japon01_1200x824.jpg"
+											class="d-block w-100" alt="Comida tipica de invierno en Japon">
+									</div>
+									<div class="carousel-item">
+										<img src="https://live.staticflickr.com/65535/52736556229_cf99f1da7e_b.jpg"
+											class="d-block w-100" alt="Templo Kinkakuji de Kioto">
+									</div>
+									<div class="carousel-item">
+										<img src="https://live.staticflickr.com/65535/49127030928_fb764e87a1_b.jpg"
+											class="d-block w-100" alt="Gran Buda de Kamakura">
+									</div>
+									<div class="carousel-item">
+										<img src="https://d0626f1e44.clvaw-cdnwnd.com/efd82a4c10d67d793c62b322158b9943/200001690-1c3871c38b/mujer-vistiendo-kimono-tradicional-japones-paraguas-pagoda-yasaka-calle-sannen-zaka-kyoto-japon%20%282%29.webp?ph=d0626f1e44"
+											class="d-block w-100" alt="Kimono">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-7">
+						<p class="carrusel-texto-1">
+							La cultura japonesa es muy rica y diferente a la del resto de Asia y del mundo. Dicha
+							cultura se
+							manifiesta de múltiples maneras: música, cine, gastronomía y literatura, entre otras.
+							Además,
+							Japón es un país en el que se fusionan la modernidad y las tradiciones, que siguen muy
+							presentes
+							en su día a día, como puede verse en sus famosos matsuri (festivales).
+
+						</p>
+					</div>
+				</div>
+			</div>
+			<!-- Carrusel de imágenes 2 -->
+			<div class="row align-items-center">
+				<div class="col-md-6">
+					<p class="carrusel-texto">
+						Los japoneses siempre muestran modestia y humildad . La gente suele hacer reverencias para
+						transmitir el mensaje: "No estoy por encima de ti. Te respeto". Hacer una reverencia más larga
+						con un ángulo más alto significa más respeto. Además, los japoneses tienen dos religiones al
+						mismo tiempo: son budistas y sintoístas . Cuando nace un bebé japonés, la ceremonia se celebra
+						en el santuario sintoísta y cuando alguien muere, la ceremonia tiene lugar en un templo budista.
+					</p>
+				</div>
+				<div class="col-md-6" id="carrusel-2">
+					<div class="museo-card ">
+						<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+							<div class="carousel-inner">
+								<div class="carousel-item active">
+									<img src="https://japon-secreto.com/wp-content/uploads/2018/08/yosakoi-matsuri02.jpg"
+										class="d-block w-100" alt="Festival Yosakoi">
+								</div>
+								<div class="carousel-item">
+									<img src="https://japon-secreto.com/wp-content/uploads/2025/07/JP2018IMG_0616_1200x859.jpg"
+										class="d-block w-100" alt="Osorezan, el monte del terror y las almas perdidas">
+								</div>
+								<div class="carousel-item">
+									<img src="https://japon-secreto.com/wp-content/uploads/2025/08/ceremonia-te-jeffrey-friedl_1200x799.jpg"
+										class="d-block w-100" alt="Ceremonia del té">
+								</div>
+								<div class="carousel-item">
+									<img src="https://japon-secreto.com/wp-content/uploads/2025/07/obon001_1200x788.jpg.webp"
+										class="d-block w-100" alt="Obon, la fiesta japonesa de los difuntos">
+								</div>
+								<div class="carousel-item">
+									<img src="https://live.staticflickr.com/4900/45266820465_6a17e3fe68_b.jpg"
+										class="d-block w-100" alt="Dia del respeto a los ancianos">
+								</div>
+								<div class="carousel-item">
+									<img src="https://japon-secreto.com/wp-content/uploads/2017/10/aoba-matsuri02.jpg"
+										class="d-block w-100" alt="Festival de los yamabushi en homenaje a Kōbō Daishi">
+								</div>
+								<div class="carousel-item">
+									<img src="https://japon-secreto.com/wp-content/uploads/2019/03/tsuru-hachi-reitasai06.jpg"
+										class="d-block w-100" alt="El Shintō (o sintoísmo) en Japón">
+								</div>
+								<div class="carousel-item">
+									<img src="https://japon-secreto.com/wp-content/uploads/2017/08/JP2010P1210862t.jpg"
+										class="d-block w-100" alt="Templo budista, semioculto entre la ladera boscosa">
+								</div>
+								<div class="carousel-item">
+									<img src="https://xx.bstatic.com/xdata/images/xphoto/max2000/554943714.jpg?k=3c5fbf97e681909dc9da7217a2f3e3a3e42223f7f1d95a5871cb00df959327a4&o="
+										class="d-block w-100" alt="Onzen al aire libre en las montañas de Japón">
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<!-- Carrusel de imágenes 3 -->
+			<div class="row align-items-center">
+				<div class="col-md-6">
+					<div class="carrusel-texto">
+						<h3>Experiencias que puedes vivir en Japón</h3>
+						<p>
+							Hay muchas cosas que se pueden hacer en Japón además de visitar bellos lugares y tomar miles
+							de
+							fotografías.
+							Y es que un viaje a Japón debe ser más que una sucesión de visitas.
+							Japón es un país lleno de encantos y exotismo que ofrece multitud de opciones para disfrutar
+							y
+							para descubrir una cultura muy diferente a la del resto del mundo: gastronomía,
+							espectáculos,
+							arte…
+						</p>
+						<a href="https://japon-secreto.com/atractivos-de-japon-que-hacer-intereses-actividades/">Leer
+							más</a>
+					</div>
+				</div>
+				<div class="col-md-6" id="carrusel-3">
+					<div class="museo-card ">
+						<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+							<div class="carousel-inner">
+								<div class="carousel-item active">
+									<img src="https://travel-japan-now.jp/wp-content/uploads/2024/05/kabuki1.jpg"
+										class="d-block w-100" alt="Teatro Kabuki">
+								</div>
+								<div class="carousel-item">
+									<img src="https://japon-secreto.com/wp-content/uploads/2017/07/kitano-odori01.jpg"
+										class="d-block w-100" alt="Festivales de geishas y maikos en Kioto">
+								</div>
+								<div class="carousel-item">
+									<img src="https://miviaje.com/wp-content/uploads/2020/01/onsen-toboganes.jpg?auto=format%2Ccompress&quality=75&width=640&height=360&fit=cover&gravity=center&sharp=true&progressive=true"
+										class="d-block w-100" alt="Onzen japones">
+								</div>
+								<div class="carousel-item">
+									<img src="https://d0626f1e44.clvaw-cdnwnd.com/efd82a4c10d67d793c62b322158b9943/200000939-ce0b4ce0b8/700/comida-en-japon.webp?ph=d0626f1e44"
+										class="d-block w-100" alt="Comida japonesa">
+								</div>
+								<div class="carousel-item">
+									<img src="https://japon-secreto.com/wp-content/uploads/2024/02/teamLabBorderless04.jpg"
+										class="d-block w-100" alt="TeamLab Borderless, museo de arte digital inmersivo en Tokio">
+								</div>
+								<div class="carousel-item">
+									<img src="https://japon-secreto.com/wp-content/uploads/2025/05/super-nintendo-world-osaka01.jpg.webp"
+										class="d-block w-100" alt="Super Nintendo World en Osaka">
+								</div>
+								<div class="carousel-item">
+									<img src="https://japon-secreto.com/wp-content/uploads/2019/07/JP2010P1030379.jpg"
+										class="d-block w-100" alt="Lucha de sumo">
+								</div>
+								<div class="carousel-item">
+									<img src="https://res.klook.com/images/fl_lossy.progressive,q_65/c_fill,w_1295,h_863/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/zzflwukh7oa1ryizo8e0/MuseoNacionaldeTokio.jpg"
+										class="d-block w-100" alt="Museo Nacional de Tokio">
+								</div>
+								<div class="carousel-item">
+									<img src="https://japon-secreto.com/wp-content/uploads/2025/10/tsuwano-yabusame01_1200x913.jpg"
+										class="d-block w-100" alt="Yabusame, el tiro con arco a caballo de los samurái">
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<!-- Carrusel de imágenes 4 -->
+			<div class="row align-items-center">
+				<div class="col-md-6" id="carrusel-4">
+					<div class="museo-card ">
+						<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+							<div class="carousel-inner">
+								<div class="carousel-item active">
+									<img src="https://dynamic-media.tacdn.com/media/photo-o/2e/c8/60/4b/caption.jpg?w=1100&h=800&s=1"
+										class="d-block w-100" alt="DisneyLand/Sea Tokio">
+								</div>
+								<div class="carousel-item">
+									<img src="https://japon-secreto.com/wp-content/uploads/2025/09/tokyo-disneyland-disneysea01_1200x800.jpg.webp"
+										class="d-block w-100" alt="Tokyo Disneyland">
+								</div>
+								<div class="carousel-item">
+									<img src="https://japon-secreto.com/wp-content/uploads/2023/06/teamLab-Planets03.jpg"
+										class="d-block w-100" alt="TeamLab Planets, museo digital inmersivo en Tokio">
+								</div>
+								<div class="carousel-item">
+									<img src="https://japon-secreto.com/wp-content/uploads/2025/08/fujiqhighland_1200x675.jpg.webp"
+										class="d-block w-100" alt="Fuji-Q Highland, un parque de atracciones de Récords Guinness ">
+								</div>
+								<div class="carousel-item">
+									<img src="https://japon-secreto.com/wp-content/uploads/2023/07/legoland-japan04.jpg.webp"
+										class="d-block w-100" alt=" Legoland Japan de Nagoya">
+								</div>
+								<div class="carousel-item">
+									<img src="https://japon-secreto.com/wp-content/uploads/2024/12/ghibli-park03.webp"
+										class="d-block w-100" alt="Ghibli Park de Nagoya">
+								</div>
+								<div class="carousel-item">
+									<img src="https://japon-secreto.com/wp-content/uploads/2024/05/universal-studios-japan01-jpg.webp"
+										class="d-block w-100" alt="Universal Studios Japan en Osaka">
+								</div>
+								<div class="carousel-item">
+									<img src="https://japon-secreto.com/wp-content/uploads/2023/11/super-nintendo-world-osaka.jpg"
+										class="d-block w-100" alt="Parque Mario Bros Super Nintendo World, Universal Studios Japan en Osaka">
+								</div>
+								<div class="carousel-item">
+									<img src="https://tipsparatuviaje.com/wp-content/uploads/2018/08/hakone-kowakien-yunessun.jpg"
+										class="d-block w-100" alt="Hakone Kowakien Yunessun">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="museo-card ">
+						<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+							<div class="carousel-inner">
+								<div class="carousel-item active">
+									<img src="https://live.staticflickr.com/65535/52462527305_806a1e741e_b.jpg"
+										class="d-block w-100" alt="Calles de Shinsekai con la torre al fondo">
+								</div>
+								<div class="carousel-item">
+									<img src="https://live.staticflickr.com/65535/52908922819_72df180c76_b.jpg"
+										class="d-block w-100" alt="Fantástico kumade visto en Tokio">
+								</div>
+								<div class="carousel-item">
+									<img src="https://live.staticflickr.com/4160/34236914231_983a3b09e5_b.jpg"
+										class="d-block w-100" alt="Castillo de Odawara en la actualidad">
+								</div>
+								<div class="carousel-item">
+									<img src="https://live.staticflickr.com/7910/33480812238_c099dc23b8_b.jpg"
+										class="d-block w-100" alt="Shibuya Stream">
+								</div>
+								<div class="carousel-item">
+									<img src="https://live.staticflickr.com/65535/51064781423_5f2541e53b_b.jpg"
+										class="d-block w-100" alt="Calle Monzeki-dori">
+								</div>
+								<div class="carousel-item">
+									<img src="https://live.staticflickr.com/4913/32369733188_238a8cc335_b.jpg"
+										class="d-block w-100" alt="El estrecho callejón Omoide Yokocho">
+								</div>
+								<div class="carousel-item">
+									<img src="https://live.staticflickr.com/65535/52429137769_1aa27fdff6_b.jpg"
+										class="d-block w-100" alt="El Kanto Matsuri de Akita, uno de nuestros festivales favoritos de Tohoku">
+								</div>
+								<div class="carousel-item">
+									<img src="https://live.staticflickr.com/877/41592386222_719c21ba48_b.jpg"
+										class="d-block w-100" alt="Angel Road en Shodoshima ">
+								</div>
+								<div class="carousel-item">
+									<img src="https://live.staticflickr.com/4804/32356345568_f4bb68d480_b.jpg"
+										class="d-block w-100" alt="Callejuelas de la colina de los love hotels">
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<!-- Carrusel de imágenes 5  -->
+			<div class="carrusel-5">
+				<h4>Descubre los tres jardines más bonitos de Japón</h4>
+				<div class="row align-items-center">
+					<div class="col-md-4">
+						<div class="museo-card-5 ">
+							<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+								<div class="carousel-inner">
+									<div class="carousel-item active">
+										<img src="https://www.kanpai-japan.com/sites/default/files/uploads/2021/01/mito-kairakuen-2.jpg"
+											class="d-block w-100" alt="Kairaku-en Mito, Parque de cerezos">
+									</div>
+									<div class="carousel-item">
+										<img src="https://www.kanpai-japan.com/sites/default/files/uploads/2021/01/mito-kairakuen-8.jpg"
+											class="d-block w-100" alt="Kairaku-en Mito, flor de cerezos">
+									</div>
+									<div class="carousel-item">
+										<img src="https://www.kanpai-japan.com/sites/default/files/uploads/2021/01/mito-kairakuen-6.jpg"
+											class="d-block w-100" alt="Kairaku-en Mito, jardin">
+									</div>
+									<div class="carousel-item">
+										<img src="https://www.kanpai-japan.com/sites/default/files/uploads/2021/01/mito-kairakuen-7.jpg"
+											class="d-block w-100" alt="Kairaku-en Mito, Jardin ">
+									</div>
+									<div class="carousel-item">
+										<img src="https://www.kanpai-japan.com/sites/default/files/uploads/2021/01/mito-kairakuen-12.jpg"
+											class="d-block w-100" alt="Kairaku-en Mito, Recidencia Kobuntei">
+									</div>
+									<div class="carousel-item">
+										<img src="https://www.kanpai-japan.com/sites/default/files/uploads/2021/01/mito-kairakuen-11.jpg"
+											class="d-block w-100" alt="Kairaku-en Mito, Bosque de cedros">
+									</div>
+									<div class="carousel-item">
+										<img src="https://live.staticflickr.com/65535/52736556229_cf99f1da7e_b.jpg"
+											class="d-block w-100" alt="Templo Kinkakuji de Kioto">
+									</div>
+									<div class="carousel-item">
+										<img src="https://www.kanpai-japan.com/sites/default/files/uploads/2021/01/mito-kairakuen-10.jpg"
+											class="d-block w-100" alt="Kairaku-en Mito, Vista desde la recidencia Kobuntei">
+									</div>
+									<div class="carousel-item">
+										<img src="https://www.kanpai-japan.com/sites/default/files/uploads/2021/01/mito-kairakuen-5.jpg"
+											class="d-block w-100" alt="Kairaku-en, Ibarakiken Gokoku shrine">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="museo-card-5 ">
+							<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+								<div class="carousel-inner">
+									<div class="carousel-item active">
+										<img src="https://cdn.prod.website-files.com/660af1757c2dcb55d4d954ae/68d2a15e786501a094a0073d_Bright%20Rainbow%20and%20Stars%20Rectangle%20Tub%20Name%20Labels.png"
+											class="d-block w-100" alt="Kenroku-en (Kanazawa, prefectura de Ishikawa)">
+									</div>
+									<div class="carousel-item">
+										<img src="https://previews.123rf.com/images/amstk/amstk2002/amstk200200447/141337795-japanese-garden-at-kenrokuen-garden-kanazawa-city-ishikawa-pref-japan.avif"
+											class="d-block w-100" alt="Kenroku-en (Kanazawa, prefectura de Ishikawa)">
+									</div>
+									<div class="carousel-item">
+										<img src="https://res.klook.com/image/upload/c_crop,h_1055,w_1688,x_0,y_35,z_0.5/c_fill,w_1265,h_712/q_80/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/v3khevmr8lcpxemdaf8u.jpg"
+											class="d-block w-100" alt="Kenroku-en">
+									</div>
+									<div class="carousel-item">
+										<img src="https://www.kanpai-japan.com/sites/default/files/uploads/2015/04/kanazawa-kenrokuen-garden-9.jpg"
+											class="d-block w-100" alt="Kenroku-en">
+									</div>
+									<div class="carousel-item">
+										<img src="https://www.kanpai-japan.com/sites/default/files/styles/content_lg/public/uploads/2015/04/kanazawa-kenrokuen-garden-6.jpg"
+											class="d-block w-100" alt="Kenroku-en">
+									</div>
+									<div class="carousel-item">
+										<img src="https://www.kanpai-japan.com/sites/default/files/uploads/2015/04/kanazawa-kenrokuen-garden-16.jpg"
+											class="d-block w-100" alt="Kenroku-en Sakura reflejandose en el lago">
+									</div>
+									<div class="carousel-item">
+										<img src="https://www.kanpai-japan.com/sites/default/files/uploads/2015/04/kanazawa-kenrokuen-garden-20.jpg"
+											class="d-block w-100" alt="Kenroku-en Rio entre arboles Sakura">
+									</div>
+									<div class="carousel-item">
+										<img src="https://www.kanpai-japan.com/sites/default/files/uploads/2015/04/kanazawa-kenrokuen-garden-1.jpg"
+											class="d-block w-100" alt="Kenroku-en Fuente en el lago">
+									</div>
+									<div class="carousel-item">
+										<img src="https://www.kanpai-japan.com/sites/default/files/uploads/2015/04/kanazawa-kenrokuen-garden-13.jpg"
+											class="d-block w-100" alt="Kenroku-en y el monumento Meji">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="museo-card-5 ">
+							<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+								<div class="carousel-inner">
+									<div class="carousel-item active">
+										<img src="https://web-japan.org/niponica/images/es/niponica26/08-01.jpg"
+											class="d-block w-100" alt="Okayama, Jardin Koraku-en">
+									</div>
+									<div class="carousel-item">
+										<img src="https://a1.cdn.japantravel.com/photo/poi-133-214122/942x628!/okayama-korakuen-garden-214122.jpg"
+											class="d-block w-100" alt="Jardin Koraku-en">
+									</div>
+									<div class="carousel-item">
+										<img src="https://live.staticflickr.com/65535/51545855139_586c18a41d_b.jpg"
+											class="d-block w-100" alt="Los jardines de Okayama con el castillo al fondo">
+									</div>
+									<div class="carousel-item">
+										<img src="https://live.staticflickr.com/65535/51545127186_223591e42c_b.jpg"
+											class="d-block w-100" alt="Caminos, montículos y casas de té en los jardines Korakuen">
+									</div>
+									<div class="carousel-item">
+										<img src="https://live.staticflickr.com/65535/51545372293_0a3fb99a40_b.jpg"
+											class="d-block w-100" alt="Estanque Kayo en los jardines Korakuen">
+									</div>
+									<div class="carousel-item">
+										<img src="https://live.staticflickr.com/65535/51545855444_6258457efb_b.jpg"
+											class="d-block w-100" alt="Una de las casas de té de los jardines">
+									</div>
+									<div class="carousel-item">
+										<img src="https://live.staticflickr.com/65535/51545126536_2f7bbc0744_b.jpg"
+											class="d-block w-100" alt="Dos chicas paseando en yukata">
+									</div>
+									<div class="carousel-item">
+										<img src="https://live.staticflickr.com/65535/51545371228_a89330c372_b.jpg"
+											class="d-block w-100" alt="Preciosos rincones de los jardines">
+									</div>
+									<div class="carousel-item">
+										<img src="https://live.staticflickr.com/65535/51546050310_c3719dc1e0_b.jpg"
+											class="d-block w-100" alt="Iluminación nocturna durante el festival de verano Genso Teien">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</section>
 
 
-	
-    <footer id="footer"></footer> <!-- Footer Modularizado -->
-    		<!--Importación de librerias de bootstrap-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+	<footer id="footer"></footer> <!-- Footer Modularizado -->
+	<!--Importación de librerias de bootstrap-->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+		crossorigin="anonymous"></script>
 
 </body>
+
 </html>
