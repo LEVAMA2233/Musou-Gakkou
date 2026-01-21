@@ -7,8 +7,6 @@
 }
 
 
-
-
 .navbar{
     background-color: black;
     width: 100vw;
@@ -87,16 +85,34 @@
    
  }
  .Contactanos-seccion{
-    /* Aqui es donde tiene que ir la imagen de fondo */
-    background-color: var(--gris); /* Esto lo hice como prueba antes de colocar la imagen*/
     width: 100%;
     margin-top: 30px;
     margin-bottom: 30px;
     padding: 20px;
-    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: relative; /* Necesario para el posicionamiento absoluto del pseudo-elemento */
+ }
+ .Contactanos-seccion::before {
+    content: "";
+    /* Cargamos la imagen aquí */
+    background-image: url('https://res.klook.com/images/fl_lossy.progressive,q_65/c_fill,w_640,h_427/w_39,x_7,y_7,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/cqgviahpclqm3nw5i5o9/PICAFujiyamaFujiFiveLakesGlampingRentalCarPackageinKawaguchiko.jpg');
+    background-size: cover;
+    background-position: center;
+    /* Control de opacidad */
+    opacity: 0.7; /* Ajusta este valor (0.0 a 1.0) según prefieras */
+    /* Posicionamiento para que cubra toda la sección */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* Lo enviamos al fondo para que no tape el formulario */
+    z-index: -1;
  }
  .Formulario{
-    width: 60%;
+    width: 100%;
+    max-width: 500px;
     font-family: var(--Content);
     background-color: var(--blanquino);
     padding: 20px;
@@ -104,6 +120,7 @@
     box-shadow: 5px 5px 10px grey;
     margin-bottom: 30px;
     justify-content: center;
+   
  }
 .Campos-formulario{
     display: block;
@@ -118,10 +135,14 @@
 
 
 .Input-formulario{
-    border: 10px solid var(--blanquino); ;
-    border-radius: 25%;
-    width: 70%;
+    border: 0px var(--rojo); ;
+    border-radius: 5%;
+    width: 100%;
+    box-sizing: border-box;
     font-family: var(--Content);
+}
+.Input-formulario:focus{
+    outline: none;
 }
 #mensaje{
     height: 100px;
@@ -134,13 +155,19 @@
     margin-top: 20px;
     padding: 10px;
     border-radius: 25px;
-    width: 70%;
+    width: 100%;
     display: inline-block;
+    border: var(--rojo);
+}
+.Button-enviar:hover{
+    background-color: black;
+    color: var(--blanquino);
+    cursor: pointer;
 }
 
 
 body {
-    text-align: center;
+    text-align: initial;
 }
 
 
