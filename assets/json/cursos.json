@@ -1,0 +1,50 @@
+[
+    {
+        "id": "1",
+        "name": "Curso N5",
+        "description": "Curso",
+        "imgRoute": "/assets/img/img-cursos/n5.jpeg",
+        "cost": "4000",
+        "stars": "4.5"
+    },
+    {
+        "id": "2",
+        "name": "Curso N4",
+        "description": "Curso",
+        "imgRoute": "/assets/img/img-cursos/n4.jpeg",
+        "cost": "4500",
+        "stars": "4"
+    },
+    {
+        "id": "3",
+        "name": "Curso N3",
+        "description": "Curso",
+        "imgRoute": "/assets/img/img-cursos/n3.jpeg",
+        "cost": "5000",
+        "stars": "3"
+    },
+    {
+        "id": "4",
+        "name": "Curso N2",
+        "description": "Curso",
+        "imgRoute": "/assets/img/img-cursos/n2.jpeg",
+        "cost": "5500",
+        "stars": "5"
+    },
+    {
+        "id": "5",
+        "name": "Curso N1",
+        "description": "Curso",
+        "imgRoute": "/assets/img/img-cursos/n1.jpeg",
+        "cost": "6000",
+        "stars": "2"
+    },
+    {
+        "id": "6",
+        "name": "Clase personalizada",
+        "description": "Curso",
+        "imgRoute": "/assets/img/img-cursos/clase-personalizada.jpeg",
+        "cost": "500",
+        "stars": "1"
+    }
+]

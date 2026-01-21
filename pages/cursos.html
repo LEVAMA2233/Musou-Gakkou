@@ -5,18 +5,21 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&display=swap" rel="stylesheet">
-    <title>Musou Cursos</title>
+    	<title>Musou Cursos</title>
 		<style>
 			@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
 		</style>
 
 		<!--Importación de librerias de bootstrap para la navbar-->
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-		<script src="/js/coursesController.js"></script>
-		<script type="module" src="/js/main.js"></script>
-	  	<script src="/js/index.js"></script>
+		<script src="/assets/js/coursesController.js"></script>
+	  	<script src="/assets/js/index.js"></script>
 		<link rel="stylesheet" href="/assets/styles/cursos.css">
-      <script type="module" src="/assets/js/main.js"></script>
+      	<script type="module" src="/assets/js/main.js"></script>
+
+		<!-- Add icon library -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 	</head>
 <body>
     <header id="barra-navegacion" class="sticky-top"></header> <!-- HTML Modularizado -->
@@ -30,15 +33,15 @@
 					<div class="row">
 						<!-- Contenedor de barra de búsqueda -->
 						<div class="col-12 col-md-3">
-							<div class="contenedor-busqueda">
-								<input class="input-busqueda" placeholder="Búsqueda">
-								<img class="logo-lupa" src="https://github.com/LEVAMA2233/Musou-Gakkou/blob/imgs/lupa.png?raw=true">
-							</div>	
+<div class="contenedor-busqueda">
+    <input id="input-busqueda" class="input-busqueda" placeholder="Búsqueda">
+    <img id="boton-lupa" class="logo-lupa" src="https://github.com/LEVAMA2233/Musou-Gakkou/blob/imgs/lupa.png?raw=true" style="cursor:pointer">
+</div>
 						</div>
 						<!-- Contenedor de filtros de búsqueda -->
 						<div class="col-12 col-md-9 text-start">
 							<div class="btn-group-toggle" data-toggle="buttons">
-								<input type="radio" class="btn-check" name="options-base" id="option1" autocomplete="off" checked>
+								<input type="radio" class="btn-check" name="options-base" id="option1" autocomplete="off">
 								<label class="btn btn-filter" for="option1">
 									<span class="text-check">✓</span> Mejor valorados
 								</label>
@@ -56,7 +59,7 @@
 						</div>
 					</div>
 					<!-- Contenedor de tarjetas de cursos -->
-					<div class="row container-fluid contenedor-cursos">
+					<div class="row container-fluid contenedor-cursos" id="contenedor-cursos">
 						<div class="col-12 col-sm-6 col-md-4 col-lg-3">
 							<div class="card tarjeta-curso" id="cursoN5">
 								<img src="https://github.com/LEVAMA2233/Musou-Gakkou/blob/imgs/img-cursos/n5.jpeg?raw=true" class="card-img-top imagen-curso" alt="Curso N5">
@@ -123,7 +126,7 @@
 
 
     <footer id="footer"></footer> <!-- Footer Modularizado -->
-		<script src="/js/cursos.js"></script> <!-- Script de interactividad -->
+		<script src="/assets/js/cursos.js"></script> <!-- Script de interactividad -->
     		<!--Importación de librerias de bootstrap-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 

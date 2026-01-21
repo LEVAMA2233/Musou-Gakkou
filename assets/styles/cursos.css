@@ -106,3 +106,5 @@ max-width:200px;
 .imagen-curso{
   border-radius:25px;
 }
+.star { font-size: 30px; color: #ccc; }
+.checked { color: gold; }
