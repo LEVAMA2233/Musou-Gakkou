@@ -11,7 +11,6 @@ body{
 .contenedor-registro{
     background-color: var(--rojo);
     width: 100%;
-    margin: auto;
 }
 .contenedor-centralregistro{
     background-color: white;
@@ -19,9 +18,7 @@ body{
     margin: auto;
     text-align: left;
     font-family: var(--Tittle-and-subtitles);
-    padding: 2rem;
-    padding-left: 20rem;
-    padding-right: 20rem;
+    padding: 2rem 20rem;
 }
 h1{
     font-family: var(--Tittle-and-subtitles);
@@ -38,7 +35,8 @@ h1{
   background-color: var(--gris);
   color: black;
   border: none;
-  margin-left:11.5rem;
+  display: block;
+  margin: auto;
   padding:0.5rem 4rem;
   border-radius: 20rem;
   }
@@ -48,3 +46,29 @@ h1{
 p{
     text-align: center;
 }
+
+@media screen and (max-width: 576px) {
+    .contenedor-centralregistro{
+        width:100% !important;
+        padding: 3rem !important;
+    }
+    .btn-primary{
+        width: 65%;
+        padding: 0.8rem;
+        border-radius: 2rem;
+    }
+    p{
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .contenedor-centralregistro{
+        width: 80%;
+        padding: 2rem 6rem;
+    }
+    .btn-primary{
+        padding: 0.6rem 3rem;
+  }
+}
+

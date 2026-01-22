@@ -7,6 +7,7 @@
 }
 body{
     background-color: white;
+
 }
 .contenedor-login{
     background-color: var(--rojo);
@@ -19,10 +20,7 @@ body{
     margin: auto;
     text-align: left;
     font-family: var(--Tittle-and-subtitles);
-    padding-top: 5rem;
-    padding-bottom: 10rem;
-    padding-left: 20rem;
-    padding-right: 20rem;
+    padding: 5rem 20rem 10rem;
 }
 h1{
     font-family: var(--Tittle-and-subtitles);
@@ -41,7 +39,8 @@ h1{
   background-color: var(--gris);
   color: black;
   border: none;
-  margin-left:11.5rem;
+  display: block;
+  margin: auto;
   margin-top: 2rem;
   padding:0.5rem 4rem;
   border-radius: 20rem;
@@ -51,4 +50,29 @@ h1{
 }
 p{
     text-align: center;
+}
+@media screen and (max-width: 576px) {
+.contenedor-centrallogin{
+    width:100% !important;
+    padding: 3rem 3rem 17rem 3rem !important;
+}
+    .btn-primary{
+        width: 65%;
+        padding: 0.8rem;
+        border-radius: 2rem;
+    }
+    p{
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .contenedor-centrallogin{
+        width: 80%;
+        padding: 2rem 6rem;
+    }
+     .btn-primary{
+        padding: 0.6rem 3rem;
+  }
+
 }
