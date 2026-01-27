@@ -46,3 +46,38 @@ input[type="radio"] {
     background-color: var(--rojo);
     cursor: pointer;
 }
+/* 📱 MOBILE */
+@media screen and (max-width: 576px) {
+    .quiz-container {
+        width: 90%;
+        padding: 2rem;
+    }
+
+    .text-container {
+        width: 90%;
+        margin-left: 1rem;
+    }
+
+    .btn-primari, .btn-secondary {
+        width: 70%;
+        padding: 0.8rem;
+        border-radius: 2rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+}
+
+/* 💻 TABLET */
+@media screen and (max-width: 1024px) {
+    .quiz-container{
+        width: 70%;
+        padding: 2.5rem;
+    }
+    .text-container {
+        width: 90%;
+        margin-left: 1.5rem;
+    }
+
+}
