@@ -10,20 +10,28 @@
     background-color: var(--rojo);
     margin: 0px;
 }
+.preguntas-section{
+    background-color: var(--rojo);
+}
+.contenedor-central{
+   background-color: white;
+    width: 80%;
+    margin: auto;
+    text-align: left;
+    font-family: var(--Content);
+    padding: 3rem;
+
+}
 
  .Titulo-preguntasfrecuentes{
     font-family: var(--Title-and-subtitles);
-    color:var(--rojo);
-    background-color: var(--blanquino);
     padding-top: 35px;
-    padding-bottom: 35px;
     margin-top: 30px;
-    
+    text-align: center;
  }
 
  .Preguntas-frecuentes{
     font-family: var(--Title-and-subtitles);
-    color:var(--rojo);
     text-align: left;
     font-size: x-large;
     padding-top: 25px;
@@ -52,7 +60,6 @@ body {
     display:flex;
     flex-direction: column;
     align-items: center;
-    background-color: var(--rojo);
     padding-top: 35px;
 }
 
@@ -103,6 +110,61 @@ body {
 
 h2{
     font-family: var(--Tittle-and-subtitles);
+    padding-top:2rem ;
+}
+/* Estilo del Dropdown (La caja blanca redondeada) */
+.dropdown-pregunta {
+    background-color: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 50px; /* Bordes muy redondeados como en la imagen */
+    margin-top: 1rem;
+    padding: 10px 30px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+/* Estilo del título (Lo que se clickea) */
+.dropdown-pregunta summary {
+    list-style: none; /* Quita la flecha por defecto del navegador */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-family: var(--Content);
+    font-weight: 500;
+    font-size: 1.1rem;
+    outline: none;
+    padding: 10px 0;
+}
+
+/* Creación de la flecha personalizada a la derecha */
+.dropdown-pregunta summary::after {
+    content: '\2304'; /* Símbolo de flecha hacia abajo */
+    font-size: 1.5rem;
+    color: #666;
+    transition: transform 0.3s ease;
+}
+
+/* Rotación de la flecha cuando está abierto */
+.dropdown-pregunta[open] summary::after {
+    transform: rotate(180deg);
+}
+
+/* Estilo de la respuesta (El texto que aparece) */
+.contenido-respuesta {
+    padding: 10px 0 20px 0;
+    border-top: 1px solid #f0f0f0;
+    background-color: var(--gris);
+    border-radius: 25px;
+}
+
+.contenido-respuesta p {
+    font-family: var(--Content);
+}
+
+/* Efecto hover */
+.dropdown-pregunta:hover {
+    border-color: var(--rojo);
 }
 
 @media screen and (max-width: 1200px){
