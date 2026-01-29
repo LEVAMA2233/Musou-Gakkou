@@ -1,0 +1,106 @@
+:root{/*Variables de la identidad visual*/
+    --rojo:#c91f13;
+    --gris:#D9D9D9;
+    --blanquino:#f5f3ec;
+    --Tittle-and-subtitles:"El Messiri", sans-serif;
+    --Content:"Source Sans 3", sans-serif;
+}
+body{
+    font-family: var(--Content);
+}
+.contenido{
+    margin-top: 20px;
+}
+h1{
+    font-family: var(--Tittle-and-subtitles);
+    color: black;
+    padding-top: 15px;
+    padding-bottom: 35px;
+    margin-top: 10px;
+}
+
+.lateral{
+    background-color: var(--rojo);
+    margin: 0px;
+}
+#contenedor-titulo{
+    font-size: xx-large;
+}
+#contenedor-precio{
+    margin-top: 5px;
+}
+
+.img-seleccionado{
+    width: 70%;
+    height: auto;
+    border-radius: 20px;
+
+}
+
+.resenas{
+    vertical-align: super;
+    padding:0;
+    border-radius: 20px;
+    background-color:var(--gris);
+}
+
+.agregar-carrito{
+    border-radius: 20px;
+    background-color:var(--gris);
+    width: 90%;
+}
+
+.accordion{
+    font-weight: var(--Content);
+    border: var(--gris);
+}
+.accordion-button{
+    width:95%;
+    background-color: white;
+    border: white;
+    font-family: var(--Content) !important;
+    font-size: large;
+    margin: 5px 5px 5px 5px !important;
+    color: black !important;
+    font-weight: bold;
+}
+
+.accordion-body{
+    padding: 5px;
+}
+.accordion-button:focus{
+    border: none;
+    box-shadow: none;
+}
+.accordion-button:not(.collapsed){
+    background-color: white;
+}
+.accordion-item{
+    margin-top: 10px;
+    border: solid 1px var(--gris);
+}
+.texto-extras{
+    font-size: x-large;
+}
+.tarjeta-curso{
+    padding: 10px;
+    border-radius:25px;
+}
+.imagen-curso-extra{
+    border-radius: 25px;
+}
+.contenedor-extras{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    width: 90%;
+}
+.tarjeta-curso:hover{
+  transform: translateY(-15px); 
+}
+/*Agregar Media Query para que cuando ver reseñas se recorra se vea como el botón de agregar al carrito*/
+@media (max-width: 392px){
+    .resenas{
+        width: 90%;
+    }
+}
