@@ -75,3 +75,14 @@
   background-color: var(--gris);
   color: black;
 }
+
+@media (max-width: 767.98px) {
+  .mobile-img {
+    max-width: 60%;
+    height: auto;
+  }
+}
+
+.input-cuenta {
+  border-radius: 25px;
+}

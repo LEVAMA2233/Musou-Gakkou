@@ -46,7 +46,7 @@
                 <div class="dropdown">
                   <button id="mobileMenuButton" class="btn w-70 dropdown-toggle"
                   type="button" data-bs-toggle="dropdown">
-                  Selecciona una opción
+                  Perfil
                   </button>
                   <ul class="dropdown-menu w-70">
                     <li><a class="dropdown-item" href="#" data-section="perfil">Perfil</a></li>
@@ -57,15 +57,17 @@
                 </div>
               </div>
               
-              <!-- Contenido -->
+                  <!-- Contenido -->
               <div class="col-md-9 col-12">
                 <div class="content-window p-4">
+
+                  <!-- Ventana perfil -->
                   <div id="perfil" class="content-section active">
                     <h1>Datos de la cuenta</h1>
                     <div class="container text-center">
                       <div class="row">
                         <div class="col">
-                          <img src="https://images.icon-icons.com/3873/PNG/512/profile_circle_icon_244573.png" class="img-fluid" alt="icono de perfil">
+                          <img src="https://images.icon-icons.com/3873/PNG/512/profile_circle_icon_244573.png" class="img-fluid mobile-img" alt="icono de perfil">
                           <p>Activo</p>
                           <p>Nivel: N5</p>
                         </div>
@@ -81,18 +83,114 @@
                             <li class="list-group-item item-principal">guillermotorogmz@gmail.com</li>
                             <li class="list-group-item item-principal">Contraseña: </li>
                             <li class="list-group-item item-principal">**********</li>
-                            <li style="list-style-type: none;"><button type="button" class="btn btn-secondary btn-cuenta">Editar</button></li>
+                            <li style="list-style-type: none;" data-section="editar-perfil"><button type="button" class="btn btn-secondary btn-cuenta">Editar</button></li>
                           </ul>
                         </div>
                       </div>
                     </div>
-                       
                   </div>
+
+                    <!-- Ventaja Editar perfil -->
+                  <div id="editar-perfil" class="content-section">
+                    <h1>Datos de la cuenta</h1>
+                    <div class="container">
+                      <div class="row">
+                        <!-- Columna de imagen -->
+                        <div class="col-md-3 text-center">
+                          <img src="https://images.icon-icons.com/3873/PNG/512/profile_circle_icon_244573.png" class="img-fluid mobile-img" alt="icono de perfil">
+                          <button type="button" class="btn"><u>Editar foto</u></button>
+                        </div>
+
+                        <!-- Columna del formulario -->
+                        <div class="col-md-9">
+                          <form id="formRegistro" novalidate>
+                            <div class="mb-3 text-start">
+                              <label class="form-label">Nombre(s):</label>
+                              <input type="text" id="nombre" class="form-control input-cuenta" placeholder="Guillermo">
+                              <div class="text-danger small" id="errorNombre"></div>
+                            </div>
+
+                            <div class="mb-3 text-start">
+                              <label class="form-label">Apellidos:</label>
+                              <input type="text" id="apellido" class="form-control input-cuenta" placeholder="del Toro Gómez">
+                              <div class="text-danger small" id="errorApellido"></div>
+                            </div>
+
+                            <div class="mb-3 text-start">
+                              <label class="form-label">Teléfono / Celular:</label>
+                              <input type="tel" id="telefono" class="form-control input-cuenta" maxlength="10" placeholder="8157968532">
+                              <div class="text-danger small" id="errorTelefono"></div>
+                            </div>
+
+                            <div class="mb-3 text-start">
+                              <label class="form-label">Correo electrónico:</label>
+                              <input type="email" id="email" class="form-control input-cuenta" placeholder="guillermotorogmz@gmail.com">
+                              <div class="text-danger small" id="errorEmail"></div>
+                            </div>
+
+                            <div class="mb-3 text-start">
+                              <label class="form-label">Actualizar contraseña:</label>
+                              <input type="password" id="password" class="form-control input-cuenta">
+                              <div class="text-danger small" id="errorPassword"></div>
+                            </div>
+
+                            <div class="mb-3 text-start">
+                              <label class="form-label">Confirmar nueva contraseña:</label>
+                              <input type="password" id="password2" class="form-control input-cuenta">
+                              <div class="text-danger small" id="errorPassword2"></div>
+                            </div>
+
+                            <div class="mb-3 text-start">
+                              <label class="form-label">Ingresa contraseña anterior:</label>
+                              <input type="password" id="password2" class="form-control input-cuenta">
+                              <div class="text-danger small" id="errorPassword2"></div>
+                            </div>
+
+                            <button type="submit" class="btn btn-secondary btn-cuenta">Guardar</button>
+                            <div class="text-success text-center mt-3" id="successMsg"></div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>   
+
+                  <!-- Ventana Métodos de pago -->
 
                   <div id="metodos-pago" class="content-section">
                       <h2>Información de tarjeta</h2>
+                        <div class="col-md-9">
+                          <ul class="list-group">
+                            <li class="list-group-item item-principal">Número de tarjeta: </li>
+                            <li class="list-group-item item-principal"><b>7485 2578 7485 6529 2517</b></li>
+                            <li class="list-group-item item-principal">Nombre en la tarjeta: </li>
+                            <li class="list-group-item item-principal"><b>Guillermo del Toro Gómez</b></li>
+
+                              <li class="list-group-item p-0 item-principal">
+                                <div class="row m-0">
+                                  <div class="col-md-6">
+                                    <span class="d-block px-3 py-2">Fecha de vencimiento:</span>
+                                    <span class="d-block px-3 py-2"><b>12/30</b></span>
+                                  </div>
+                                  <div class="col-md-6">
+                                    <span class="d-block px-3 py-2">CVV:</span>
+                                    <span class="d-block px-3 py-2"><b>1485</b></span>
+                                  </div>
+                                </div>
+                              </li>
+                              
+                            <li style="list-style-type: none;" data-section="editar-metodo-pago"><button type="button" class="btn btn-secondary btn-cuenta">Editar</button></li>
+                          </ul>
+                        </div>
                   </div>
+
+                  <!-- Ventana Editar métodos de pago -->
+                  
+
+
+                  <!-- Ventana Clases Agendadas -->
                   <div id="clases-agendadas" class="content-section"></div>
+
+                  <!-- Ventana Recursos obtenidos -->
                   <div id="recursos-obtenidos" class="content-section"></div>
                 </div>
               </div>
