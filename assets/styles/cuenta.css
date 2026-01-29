@@ -86,3 +86,32 @@
 .input-cuenta {
   border-radius: 25px;
 }
+
+.item-card {
+  border: 0;
+  text-align: left;
+  color: gray;
+  padding: 0%;
+}
+
+.btn-clase {
+  background-color: var(--gris);
+  border-color: black;
+}
+
+.btn-clase:hover {
+  color: inherit !important;
+  background-color: rgb(159, 159, 159);
+  border-color: inherit !important;
+}   
+
+.icono{
+  width: 30px;
+  transform: rotate(180deg);
+}
+
+@media (max-width: 768px) {
+  .calendario-responsivo {
+    display: none;
+  }
+}
