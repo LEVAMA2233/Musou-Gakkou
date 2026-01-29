@@ -41,7 +41,8 @@
     z-index: -1;
  }
  .Formulario{
-    width: 60%;
+    width: 100%;
+    max-width: 500px;
     font-family: var(--Content);
     background-color: var(--blanquino);
     padding: 20px;
@@ -66,7 +67,8 @@
 .Input-formulario{
     border: 0px var(--rojo); ;
     border-radius: 5%;
-    width: 70%;
+    width: 100%;
+    box-sizing: border-box;
     font-family: var(--Content);
 }
 .Input-formulario:focus{
@@ -83,7 +85,7 @@
     margin-top: 20px;
     padding: 10px;
     border-radius: 25px;
-    width: 70%;
+    width: 100%;
     display: inline-block;
     border: var(--rojo);
 }
@@ -95,7 +97,7 @@
 
 
 body {
-    text-align: center;
+    text-align: initial;
 }
 
 
