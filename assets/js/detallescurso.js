@@ -104,11 +104,19 @@ if (alertTrigger) {
 
 async function agregarCarrito(id){
   const productos = await getProducts();
+  const storedCarrito = localStorage.getItem('miCarrito');
   const cursoSeleccionado = productos.find(curso => curso.id == id);
-  let carrito = {}; // Esperamos la info
+  //let carrito = await getCarrito(); // Esperamos la info
+  let carrito = storedCarrito ? JSON.parse(storedCarrito) : [];
+  //let carrito = {};
   //let jsonObject = JSON.parse(carrito);
-  let productoJSON = JSON.stringify(cursoSeleccionado);
+  //let productoJSON = JSON.stringify(cursoSeleccionado);
   //console.log(cursoSeleccionado);
-  console.log(productoJSON);
-  carrito.push(productoJSON);
+  //console.log(productoJSON);
+  //Object.assign(carrito,cursoSeleccionado);
+  carrito.push(cursoSeleccionado);
+  localStorage.setItem('miCarrito', JSON.stringify(carrito));
+
+  console.log("Carrito actualizado:", carrito);
+  console.log(carrito);
 }
