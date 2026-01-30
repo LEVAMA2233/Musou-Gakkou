@@ -115,3 +115,20 @@
     display: none;
   }
 }
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.tarjeta-recurso{ 
+  border-radius: 25px;
+}
+
+.img-recurso {
+  width: 250px;
+  height: 220px;
+  border-radius: 25px;
+  margin: 10px;
+}
