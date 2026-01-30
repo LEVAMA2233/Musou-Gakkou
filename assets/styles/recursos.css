@@ -103,7 +103,11 @@ body {
     box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
     max-width: 300px;
     min-width: 100px;
-    ;
+    margin: 10px;
+}
+
+.contenedor-tarjeta{
+    margin: 20px;
 }
 
 .bg {
