@@ -1,47 +1,28 @@
 <!DOCTYPE html>
 <html>
+	<head>
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&display=swap" rel="stylesheet">
 
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&display=swap" rel="stylesheet">
-    <title>Contacto Musō夢想</title>
-    <link rel="icon" href="../assets/img/img-acercade/llamaMuso.ico">
-
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
-    </style>
-    <!--Importación de librerias de bootstrap para la navbar-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <!-- Librería de icon-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/assets/styles/contacto.css">
-    <script type="module" src="/assets/js/main.js"></script>
-</head>
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+			</style>
+			<!--Importación de librerias de bootstrap para la navbar-->
+			<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+					<!-- Librería de icon-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="/assets/styles/contacto.css">
+		  <script type="module" src="/assets/js/main.js"></script>
+	</head>
 
 
-<<<<<<< HEAD
-<!--Inicia la navbar-->
-
-<body>
-
-    <header id="barra-navegacion" class="sticky-top"></header> <!-- HTML Modularizado -->
-    <!--  **********   Aqui termina la navbar  ************ -->
-
-    <section class="Titulo-contactanos">
-        <h1>Contáctanos</h1>
-    </section>
-
-
-    <section class="Contactanos-seccion">
-=======
   <!--Inicia la navbar-->
   
   <body>
       
-      <header id="barra-navegacion" class="sticky-top w-100" style="height: 15%"></header> <!-- HTML Modularizado -->
+      <header id="barra-navegacion" class="sticky-top"></header> <!-- HTML Modularizado -->
               <!--  **********   Aqui termina la navbar  ************ -->
       
               <section class="Titulo-contactanos">
@@ -49,59 +30,67 @@
               </section>
       
               <title>Contacto Musō夢想</title>
-              <link rel="icon" href="../assets/img/img-acercade/llamaMuso.ico">
               
       <section class="Contactanos-seccion">
->>>>>>> a2b254b04b5ec0dfe99081f3201846f882cb439b
         <!-- Aqui va el fondo de la imagen  -->
 
         <div class="Formulario">
             <form action="https://formsubmit.co/4c6170eb8d5a4e76d1fe85174cb3ab9f" method="post" id="Formulario">
-                <fieldset> <!-- Organizar en campos las cosas de un formulario -->
-
-                    <label for="nombre" class="Label-formulario">
-                        <!-- Atributo for conecta la etiqueta con el input, debe tener el mismo nombre -->
-                        Nombre(s): <br> <input class="Input-formulario" id="nombre" type="" placeholder="Blanca"
-                            name="nombre" required> <!-- Input es elemento de autocierre -->
-                    </label>
-
-                    <label for="apellidos" class="Label-formulario">
-                        Apellidos: <br> <input class="Input-formulario" id="apellidos" type="text" placeholder="Perez"
-                            name="apellidos" required>
-                    </label>
-
+            <fieldset> <!-- Organizar en campos las cosas de un formulario -->
+                    
+                    <label for="nombre" class="Label-formulario"> <!-- Atributo for conecta la etiqueta con el input, debe tener el mismo nombre --> 
+                        Nombre(s): <br> <input class="Input-formulario"
+                                    id="nombre" 
+                                    type=""  
+                                    placeholder="Blanca" 
+                                    name="nombre"
+                                    required> <!-- Input es elemento de autocierre -->
+                    </label> 
+                    
+                    <label for ="apellidos" class="Label-formulario">
+                        Apellidos: <br> <input class="Input-formulario"
+                                    id="apellidos" 
+                                    type="text" 
+                                    placeholder="Perez" 
+                                    name="apellidos"
+                                    required>
+                    </label> 
+                    
                     <label for="correo" class="Label-formulario">
-                        Correo electronico: <br> <input class="Input-formulario" id="correo" type="email"
-                            placeholder="blanca@gmail.com" name="correo"
-                            required><!--con type=email la validación es directa-->
-                    </label>
+                        Correo electronico: <br> <input class="Input-formulario"
+                                            id="correo" 
+                                            type="email" 
+                                            placeholder="blanca@gmail.com"
+                                            name="correo"
+                                            required><!--con type=email la validación es directa-->
+                    </label> 
 
                     <label for="mensaje" class="Label-formulario">
-                        Mensaje: <br> <input class="Input-formulario" type="text" id="mensaje"
-                            placeholder="Escribe tu mensaje aquí" name="mensaje">
+                        Mensaje: <br> <input class="Input-formulario"
+                                  type="text" 
+                                  id="mensaje" 
+                                  placeholder="Escribe tu mensaje aquí"
+                                  name="mensaje">
                     </label>
                 </fieldset>
 
                 <!-- Etiqueta semantica para boton -->
                 <button class="Button-enviar" type="submit"> Enviar </button>
-
-            </form>
+                
+            </form>   
         </div>
 
-    </section>
+        </section>
 
-
-
-    <!-- ********** AQUI INICIA EL FOOTER ******* -->
-    <footer id="footer"> </footer> <!-- Footer Modularizado -->
-    <!--Importación de librerias de bootstrap-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
-</body>
+        
+        
+<!-- ********** AQUI INICIA EL FOOTER ******* -->
+<footer id = "footer"> </footer> <!-- Footer Modularizado -->
+		<!--Importación de librerias de bootstrap-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+	</body>
 
 
 <!-- Test de procedimientos de commit 1:
   -->
-
 </html>
