@@ -6,19 +6,21 @@
     --Content:"Source Sans 3", sans-serif;
 }
 body{
-    background-color: var(--white);
+    background-color: white;
+
 }
-.contenedor-registro{
+.contenedor-login{
     background-color: var(--rojo);
-    
+    width: 100%;
+    margin: auto;
 }
-.contenedor-centralregistro{
-    background-color: var(--blanquino) ;
+.contenedor-centrallogin{
+    background-color: white;
     width: 80%;
     margin: auto;
     text-align: left;
     font-family: var(--Tittle-and-subtitles);
-    padding: 2rem 2rem;
+    padding: 5rem 20rem 10rem;
 }
 h1{
     font-family: var(--Tittle-and-subtitles);
@@ -30,6 +32,8 @@ h1{
 }
 .form-control{
     margin-bottom: 1rem;
+    border-color: white;
+    border-bottom-color: black; 
 }
 .btn-primary{
   background-color: var(--gris);
@@ -37,6 +41,7 @@ h1{
   border: none;
   display: block;
   margin: auto;
+  margin-top: 2rem;
   padding:0.5rem 4rem;
   border-radius: 20rem;
   }
@@ -46,12 +51,11 @@ h1{
 p{
     text-align: center;
 }
-
 @media screen and (max-width: 576px) {
-    .contenedor-centralregistro{
-        width:100% !important;
-        padding: 3rem !important;
-    }
+.contenedor-centrallogin{
+    width:100% !important;
+    padding: 3rem 3rem 17rem 3rem !important;
+}
     .btn-primary{
         width: 65%;
         padding: 0.8rem;
@@ -63,12 +67,12 @@ p{
 }
 
 @media screen and (max-width: 1024px){
-    .contenedor-centralregistro{
+    .contenedor-centrallogin{
         width: 80%;
         padding: 2rem 6rem;
     }
-    .btn-primary{
+     .btn-primary{
         padding: 0.6rem 3rem;
   }
-}
 
+}

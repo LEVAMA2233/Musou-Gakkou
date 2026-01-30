@@ -1,0 +1,173 @@
+
+[
+  {
+    "id": 1768868706812,
+    "tipo": "Curso",
+    "titulo": "N5 Principiante",
+    "descripcion": "Conoces los kanjis",
+    "detalle": "En este nivel inicial, desarrollarás la capacidad de comprender expresiones básicas y frases hechas de la vida cotidiana. Aprenderás a leer y escribir los alfabetos Hiragana, Katakana y aproximadamente 100 Kanjis esenciales, permitiéndote presentarte y realizar compras básicas.",
+    "precio": 2000,
+    "horario": "Sabatino",
+    "fechaInicio": "2026-01-23",
+    "imagenUrl": "https://i.ibb.co/dwbsg2Sp/N5curso.jpg",
+    "imagenUrl": "/assets/img/img-cursos/n5.jpeg",
+    "calificacion": "5",
+    "resenas": [
+      { "autor": "Blanca Perez", "calificacion": "5", "mensaje": "Contenido excelente, el maestro hizo la clase muy amena", "fecha": "2025-12-10" },
+      { "autor": "Tania Gayosso", "calificacion": "5", "mensaje": "Me gustó mucho el material didáctico", "fecha": "2025-01-10" }
+    ]
+  },
+  {
+    "id": 1768868706811,
+    "tipo": "Curso",
+    "titulo": "N5 Principiante",
+    "descripcion": "Conoces los kanjis",
+    "detalle": "Curso enfocado en la gramática elemental y la comprensión auditiva de conversaciones lentas. Al finalizar, el alumno podrá entender instrucciones sencillas y participar en diálogos breves sobre temas familiares, sentando las bases sólidas para el estudio del idioma.",
+    "precio": 1800,
+    "horario": "Intensivo",
+    "fechaInicio": "2026-01-23",
+    "imagenUrl": "https://i.ibb.co/dwbsg2Sp/N5curso.jpg",
+    "imagenUrl": "/assets/img/img-cursos/n5.jpeg",
+    "calificacion": "5",
+    "resenas": [
+      { "autor": "Ricardo M.", "calificacion": "5", "mensaje": "Excelente para empezar desde cero.", "fecha": "2025-11-20" },
+      { "autor": "Elena Soto", "calificacion": "5", "mensaje": "Muy dinámico y bien estructurado.", "fecha": "2025-11-25" }
+    ]
+  },
+  {
+    "id": 1768868745478,
+    "tipo": "Curso",
+    "titulo": "N4 Semi intermedio",
+    "descripcion": "Puedes escribir utilizando kanjis",
+    "detalle": "Este nivel profundiza en la gramática de nivel básico-medio. El estudiante adquiere la habilidad de leer y comprender pasajes sobre temas cotidianos utilizando un vocabulario de unos 300 Kanjis. Se enfatiza el uso de formas verbales más complejas y expresiones de cortesía.",
+    "precio": 1700,
+    "horario": "Sabatino",
+    "fechaInicio": "2026-01-23",
+    "imagenUrl": "https://i.ibb.co/dwbsg2Sp/N5curso.jpg",
+    "imagenUrl": "/assets/img/img-cursos/n4.jpeg",
+    "calificacion": "4.3",
+    "resenas": [
+      { "autor": "Jorge L.", "calificacion": "4.6", "mensaje": "Buen curso, aunque la gramática es intensa.", "fecha": "2025-10-05" },
+      { "autor": "Lucía H.", "calificacion": "4.0", "mensaje": "Me ayudó mucho con los kanjis del N4.", "fecha": "2025-10-12" }
+    ]
+  },
+  {
+    "id": 1768868745475,
+    "tipo": "Curso",
+    "titulo": "N4 Semi intermedio",
+    "descripcion": "Puedes escribir utilizando kanjis",
+    "detalle": "Al completar este curso, el alumno será capaz de entender conversaciones fluidas en situaciones diarias, siempre que el interlocutor hable con claridad. Se desarrollan habilidades para narrar experiencias pasadas y expresar deseos o planes a futuro de forma coherente.",
+    "precio": 1400,
+    "horario": "Intensivo",
+    "fechaInicio": "2026-01-23",
+    "imagenUrl": "https://i.ibb.co/dwbsg2Sp/N5curso.jpg",
+    "imagenUrl": "/assets/img/img-cursos/n4.jpeg",
+    "calificacion": "4.8",
+    "resenas": [
+      { "autor": "Sofía Díaz", "calificacion": "4.8", "mensaje": "El formato intensivo es lo mejor para avanzar.", "fecha": "2025-09-15" },
+      { "autor": "Mateo R.", "calificacion": "4.8", "mensaje": "Increíble la rapidez con la que aprendes.", "fecha": "2025-09-20" }
+    ]
+  },
+  {
+    "id": 1768868777821,
+    "tipo": "Curso",
+    "titulo": "N3 Intermedio",
+    "descripcion": "Puedes entablar una conversación sencilla",
+    "detalle": "El nivel N3 es el puente entre el japonés básico y el avanzado. Aprenderás a entender puntos específicos en artículos sobre temas generales y a captar ideas principales en noticias. El vocabulario se expande a unos 600 Kanjis, permitiendo una comunicación social más natural.",
+    "precio": 1600,
+    "horario": "Intensivo",
+    "fechaInicio": "2026-01-23",
+    "imagenUrl": "https://i.ibb.co/dwbsg2Sp/N5curso.jpg",
+    "imagenUrl": "/assets/img/img-cursos/n3.jpeg",
+    "calificacion": "3.8",
+    "resenas": [
+      { "autor": "Andrés P.", "calificacion": "3.6", "mensaje": "Falta un poco de tiempo para conversación.", "fecha": "2025-08-10" },
+      { "autor": "Valeria C.", "calificacion": "4.0", "mensaje": "Sólido pero requiere mucho estudio autónomo.", "fecha": "2025-08-15" }
+    ]
+  },
+  {
+    "id": 1768868777822,
+    "tipo": "Curso",
+    "titulo": "N3 Intermedio",
+    "descripcion": "Puedes entablar una conversación sencilla",
+    "detalle": "Se enfoca en la transición hacia un lenguaje más abstracto. El alumno aprenderá a parafrasear y explicar conceptos cuando no conoce la palabra exacta, además de comprender la cohesión de textos escritos y conversaciones a velocidad casi natural.",
+    "precio": 1900,
+    "horario": "Sabatino",
+    "fechaInicio": "2026-01-23",
+    "imagenUrl": "https://i.ibb.co/dwbsg2Sp/N5curso.jpg",
+    "imagenUrl": "/assets/img/img-cursos/n3.jpeg",
+    "calificacion": "4.2",
+    "resenas": [
+      { "autor": "Daniela G.", "calificacion": "4.2", "mensaje": "Muy buen material de apoyo.", "fecha": "2025-07-05" },
+      { "autor": "Tomás V.", "calificacion": "4.2", "mensaje": "El profesor explica muy bien los puntos difíciles.", "fecha": "2025-07-12" }
+    ]
+  },
+  {
+    "id": 1768868869794,
+    "tipo": "Curso",
+    "titulo": "N2 Avanzado",
+    "descripcion": "Eres capaz de mantener una conversación y manejar textos complejos",
+    "detalle": "Nivel de suficiencia para trabajar en entornos profesionales japoneses. Aprenderás a leer críticamente artículos, comentarios y críticas en periódicos o revistas. Dominarás aproximadamente 1,000 Kanjis y estructuras gramaticales complejas para expresar matices psicológicos y sociales.",
+    "precio": 1500,
+    "horario": "Intensivo",
+    "fechaInicio": "2026-01-26",
+    "imagenUrl": "https://i.ibb.co/dwbsg2Sp/N5curso.jpg",
+    "imagenUrl": "/assets/img/img-cursos/n2.jpeg",
+    "calificacion": "4.7",
+    "resenas": [
+      { "autor": "Brenda L.", "calificacion": "4.7", "mensaje": "Nivel avanzado real, muy útil para el examen.", "fecha": "2025-11-01" },
+      { "autor": "Hugo M.", "calificacion": "4.7", "mensaje": "Excelente contenido técnico.", "fecha": "2025-11-05" }
+    ]
+  },
+  {
+    "id": 1768868869795,
+    "tipo": "Curso",
+    "titulo": "N2 Avanzado",
+    "descripcion": "Eres capaz de mantener una conversación y manejar textos complejos",
+    "detalle": "Desarrolla la capacidad de comprender el flujo lógico de un discurso en diversos contextos, desde presentaciones hasta noticias de actualidad. El alumno podrá entablar conversaciones sobre una amplia variedad de temas con fluidez y naturalidad.",
+    "precio": 1800,
+    "horario": "Sabatino",
+    "fechaInicio": "2026-01-26",
+    "imagenUrl": "https://i.ibb.co/dwbsg2Sp/N5curso.jpg",
+    "imagenUrl": "/assets/img/img-cursos/n2.jpeg",
+    "calificacion": "4.4",
+    "resenas": [
+      { "autor": "Mónica T.", "calificacion": "4.4", "mensaje": "Gran enfoque en lectura comprensiva.", "fecha": "2025-12-15" },
+      { "autor": "Paola F.", "calificacion": "4.4", "mensaje": "Clases sabatinas muy productivas.", "fecha": "2025-12-20" }
+    ]
+  },
+  {
+    "id": 1768868937885,
+    "tipo": "Curso",
+    "titulo": "N1 Profesional",
+    "descripcion": "Puedes utilizar el idioma en cualquier contexto",
+    "detalle": "El nivel más alto del JLPT. Se centra en la capacidad de leer textos con profundidad lógica o abstracción en temas complejos como filosofía, economía y política. Dominio de 2,000 Kanjis y la capacidad de captar la intención del autor a través de matices lingüísticos sutiles.",
+    "precio": 1200,
+    "horario": "Intensivo",
+    "fechaInicio": "2026-01-26",
+    "imagenUrl": "https://i.ibb.co/dwbsg2Sp/N5curso.jpg",
+    "imagenUrl": "/assets/img/img-cursos/n1.jpeg",
+    "calificacion": "4",
+    "resenas": [
+      { "autor": "Samuel F.", "calificacion": "4.0", "mensaje": "Un reto total, pero el profesor es un experto.", "fecha": "2025-06-15" },
+      { "autor": "Karina B.", "calificacion": "4.0", "mensaje": "Perfecto para pulir los últimos detalles del idioma.", "fecha": "2025-06-20" }
+    ]
+  },
+  {
+    "id": 1768868937888,
+    "tipo": "Curso",
+    "titulo": "N1 Profesional",
+    "descripcion": "Puedes utilizar el idioma en cualquier contexto",
+    "detalle": "Perfeccionamiento de la comprensión auditiva en situaciones académicas y laborales de alta complejidad. El estudiante será capaz de seguir conferencias y debates a velocidad nativa, captando ironías, estados de ánimo y estructuras honoríficas de nivel experto.",
+    "precio": 1500,
+    "horario": "Sabatino",
+    "fechaInicio": "2026-01-26",
+    "imagenUrl": "https://i.ibb.co/dwbsg2Sp/N5curso.jpg",
+    "imagenUrl": "/assets/img/img-cursos/n1.jpeg",
+    "calificacion": "3.8",
+    "resenas": [
+      { "autor": "Inés M.", "calificacion": "3.8", "mensaje": "Contenido sólido, el ritmo sabatino ayuda a digerir los temas.", "fecha": "2025-05-10" },
+      { "autor": "Felipe G.", "calificacion": "3.8", "mensaje": "Dificultad alta, ideal para traductores.", "fecha": "2025-05-15" }
+    ]
+  }
+]

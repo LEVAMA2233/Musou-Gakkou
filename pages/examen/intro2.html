@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&display=swap" rel="stylesheet">
+    <title>Musou Gakkou</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+    </style>
+
+    <!--Importación de librerias de bootstrap para la navbar-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    		<!-- Librería de icon-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../../assets/styles/examenIntro.css">
+    <script type="module" src="../../assets/js/main.js"></script>
+</head>
+
+<body>
+    <header id="barra-navegacion" class="sticky-top"></header> <!-- HTML Modularizado -->
+    <section class="intro-contenedor">
+        <div class="quiz-container">
+            <div class="text-container">
+                <h2 class="text-center mb-4">Intro 2</h2>
+                <p>Selecciona la opción correcta.</p>
+                <form id="quizzForm">
+
+                    <!-- Pregunta 1-->
+                    <div class="mb-3">
+                        <p>16. ¿Cuál de las siguientes letras pertenece al katakana?</p>
+                        <div>
+                            <input type="radio" name="p16" value="0">千<br>
+                            <input type="radio" name="p16" value="0">三<br>
+                            <input type="radio" name="p16" value="0">七<br>
+                            <input type="radio" name="p16" value="1">ス<br>
+                            <input type="radio" name="p16" value="0">No sé
+                        </div>
+                    </div>
+
+                    <!-- Pregunta 2-->
+                    <div class="mb-3">
+                        <p>17. ¿Cómo se escribe en romaji la palabra「メキシコ」?</p>
+                        <div>
+                            <input type="radio" name="p17" value="0">Nakitsugo<br>
+                            <input type="radio" name="p17" value="0">Nasakiko<br>
+                            <input type="radio" name="p17" value="0">Nekishiko<br>
+                            <input type="radio" name="p17" value="1">Mekishiko<br>
+                            <input type="radio" name="p17" value="0">No sé
+                        </div>
+                    </div>
+
+                    <!-- Pregunta 3-->
+                    <div class="mb-3">
+                        <p>18. ¿Qué partícula usamos para indicar que la oración es una pregunta?</p>
+                        <div>
+                            <input type="radio" name="p18" value="0">は<br>
+                            <input type="radio" name="p18" value="1">か<br>
+                            <input type="radio" name="p18" value="0">の<br>
+                            <input type="radio" name="p18" value="0">を<br>
+                            <input type="radio" name="p18" value="0">No sé
+                        </div>
+                    </div>
+
+                    <!-- Pregunta 4-->
+                    <div class="mb-3">
+                        <p>19. ¿Qué palabra representa un país?</p>
+                        <div>
+                            <input type="radio" name="p19" value="0">タイじん<br>
+                            <input type="radio" name="p19" value="0">パリ<br>
+                            <input type="radio" name="p19" value="0">にほん<br>
+                            <input type="radio" name="p19" value="1">ちゅうごくご<br>
+                            <input type="radio" name="p19" value="0">No sé
+                        </div>
+                    </div>
+
+                    <!-- Pregunta 5 -->
+                    <div class="mb-3">
+                        <p>20. ¿Cuá es el significado de la oración「これはなんですか」?</p>
+                        <div>
+                            <input type="radio" name="p20" value="1">¿Qué es esto?<br>
+                            <input type="radio" name="p20" value="0">¿Dónde está eso?<br>
+                            <input type="radio" name="p20" value="0">¿Quién es ella?<br>
+                            <input type="radio" name="p20" value="0">¿Esto es tuyo?<br>
+                            <input type="radio" name="p20" value="0">No sé
+                        </div>
+                    </div>
+
+                    <!-- Pregunta 6 -->
+                    <div class="mb-3">
+                        <p>21. ¿Qué significa en español la palabra「デザイナー」?</p>
+                        <div>
+                            <input type="radio" name="p21" value="0">Designador<br>
+                            <input type="radio" name="p21" value="1">Diseñador<br>
+                            <input type="radio" name="p21" value="0">Diseño<br>
+                            <input type="radio" name="p21" value="0">Diseñar<br>
+                            <input type="radio" name="p21" value="0">No sé
+                        </div>
+                    </div>
+
+                    <!-- Pregunta 7 -->
+                    <div class="mb-3">
+                        <p>22. ¿Qué palabra corresponde al pronombre demostrativo "eso"?</p>
+                        <div>
+                            <input type="radio" name="p22" value="0">あれ<br>
+                            <input type="radio" name="p22" value="0">これ<br>
+                            <input type="radio" name="p22" value="1">それ<br>
+                            <input type="radio" name="p22" value="0">どれ<br>
+                            <input type="radio" name="p22" value="0">No sé
+                        </div>
+                    </div>
+
+                    <!-- Pregunta 8 -->
+                    <div class="mb-3">
+                        <p>23. ¿Qué oración representa la forma negativa formal de la oración「これはほんです」?</p>
+                        <div>
+                            <input type="radio" name="p23" value="0">これはほんでした<br>
+                            <input type="radio" name="p23" value="0">これはほんですか<br>
+                            <input type="radio" name="p23" value="1">これはほんじゃない<br>
+                            <input type="radio" name="p23" value="0">これはほんじゃありません<br>
+                            <input type="radio" name="p23" value="0">No sé
+                        </div>
+                    </div>
+
+                    <!-- Pregunta 9 -->
+                    <div class="mb-3">
+                        <p>24. ¿Cuál de las siguientes es la partícula que indica "también"?</p>
+                        <div>
+                            <input type="radio" name="p24" value="0">の<br>
+                            <input type="radio" name="p24" value="1">も<br>
+                            <input type="radio" name="p24" value="0">か<br>
+                            <input type="radio" name="p24" value="0">を<br>
+                            <input type="radio" name="p24" value="0">No sé
+                        </div>
+                    </div>
+
+                    <!-- Pregunta 10 -->
+                    <div class="mb-3">
+                        <p>25. ¿Cómo se lee en romaji la palabra「シャープペンシル」?</p>
+                        <div>
+                            <input type="radio" name="p25" value="0">Shiyapupentsuru<br>
+                            <input type="radio" name="p25" value="0">Shapupentsuru<br>
+                            <input type="radio" name="p25" value="1">Shaapupenshiru<br>
+                            <input type="radio" name="p25" value="0">Shiyapupenshiru<br>
+                            <input type="radio" name="p25" value="0">No sé
+                        </div>
+                    </div>
+
+                    <!-- Pregunta 11-->
+                    <div class="mb-3">
+                        <p>26. ¿Cuál de las siguientes opciones es un objeto escolar?</p>
+                        <div>
+                            <input type="radio" name="p26" value="0">にほん<br>
+                            <input type="radio" name="p26" value="1">おさら<br>
+                            <input type="radio" name="p26" value="0">のり<br>
+                            <input type="radio" name="p26" value="0">おはし<br>
+                            <input type="radio" name="p26" value="0">No sé
+                        </div>
+                    </div>
+
+                    <!-- Pregunta 12 -->
+                    <div class="mb-3">
+                        <p>27. ¿Cómo se escribe en romaji la palabra「コミュニケーション」?</p>
+                        <div>
+                            <input type="radio" name="p27" value="0">Komyunikeshon<br>
+                            <input type="radio" name="p27" value="0">Gomiyunisetsuyon<br>
+                            <input type="radio" name="p27" value="1">Komyunikeeshon<br>
+                            <input type="radio" name="p27" value="0">Komyunisaashiyon<br>
+                            <input type="radio" name="p27" value="0">No sé
+                        </div>
+                    </div>
+
+                    <!-- Pregunta 13   -->
+                    <div class="mb-3">
+                        <p>28. ¿Cuál es el significado de la oración「あれはマンションです」?</p>
+                        <div>
+                            <input type="radio" name="p28" value="0">Ese es un estudiante<br>
+                            <input type="radio" name="p28" value="1">Aquel es un departamento<br>
+                            <input type="radio" name="p28" value="0">Aquel es un supermercado<br>
+                            <input type="radio" name="p28" value="0">Esta es una escuela<br>
+                            <input type="radio" name="p28" value="0">No sé
+                        </div>
+                    </div>
+
+                    <!-- Pregunta 14 -->
+                    <div class="mb-3">
+                        <p>29. ¿Cuál de las siguientes oraciones habla de algo que se puede expresar a través de la
+                            partícula の?
+                        </p>
+                        <div>
+                            <input type="radio" name="p29" value="0">Expresar el lugar donde pasa algo<br>
+                            <input type="radio" name="p29" value="0">Expresar el lugar a donde voy<br>
+                            <input type="radio" name="p29" value="1">Expresar de donde soy originario<br>
+                            <input type="radio" name="p29" value="0">Expresar el lugar donde estoy<br>
+                            <input type="radio" name="p29" value="0">No sé
+                        </div>
+                    </div>
+
+                    <!-- Pregunta 15 -->
+                    <div class="mb-3">
+                        <p>30. ¿Qué significa en español la palabra「さんぜんろっぴゃくごじゅういち」?</p>
+                        <div>
+                            <input type="radio" name="p30" value="1">3651<br>
+                            <input type="radio" name="p30" value="0">36 años de edad<br>
+                            <input type="radio" name="p30" value="0">3060591<br>
+                            <input type="radio" name="p30" value="0">38451<br>
+                            <input type="radio" name="p30" value="0">No sé
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-center mt-3">
+                        <button type="button" class="btn btn-secondary" onclick="window.location.href='intro1.html'">
+                            ← Anterior
+                        </button>
+
+
+                        <button type="button" class="btn btn-primari" onclick="guardarYContinuar('intro3.html')">
+                            Siguiente →
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer id="footer"></footer> <!-- Footer Modularizado -->
+    <!--Importación de librerias de bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="../../assets/js/examen.js"></script>
+
+</body>
+
+</html>

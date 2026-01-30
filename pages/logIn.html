@@ -12,14 +12,34 @@
 
 			<!--Importación de librerias de bootstrap para la navbar-->
 			<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-			<link rel="stylesheet" href="./acercaDe.css">
+					<!-- Librería de icon-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+			<link rel="stylesheet" href="/assets/styles/logIn.css">
       <script type="module" src="/assets/js/main.js"></script>
 	</head>
 <body>
     <header id="barra-navegacion" class="sticky-top"></header> <!-- HTML Modularizado -->
-    <footer id="footer"></footer> <!-- Footer Modularizado -->
-    		<!--Importación de librerias de bootstrap-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-
-</body>
+	
+	<!--Importación de librerias de bootstrap-->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+		crossorigin="anonymous"></script>
+	<section class="contenedor-login">
+		<div class="contenedor-centrallogin">
+			<h1>Inicia Sesión o Regístrate</h1>
+			<form>
+				<div class="mb-3">
+					<label for="exampleInputEmail1"></label>
+					<input type="email" class="form-control" id="exampleInputEmail1" placeholder="email">
+				<div class="mb-3">
+					<label for="exampleInputPassword1"></label>
+					<input type="password" class="form-control" id="exampleInputPassword1" placeholder="contraseña">
+				</div>
+				<button type="login" class="btn btn-primary">Iniciar sesión</button>
+				<p>¿No tienes cuenta? <u><a href="registro.html">Regístrate</a></u></p>
+			</form>
+		</div>
+	</section>
+	<footer id="footer"></footer> <!-- Footer Modularizado -->
+	</body>
 </html>

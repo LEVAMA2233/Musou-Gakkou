@@ -20,39 +20,6 @@ h1{
     background-color: var(--rojo);
     margin: 0px;
 }
-.contenedor-mejor-valorados,
-.contenedor-busqueda{
-/* Caja redondeada */
-            display: flex;
-            align-items: center;
-            border: 1px solid #ccc;
-            border-radius: 50px; /* Hace que los bordes sean circulares */
-            padding: 5px 20px;
-            height: 55px;
-            background-color: white;
-}
-.contenedor-busqueda{
-width: 100%;
-max-width:200px;
-}
-.input-busqueda{
-/* Quitar el estilo por defecto del input */
-            font-family: var(--Content);
-            border: none;
-            outline: none;
-            width:90%;
-            /*flex-grow: 1; *//* El input toma todo el espacio disponible */
-            font-size: 18px;
-            color: #999;
-            padding: 8px 0; 
-}
-.logo-lupa{
-/* Estilo para tu imagen */
-            width: 10%;
-            height: auto;
-            cursor: pointer;
-            margin-left: 10px;
-}
 
 /* Estilo base del botón (Inactivo) */
 .btn-filter {
@@ -83,29 +50,17 @@ max-width:200px;
   display: inline-block;
 }
 
-/* Efecto hover opcional */
-.btn-filter:hover {
-  background-color: #e0e0e0;
+/*Estilos de las tarjetas*/
+.card{
+    margin: 10px;
+}
+.perfil-miniatura{
+    width:45px;
+    height:45px;
+    border-radius:45px;
+    margin-left: 10%
 }
 
-/* Cursos */
-.contenedor-cursos{
-  margin: 20px;
-}
-.tarjeta-curso{
-  margin: 15px;
-  border-radius:25px;
-  padding: 10px;
-}
-.tarjeta-curso:hover{
-  transform: translateY(-15px); 
-}
-.card-title{
-  font-family: var(--Tittle-and-subtitles);
-}
-.imagen-curso{
-  border-radius:25px;
-}
 /*css para rellenar las estrellas bien*/
 /* START FROM HERE */
 
