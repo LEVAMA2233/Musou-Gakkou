@@ -11,7 +11,9 @@ const navbar = () =>{
 
 
 .navbar{
-
+  background-color: black;
+  max-width:100%;
+  height: 100%;
  }
 
 #logo-muso{
@@ -20,6 +22,11 @@ const navbar = () =>{
  .navbar-brand{
 
  }
+ .navbar-nav{
+ flex: 1;
+ display:flex;
+ justify-content: space-around;
+  }
  .nav-item{
     margin-right: 4px;
  }
@@ -28,7 +35,7 @@ const navbar = () =>{
     color:var(--blanquino);
     font-family:var(--Tittle-and-subtitles);
     /* font-size: 1.5vw; */
-    font-size: x-large;
+    font-size: 2vw;
     border-radius: 10px;
  }
   .dropdown-menu{
@@ -51,11 +58,11 @@ const navbar = () =>{
 #logo-muso:hover{
     transform: scale(1.3);
 }
-#logo-carrito{
-  height: 75px;
-  width: 75px;
+.carrito{
+  color: white;
+  font-size: 6vh;
 }
-#logo-carrito:hover{
+.carrito:hover{
     transform: scale(1.3);
 }
 
@@ -64,8 +71,8 @@ const navbar = () =>{
     color: var(--blanquino);
     font-family: var(--Tittle-and-subtitles);
     margin: 3px;
-    font-size: x-large;
-    padding: 2px 5px;
+    font-size: 2vw;
+    padding: 5px 10px;
     border-radius: 10px;
  }
  #btn-Log-in{
@@ -115,19 +122,23 @@ const navbar = () =>{
  }
 
 }
-
+@container navbar (min-width: 700px) {
+  .nav-link {
+    font-size: 2em;
+  }
+}
     
     </style>
-    <nav class="navbar navbar-expand-lg custom-navbar sticky-top" data-bs-theme="dark" style="background-color: black; max-width:100%;">
+    <nav class="navbar navbar-expand-lg custom-navbar sticky-top" data-bs-theme="dark">
             <div class="container-fluid">
               <a class="navbar-brand" href="/" style="    color:var(--blanquino); margin: 0px;">
-                <img src="/assets/img/img-acercade/logo-muso.png" id="logo-muso" alt="Logo de Musou" class="img-fluid" style="max-height: 70px; max-width: 150px; margin-right: 0px;">
+                <img src="/assets/img/img-acercade/logo-muso.png" id="logo-muso" alt="Logo de Musou" class="img-fluid" style="max-height: 13vh; max-width: auto; margin-right: 0px;">
               </a>
               <button class="navbar-toggler" style="color:#e6e6ff; margin-right: 20px;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon  mr-4"></span>
               </button>
               <div class="collapse navbar-collapse " id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto align-items-center">
+                <ul class="navbar-nav">
                   <li class="nav-item">
                     <a class="nav-link" aria-current="page" href="/pages/cursos.html" >Cursos</a>
                   </li>
@@ -169,7 +180,7 @@ const navbar = () =>{
                   <!-- Solo se muestran como botones en  caso de pantallas grandes-->
                   <li class="nav-item d-none d-lg-block">
                     <a class="navbar-link" href="/pages/carrito.html">
-                        <img src="/assets/img/img-acercade/carrito-logo.png" id="logo-carrito" alt="Logo de carrito" class="img-fluid">
+                        <i class="fa fa-shopping-cart carrito"></i>
                     </a>
                   </li>
                   <li class="nav-item d-none d-lg-block">

@@ -6,7 +6,9 @@
     --Tittle-and-subtitles: "El Messiri", sans-serif;
     --Content: "Source Sans 3", sans-serif;
 }
-
+body{
+    max-width: 100%;
+}
 .container-fluido {
     /*Encabezado*/
     padding-bottom: 55px;
