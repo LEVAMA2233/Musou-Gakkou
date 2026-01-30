@@ -3,38 +3,41 @@ const lista = document.getElementById('listaCarrito');
 const total = document.getElementById('total');
 
 function render() {
+  const total = document.getElementById('total');
   const datosGuardados = localStorage.getItem('miCarrito');
   console.log(datosGuardados);
-
-//console.log(carritoRecuperado); // Output: [1, 2, 3]
+  let items = JSON.parse(datosGuardados);
+  //console.log(carritoRecuperado); // Output: [1, 2, 3]
   lista.innerHTML = '';
-  const items = carrito.obtenerCarrito();
+  //const items = carrito.obtenerCarrito();
 
   if (items.length === 0) {
     lista.innerHTML = '<p>Tu carrito está vacío.</p>';
   }
-
+  let totalvalue = 0;
   items.forEach(p => {
     const div = document.createElement('div');
-    div.className = 'card mb-3 p-3 carrito-item d-flex flex-column flex-md-row align-items-start gap-2';
+    div.className = 'col-12';
 
     div.innerHTML = `
-      <img  style="width:100px; "class="" src="${p.imagen || 'src/img/sin-imagen.png'}" alt="${p.nombre}">
+    <div class="card mb-3 p-3 carrito-item d-flex flex-column flex-md-row align-items-start gap-2">
+      <img  style="width:100px; "class="" src="${p.imagenUrl || 'src/img/sin-imagen.png'}" alt="${p.titulo}">
       <div class="d-flex flex-column flex-md-row gap-1 align-items-start justify-content-between w-100">
-        <h5>${p.nombre}</h5>
+        <h5>${p.titulo}</h5>
         <div class="info-item d-flex flex-md-column">
           <p>Precio unitario:</p>
           <span>$${p.precio}</span>
         </div>
         <div class="info-item d-flex flex-md-column">
           <p>Cantidad:</p>
-          <input type="number" min="1" value="${p.cantidad}" style="width:60px">
+          <input type="number" min="1" value="1" style="width:60px">
         </div>
         <div class="info-item d-flex flex-md-column">
           <p>Subtotal:</p>
-          <span>$${(p.precio * p.cantidad).toFixed(2)}</span>
+          <span>$${(p.precio).toFixed(2)}</span>
         </div>
         <button class="btn btn-danger">x</button>
+      </div>
       </div>
     `;
 
@@ -52,9 +55,10 @@ function render() {
     });
 
     lista.appendChild(div);
+    totalvalue += p.precio;
   });
-
-  total.textContent = carrito.obtenerTotal().toFixed(2);
+  total.textContent = totalvalue;
+  //total.textContent = carrito.obtenerTotal().toFixed(2);
 }
 
 render();

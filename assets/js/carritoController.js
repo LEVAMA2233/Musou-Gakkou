@@ -38,7 +38,7 @@ class CarritoController {
   }
 
   obtenerTotal() {
-    return this.carrito.reduce((total, p) => total + p.precio * p.cantidad, 0);
+    return this.carrito.reduce((total, p) => total + p.precio * 1, 0);
   }
 
   vaciar() {
