@@ -57,6 +57,6 @@ document.getElementById("formRegistro").addEventListener("submit", function (e) 
     }
 
     if (valido) {
-        successMsg.textContent = "Usuario registrado con exito)";
+        successMsg.textContent = "Usuario registrado con exito";
     }
 });
