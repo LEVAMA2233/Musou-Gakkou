@@ -56,7 +56,7 @@ const navbar = () =>{
 
 }
 #logo-muso:hover{
-    transform: scale(1.3);
+    transform: scale(1.1);
 }
 .carrito{
   color: white;
@@ -132,7 +132,7 @@ const navbar = () =>{
     <nav class="navbar navbar-expand-lg custom-navbar sticky-top" data-bs-theme="dark">
             <div class="container-fluid">
               <a class="navbar-brand" href="/" style="    color:var(--blanquino); margin: 0px;">
-                <img src="/assets/img/img-acercade/logo-muso.png" id="logo-muso" alt="Logo de Musou" class="img-fluid" style="max-height: 13vh; max-width: auto; margin-right: 0px;">
+                <img src="/assets/img/img-acercade/logo-muso-transparente.png" id="logo-muso" alt="Logo de Musou" class="img-fluid" style="max-height: 13vh; max-width: auto; margin-right: 0px;">
               </a>
               <button class="navbar-toggler" style="color:#e6e6ff; margin-right: 20px;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon  mr-4"></span>
