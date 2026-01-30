@@ -134,7 +134,7 @@ h2{
     font-weight: 500;
     font-size: 1.1rem;
     outline: none;
-    padding: 10px 0;
+    padding: 1rem;
 }
 
 /* Creación de la flecha personalizada a la derecha */
@@ -185,5 +185,21 @@ h2{
     .tarjeta-ittai h3{
         font-size: 5vw;
     }
+    .contenedor-central{
+        width: 90%;
+        padding: 1rem;
+    }
+    .dropdown-pregunta{
+        padding: 0.5rem 1rem;
+    }
+     .contenido-respuesta p{
+        padding: 1rem;
+        font-size: 4vw;
+        text-align: center;
+     }
+     .dropdown-pregunta summary {
+    font-size: 5vw;
+    text-align: center;
+}
 
 }
