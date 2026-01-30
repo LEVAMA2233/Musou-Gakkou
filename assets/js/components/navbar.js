@@ -118,7 +118,7 @@ const navbar = () =>{
 
     
     </style>
-    <nav class="navbar navbar-expand-lg custom-navbar sticky-top" data-bs-theme="dark" style="background-color: black; width: 100vw;">
+    <nav class="navbar navbar-expand-lg custom-navbar sticky-top" data-bs-theme="dark" style="background-color: black; max-width:100%;">
             <div class="container-fluid">
               <a class="navbar-brand" href="/" style="    color:var(--blanquino); margin: 0px;">
                 <img src="/assets/img/img-acercade/logo-muso.png" id="logo-muso" alt="Logo de Musou" class="img-fluid" style="max-height: 70px; max-width: 150px; margin-right: 0px;">
