@@ -120,13 +120,13 @@ body {
 .Nuestros-Docentes p{
     font-family: var(--Content);
     text-align: justify;
+    font-size: 1vw;
 }
 
 .Nuestros-Docentes-grid{
     display: flex;
     justify-content: center;
     max-width: 900px;   
-    
     gap: 20px;
     flex-wrap: wrap;
 }
