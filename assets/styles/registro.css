@@ -6,19 +6,19 @@
     --Content:"Source Sans 3", sans-serif;
 }
 body{
-    background-color: white;
+    background-color: var(--white);
 }
 .contenedor-registro{
     background-color: var(--rojo);
-    width: 100%;
+    
 }
 .contenedor-centralregistro{
-    background-color: white;
+    background-color: var(--blanquino) ;
     width: 80%;
     margin: auto;
     text-align: left;
     font-family: var(--Tittle-and-subtitles);
-    padding: 2rem 20rem;
+    padding: 2rem 2rem;
 }
 h1{
     font-family: var(--Tittle-and-subtitles);

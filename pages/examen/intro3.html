@@ -4,219 +4,236 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Examen de ubicación</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&display=swap" rel="stylesheet">
+    <title>Musou Gakkou</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+    </style>
 
+    <!--Importación de librerias de bootstrap para la navbar-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    		<!-- Librería de icon-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../../assets/styles/examenIntro.css">
+    <script type="module" src="../../assets/js/main.js"></script>
 </head>
 
 <body>
+    <header id="barra-navegacion" class="sticky-top"></header> <!-- HTML Modularizado -->
+    <section class="intro-contenedor">
+        <div class="quiz-container">
+            <div class="text-container">
+                <h2 class="text-center mb-4">Intro 3</h2>
+                <p>Selecciona la opción correcta.</p>
+                <form id="quizzForm">
 
-    <div class="quiz-container">
-        <h2 class="text-center mb-4">Intro 3</h2>
-        <p>Selecciona la opción correcta.</p>
-        <form id="quizzForm">
+                    <!-- Pregunta 1, d -->
+                    <div class="mb-3">
+                        <p>31. ¿Cuál es el pasado positivo del verbo “ir”?</p>
+                        <div>
+                            <input type="radio" name="p31" value="0">ありました<br>
+                            <input type="radio" name="p31" value="0">ねません<br>
+                            <input type="radio" name="p31" value="0">のめませんでした<br>
+                            <input type="radio" name="p31" value="1">いきました<br>
+                            <input type="radio" name="p31" value="0">No sé
+                        </div>
+                    </div>
 
-            <!-- Pregunta 1, d -->
-            <div class="mb-3">
-                <p>31. ¿Cuál es el pasado positivo del verbo “ir”?</p>
-                <div>
-                    <input type="radio" name="p31" value="0">ありました<br>
-                    <input type="radio" name="p31" value="0">ねません<br>
-                    <input type="radio" name="p31" value="0">のめませんでした<br>
-                    <input type="radio" name="p31" value="1">いきました<br>
-                    <input type="radio" name="p31" value="0">No sé
-                </div>
+                    <!-- Pregunta 2, c -->
+                    <div class="mb-3">
+                        <p>32. ¿Qué significa el kanji「山」?</p>
+                        <div>
+                            <input type="radio" name="p32" value="0">Río<br>
+                            <input type="radio" name="p32" value="0">Árbol<br>
+                            <input type="radio" name="p32" value="1">Montaña<br>
+                            <input type="radio" name="p32" value="0">Tres<br>
+                            <input type="radio" name="p32" value="0">No sé
+                        </div>
+                    </div>
+
+                    <!-- Pregunta 3, b -->
+                    <div class="mb-3">
+                        <p>33. ¿Qué kanji se usa para contar personas?</p>
+                        <div>
+                            <input type="radio" name="p33" value="0">月<br>
+                            <input type="radio" name="p33" value="1">人<br>
+                            <input type="radio" name="p33" value="0">本<br>
+                            <input type="radio" name="p33" value="0">日<br>
+                            <input type="radio" name="p33" value="0">No sé
+                        </div>
+                    </div>
+
+                    <!-- Pregunta 4, c -->
+                    <div class="mb-3">
+                        <p>34. Elige la traducción correcta para “este libro”.</p>
+                        <div>
+                            <input type="radio" name="p34" value="0">子の木<br>
+                            <input type="radio" name="p34" value="0">この木<br>
+                            <input type="radio" name="p34" value="1">この本<br>
+                            <input type="radio" name="p34" value="0">子の本<br>
+                            <input type="radio" name="p34" value="0">No sé
+                        </div>
+                    </div>
+
+                    <!-- Pregunta 5, d -->
+                    <div class="mb-3">
+                        <p>35. ¿Qué significa la oración「これはだれのかばんですか」?</p>
+                        <div>
+                            <input type="radio" name="p35" value="0">¿Qué hay en esta bolsa?<br>
+                            <input type="radio" name="p35" value="0">¿Quién es esa persona?<br>
+                            <input type="radio" name="p35" value="0">¿Dónde está la bolsa?<br>
+                            <input type="radio" name="p35" value="1">¿De quién es esta bolsa?<br>
+                            <input type="radio" name="p35" value="0">No sé
+                        </div>
+                    </div>
+
+                    <!-- Pregunta 6, a -->
+                    <div class="mb-3">
+                        <p>36. ¿Cuál es el pretérito de「です」?</p>
+                        <div>
+                            <input type="radio" name="p36" value="1">でした<br>
+                            <input type="radio" name="p36" value="0">でしません<br>
+                            <input type="radio" name="p36" value="0">でました<br>
+                            <input type="radio" name="p36" value="0">でしたか<br>
+                            <input type="radio" name="p36" value="0">No sé
+                        </div>
+                    </div>
+
+                    <!-- Pregunta 7, b -->
+                    <div class="mb-3">
+                        <p>37. ¿Qué palabra es el pasado negativo de “ser”?</p>
+                        <div>
+                            <input type="radio" name="p37" value="0">じゃありません<br>
+                            <input type="radio" name="p37" value="1">じゃありませんでした<br>
+                            <input type="radio" name="p37" value="0">でしたじゃありません<br>
+                            <input type="radio" name="p37" value="0">じゃないです<br>
+                            <input type="radio" name="p37" value="0">No sé
+                        </div>
+                    </div>
+
+                    <!-- Pregunta 8, d -->
+                    <div class="mb-3">
+                        <p>38. ¿Qué significa en español la oración「ここはびょういんじゃありませんか」?</p>
+                        <div>
+                            <input type="radio" name="p38" value="0">¿Por allá hay un hospital?<br>
+                            <input type="radio" name="p38" value="0">¿El hospital está aquí?<br>
+                            <input type="radio" name="p38" value="0">¿Ahí está el hospital?<br>
+                            <input type="radio" name="p38" value="1">¿Aquí no es el hospital?<br>
+                            <input type="radio" name="p38" value="0">No sé
+                        </div>
+                    </div>
+
+                    <!-- Pregunta 9, b -->
+                    <div class="mb-3">
+                        <p>39. ¿Qué palabra corresponde a “el día antes de ayer”?</p>
+                        <div>
+                            <input type="radio" name="p39" value="0">きのう<br>
+                            <input type="radio" name="p39" value="1">おととい<br>
+                            <input type="radio" name="p39" value="0">あさって<br>
+                            <input type="radio" name="p39" value="0">きょう<br>
+                            <input type="radio" name="p39" value="0">No sé
+                        </div>
+                    </div>
+
+                    <!-- Pregunta 10, b -->
+                    <div class="mb-3">
+                        <p>40. ¿Cuál es la versión formal de la palabra “allá”?</p>
+                        <div>
+                            <input type="radio" name="p40" value="0">あちら<br>
+                            <input type="radio" name="p40" value="1">そちら<br>
+                            <input type="radio" name="p40" value="0">どちら<br>
+                            <input type="radio" name="p40" value="0">こちら<br>
+                            <input type="radio" name="p40" value="0">No sé
+                        </div>
+                    </div>
+
+                    <!-- Pregunta 11, b -->
+                    <div class="mb-3">
+                        <p>41. ¿Qué significa en español「ひゃくまんにせんろくじゅうえんです」?</p>
+                        <div>
+                            <input type="radio" name="p41" value="0">Son 1260 yenes<br>
+                            <input type="radio" name="p41" value="1">Son 10260 yenes<br>
+                            <input type="radio" name="p41" value="0">Son 10020060 yenes<br>
+                            <input type="radio" name="p41" value="0">Son 1002060 yenes<br>
+                            <input type="radio" name="p41" value="0">No sé
+                        </div>
+                    </div>
+
+                    <!-- Pregunta 12, b -->
+                    <div class="mb-3">
+                        <p>42. ¿Qué significa la oración「がっこうへ行きます」?</p>
+                        <div>
+                            <input type="radio" name="p42" value="0">Iré al parque<br>
+                            <input type="radio" name="p42" value="1">Voy a la escuela<br>
+                            <input type="radio" name="p42" value="0">Estoy en la escuela<br>
+                            <input type="radio" name="p42" value="0">Me gusta la escuela<br>
+                            <input type="radio" name="p42" value="0">No sé
+                        </div>
+                    </div>
+
+                    <!-- Pregunta 13, c -->
+                    <div class="mb-3">
+                        <p>43. ¿Qué partícula falta en la oración「おねえさん__うちへ帰ります」(Regreso a casa con mi hermana mayor)?
+                        </p>
+                        <div>
+                            <input type="radio" name="p43" value="0">は<br>
+                            <input type="radio" name="p43" value="0">も<br>
+                            <input type="radio" name="p43" value="1">と<br>
+                            <input type="radio" name="p43" value="0">の<br>
+                            <input type="radio" name="p43" value="0">No sé
+                        </div>
+                    </div>
+
+                    <!-- Pregunta 14, b -->
+                    <div class="mb-3">
+                        <p>44. ¿Qué significa la palabra resaltada en la oración「きのう、山田さんは本田さんと石田のいえへ
+                            <strong><u>来ました</u></strong>」?
+                        </p>
+                        <div>
+                            <input type="radio" name="p44" value="0">Descansé<br>
+                            <input type="radio" name="p44" value="1">Vine<br>
+                            <input type="radio" name="p44" value="0">Iré<br>
+                            <input type="radio" name="p44" value="0">Fui<br>
+                            <input type="radio" name="p44" value="0">No sé
+                        </div>
+                    </div>
+
+                    <!-- Pregunta 15, d -->
+                    <div class="mb-3">
+                        <p>45. ¿Cómo se lee la palabra resaltada en la
+                            oración「きのう、山田さんは<strong><u></u>本田</strong>さんと石田のいえへ来ました」?</p>
+                        <div>
+                            <input type="radio" name="p45" value="0">Kita<br>
+                            <input type="radio" name="p45" value="0">Honta<br>
+                            <input type="radio" name="p45" value="0">Kida<br>
+                            <input type="radio" name="p45" value="1">Honda<br>
+                            <input type="radio" name="p45" value="0">No sé
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-center mt-3">
+
+                        <button type="button" class="btn btn-secondary" onclick="window.location.href='intro2.html'">
+                            ← Anterior
+                        </button>
+
+
+                        <button type="button" class="btn btn-primari" onclick="guardarYContinuar('intro4.html')">
+                            Siguiente →
+                        </button>
+                    </div>
+                </form>
             </div>
-
-            <!-- Pregunta 2, c -->
-            <div class="mb-3">
-                <p>32. ¿Qué significa el kanji「山」?</p>
-                <div>
-                    <input type="radio" name="p32" value="0">Río<br>
-                    <input type="radio" name="p32" value="0">Árbol<br>
-                    <input type="radio" name="p32" value="1">Montaña<br>
-                    <input type="radio" name="p32" value="0">Tres<br>
-                    <input type="radio" name="p32" value="0">No sé
-                </div>
-            </div>
-
-            <!-- Pregunta 3, b -->
-            <div class="mb-3">
-                <p>33. ¿Qué kanji se usa para contar personas?</p>
-                <div>
-                    <input type="radio" name="p33" value="0">月<br>
-                    <input type="radio" name="p33" value="1">人<br>
-                    <input type="radio" name="p33" value="0">本<br>
-                    <input type="radio" name="p33" value="0">日<br>
-                    <input type="radio" name="p33" value="0">No sé
-                </div>
-            </div>
-
-            <!-- Pregunta 4, c -->
-            <div class="mb-3">
-                <p>34. Elige la traducción correcta para “este libro”.</p>
-                <div>
-                    <input type="radio" name="p34" value="0">子の木<br>
-                    <input type="radio" name="p34" value="0">この木<br>
-                    <input type="radio" name="p34" value="1">この本<br>
-                    <input type="radio" name="p34" value="0">子の本<br>
-                    <input type="radio" name="p34" value="0">No sé
-                </div>
-            </div>
-
-            <!-- Pregunta 5, d -->
-            <div class="mb-3">
-                <p>35. ¿Qué significa la oración「これはだれのかばんですか」?</p>
-                <div>
-                    <input type="radio" name="p35" value="0">¿Qué hay en esta bolsa?<br>
-                    <input type="radio" name="p35" value="0">¿Quién es esa persona?<br>
-                    <input type="radio" name="p35" value="0">¿Dónde está la bolsa?<br>
-                    <input type="radio" name="p35" value="1">¿De quién es esta bolsa?<br>
-                    <input type="radio" name="p35" value="0">No sé
-                </div>
-            </div>
-
-            <!-- Pregunta 6, a -->
-            <div class="mb-3">
-                <p>36. ¿Cuál es el pretérito de「です」?</p>
-                <div>
-                    <input type="radio" name="p36" value="1">でした<br>
-                    <input type="radio" name="p36" value="0">でしません<br>
-                    <input type="radio" name="p36" value="0">でました<br>
-                    <input type="radio" name="p36" value="0">でしたか<br>
-                    <input type="radio" name="p36" value="0">No sé
-                </div>
-            </div>
-
-            <!-- Pregunta 7, b -->
-            <div class="mb-3">
-                <p>37. ¿Qué palabra es el pasado negativo de “ser”?</p>
-                <div>
-                    <input type="radio" name="p37" value="0">じゃありません<br>
-                    <input type="radio" name="p37" value="1">じゃありませんでした<br>
-                    <input type="radio" name="p37" value="0">でしたじゃありません<br>
-                    <input type="radio" name="p37" value="0">じゃないです<br>
-                    <input type="radio" name="p37" value="0">No sé
-                </div>
-            </div>
-
-            <!-- Pregunta 8, d -->
-            <div class="mb-3">
-                <p>38. ¿Qué significa en español la oración「ここはびょういんじゃありませんか」?</p>
-                <div>
-                    <input type="radio" name="p38" value="0">¿Por allá hay un hospital?<br>
-                    <input type="radio" name="p38" value="0">¿El hospital está aquí?<br>
-                    <input type="radio" name="p38" value="0">¿Ahí está el hospital?<br>
-                    <input type="radio" name="p38" value="1">¿Aquí no es el hospital?<br>
-                    <input type="radio" name="p38" value="0">No sé
-                </div>
-            </div>
-
-            <!-- Pregunta 9, b -->
-            <div class="mb-3">
-                <p>39. ¿Qué palabra corresponde a “el día antes de ayer”?</p>
-                <div>
-                    <input type="radio" name="p39" value="0">きのう<br>
-                    <input type="radio" name="p39" value="1">おととい<br>
-                    <input type="radio" name="p39" value="0">あさって<br>
-                    <input type="radio" name="p39" value="0">きょう<br>
-                    <input type="radio" name="p39" value="0">No sé
-                </div>
-            </div>
-
-            <!-- Pregunta 10, b -->
-            <div class="mb-3">
-                <p>40. ¿Cuál es la versión formal de la palabra “allá”?</p>
-                <div>
-                    <input type="radio" name="p40" value="0">あちら<br>
-                    <input type="radio" name="p40" value="1">そちら<br>
-                    <input type="radio" name="p40" value="0">どちら<br>
-                    <input type="radio" name="p40" value="0">こちら<br>
-                    <input type="radio" name="p40" value="0">No sé
-                </div>
-            </div>
-
-            <!-- Pregunta 11, b -->
-            <div class="mb-3">
-                <p>41. ¿Qué significa en español「ひゃくまんにせんろくじゅうえんです」?</p>
-                <div>
-                    <input type="radio" name="p41" value="0">Son 1260 yenes<br>
-                    <input type="radio" name="p41" value="1">Son 10260 yenes<br>
-                    <input type="radio" name="p41" value="0">Son 10020060 yenes<br>
-                    <input type="radio" name="p41" value="0">Son 1002060 yenes<br>
-                    <input type="radio" name="p41" value="0">No sé
-                </div>
-            </div>
-
-            <!-- Pregunta 12, b -->
-            <div class="mb-3">
-                <p>42. ¿Qué significa la oración「がっこうへ行きます」?</p>
-                <div>
-                    <input type="radio" name="p42" value="0">Iré al parque<br>
-                    <input type="radio" name="p42" value="1">Voy a la escuela<br>
-                    <input type="radio" name="p42" value="0">Estoy en la escuela<br>
-                    <input type="radio" name="p42" value="0">Me gusta la escuela<br>
-                    <input type="radio" name="p42" value="0">No sé
-                </div>
-            </div>
-
-            <!-- Pregunta 13, c -->
-            <div class="mb-3">
-                <p>43. ¿Qué partícula falta en la oración「おねえさん__うちへ帰ります」(Regreso a casa con mi hermana mayor)?</p>
-                <div>
-                    <input type="radio" name="p43" value="0">は<br>
-                    <input type="radio" name="p43" value="0">も<br>
-                    <input type="radio" name="p43" value="1">と<br>
-                    <input type="radio" name="p43" value="0">の<br>
-                    <input type="radio" name="p43" value="0">No sé
-                </div>
-            </div>
-
-            <!-- Pregunta 14, b -->
-            <div class="mb-3">
-                <p>44. ¿Qué significa la palabra resaltada en la oración「きのう、山田さんは本田さんと石田のいえへ
-                    <strong><u>来ました</u></strong>」?
-                </p>
-                <div>
-                    <input type="radio" name="p44" value="0">Descansé<br>
-                    <input type="radio" name="p44" value="1">Vine<br>
-                    <input type="radio" name="p44" value="0">Iré<br>
-                    <input type="radio" name="p44" value="0">Fui<br>
-                    <input type="radio" name="p44" value="0">No sé
-                </div>
-            </div>
-
-            <!-- Pregunta 15, d -->
-            <div class="mb-3">
-                <p>45. ¿Cómo se lee la palabra resaltada en la
-                    oración「きのう、山田さんは<strong><u></u>本田</strong>さんと石田のいえへ来ました」?</p>
-                <div>
-                    <input type="radio" name="p45" value="0">Kita<br>
-                    <input type="radio" name="p45" value="0">Honta<br>
-                    <input type="radio" name="p45" value="0">Kida<br>
-                    <input type="radio" name="p45" value="1">Honda<br>
-                    <input type="radio" name="p45" value="0">No sé
-                </div>
-            </div>
-
-            <div class="d-flex justify-content-center mt-3">
-
-                <button type="button" class="btn btn-secondary" onclick="window.location.href='intro2.html'">
-                    ← Anterior
-                </button>
-
-               
-                <button type="button" class="btn btn-primary" onclick="guardarYContinuar('intro4.html')">
-                    Siguiente →
-                </button>
-            </div>
-
-
-
-
-        </form>
-
-    </div>
+        </div>
+    </section>
+    <footer id="footer"></footer> <!-- Footer Modularizado -->
+    <!--Importación de librerias de bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
     <script src="../../assets/js/examen.js"></script>
 
 </body>

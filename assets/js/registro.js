@@ -1,3 +1,4 @@
+//const fs = require('fs');
 document.getElementById("formRegistro").addEventListener("submit", function (e) {
     e.preventDefault();
 

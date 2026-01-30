@@ -14,16 +14,17 @@
 	<!--Importación de librerias de bootstrap para la navbar-->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-	<link rel="stylesheet" href="/assets/styles/acercaDe.css">
+			<!-- Librería de icon-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="/assets/styles/registro.css">
 	<script type="module" src="/assets/js/main.js"></script>
 
 </head>
 
-
-
 <body>
-
-	<div class="container">
+	<header id="barra-navegacion" class="sticky-top"></header> <!-- HTML Modularizado -->
+	<section class="contenedor-registro"> 
+	<div class="contenedor-centralregistro">
 
 		<div class="row justify-content-center">
 
@@ -46,7 +47,7 @@
 
 					<div class="mb-3">
 						<label class="form-label">Teléfono / Celular</label>
-						<input type="tel" id="telefono" class="form-control" placeholder="5512345678" maxlength="10">
+						<input type="tel" id="telefono" class="form-control" maxlength="10">
 						<div class="text-danger small" id="errorTelefono"></div>
 					</div>
 
@@ -82,6 +83,8 @@
 		</div>
 
 </div>
+</section>
+<footer id="footer"></footer> <!-- Footer Modularizado -->
 		<script src="/assets/js/registro.js"></script>
 
 </body>

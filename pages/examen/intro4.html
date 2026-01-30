@@ -4,188 +4,208 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Examen de ubicación</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&display=swap" rel="stylesheet">
+    <title>Musou Gakkou</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+    </style>
 
+    <!--Importación de librerias de bootstrap para la navbar-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    		<!-- Librería de icon-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../../assets/styles/examenIntro.css">
+    <script type="module" src="../../assets/js/main.js"></script>
 </head>
 
 <body>
+    <header id="barra-navegacion" class="sticky-top"></header> <!-- HTML Modularizado -->
+    <section class="intro-contenedor">
+        <div class="quiz-container">
+            <div class="text-container">
+                <div class="quiz-container">
+                    <h2 class="text-center mb-4">Intro 4</h2>
+                    <p>Selecciona la opción correcta.</p>
+                    <form id="quizzForm">
 
-    <div class="quiz-container">
-        <h2 class="text-center mb-4">Intro 4</h2>
-        <p>Selecciona la opción correcta.</p>
-        <form id="quizzForm">
+                        <!-- Pregunta 1-->
+                        <div class="mb-3">
+                            <p>46. ¿Cuál partícula se usa para expresar un horario específico?</p>
+                            <div>
+                                <input type="radio" name="p46" value="0">は<br>
+                                <input type="radio" name="p46" value="0">を<br>
+                                <input type="radio" name="p46" value="0">と<br>
+                                <input type="radio" name="p46" value="1">に<br>
+                                <input type="radio" name="p46" value="0">No sé
+                            </div>
+                        </div>
 
-            <!-- Pregunta 1-->
-            <div class="mb-3">
-                <p>46. ¿Cuál partícula se usa para expresar un horario específico?</p>
-                <div>
-                    <input type="radio" name="p46" value="0">は<br>
-                    <input type="radio" name="p46" value="0">を<br>
-                    <input type="radio" name="p46" value="0">と<br>
-                    <input type="radio" name="p46" value="1">に<br>
-                    <input type="radio" name="p46" value="0">No sé
+                        <!-- Pregunta 2-->
+                        <div class="mb-3">
+                            <p>47. ¿Qué verbo falta en la oración「パンを＿＿＿」?</p>
+                            <div>
+                                <input type="radio" name="p47" value="0">のみます<br>
+                                <input type="radio" name="p47" value="0">よみます<br>
+                                <input type="radio" name="p47" value="1">たべます<br>
+                                <input type="radio" name="p47" value="0">たべます<br>
+                                <input type="radio" name="p47" value="0">No sé
+                            </div>
+                        </div>
+
+                        <!-- Pregunta 3-->
+                        <div class="mb-3">
+                            <p>48. ¿Qué significa 「から」en la frase「九時から十一時まで」?</p>
+                            <div>
+                                <input type="radio" name="p48" value="0">Hasta<br>
+                                <input type="radio" name="p48" value="1">Desde<br>
+                                <input type="radio" name="p48" value="0">En<br>
+                                <input type="radio" name="p48" value="0">Por<br>
+                                <input type="radio" name="p48" value="0">No sé
+                            </div>
+                        </div>
+
+                        <!-- Pregunta 4-->
+                        <div class="mb-3">
+                            <p>49. ¿Qué opción es correcta?</p>
+                            <div>
+                                <input type="radio" name="p49" value="0">ペンをやすみます<br>
+                                <input type="radio" name="p49" value="1">パンをかいます<br>
+                                <input type="radio" name="p49" value="0">パンをのみます<br>
+                                <input type="radio" name="p49" value="0">ペンをはなします<br>
+                                <input type="radio" name="p49" value="0">No sé
+                            </div>
+                        </div>
+
+                        <!-- Pregunta 5 -->
+                        <div class="mb-3">
+                            <p>50. ¿Qué palabra significa “este mes”?</p>
+                            <div>
+                                <input type="radio" name="p50" value="0">今日<br>
+                                <input type="radio" name="p50" value="1">今月<br>
+                                <input type="radio" name="p50" value="0">来日<br>
+                                <input type="radio" name="p50" value="0">来月<br>
+                                <input type="radio" name="p50" value="0">No sé
+                            </div>
+                        </div>
+
+                        <!-- Pregunta 6 -->
+                        <div class="mb-3">
+                            <p>51. ¿Qué oración es correcta?</p>
+                            <div>
+                                <input type="radio" name="p51" value="0">日曜日から金曜日と私は石だちとあそこに行きます。<br>
+                                <input type="radio" name="p51" value="0">日曜日から金曜日もで私は友だちとあそこに行きます。<br>
+                                <input type="radio" name="p51" value="1">日曜日から金曜日まで私は友だちとあそこへ行きます。<br>
+                                <input type="radio" name="p51" value="0">日曜日から金曜日まで私は父だちもあそこへ行きます。<br>
+                                <input type="radio" name="p51" value="0">No sé
+                            </div>
+                        </div>
+
+                        <!-- Pregunta 7 -->
+                        <div class="mb-3">
+                            <p>52. ¿Cuál es la lectura correcta para「一分」?</p>
+                            <div>
+                                <input type="radio" name="p52" value="0">いっぶん<br>
+                                <input type="radio" name="p52" value="0">いちふん<br>
+                                <input type="radio" name="p52" value="0">いっふん<br>
+                                <input type="radio" name="p52" value="1">いっぷん<br>
+                                <input type="radio" name="p52" value="0">No sé
+                            </div>
+                        </div>
+
+                        <!-- Pregunta 8 -->
+                        <div class="mb-3">
+                            <p>53. ¿Qué significa「まいにち」?</p>
+                            <div>
+                                <input type="radio" name="p53" value="0">Todas las semanas<br>
+                                <input type="radio" name="p53" value="0">Todos los meses<br>
+                                <input type="radio" name="p53" value="1">Todos los días<br>
+                                <input type="radio" name="p53" value="0">Todas las noches<br>
+                                <input type="radio" name="p53" value="0">No sé
+                            </div>
+                        </div>
+
+                        <!-- Pregunta 9 -->
+                        <div class="mb-3">
+                            <p>54. ¿Qué significa en español「来年、日本へ行きます」?</p>
+                            <div>
+                                <input type="radio" name="p54" value="0">Fui a Japón el año pasado<br>
+                                <input type="radio" name="p54" value="0">Estoy en Japón ahora<br>
+                                <input type="radio" name="p54" value="0">Voy a Japón cada año<br>
+                                <input type="radio" name="p54" value="1">Iré a Japón el próximo año<br>
+                                <input type="radio" name="p54" value="0">No sé
+                            </div>
+                        </div>
+
+                        <!-- Pregunta 10 -->
+                        <div class="mb-3">
+                            <p>55. ¿Qué expresión indica tiempo futuro?</p>
+                            <div>
+                                <input type="radio" name="p55" value="0">きのう<br>
+                                <input type="radio" name="p55" value="1">あした<br>
+                                <input type="radio" name="p55" value="0">おととい<br>
+                                <input type="radio" name="p55" value="0">きょう<br>
+                                <input type="radio" name="p55" value="0">No sé
+                            </div>
+                        </div>
+
+                        <!-- Pregunta 11-->
+                        <div class="mb-3">
+                            <p>56. Conjuga el verbo「おわります」para que signifique “no terminaré” en lenguaje formal.</p>
+                            <div>
+                                <input type="radio" name="p56" value="0">おわらない<br>
+                                <input type="radio" name="p56" value="0">おわった<br>
+                                <input type="radio" name="p56" value="0">おわりました<br>
+                                <input type="radio" name="p56" value="1">おわりません<br>
+                                <input type="radio" name="p56" value="0">No sé
+                            </div>
+                        </div>
+
+                        <!-- Pregunta 12 -->
+                        <div class="mb-3">
+                            <p>57. ¿Qué oración significa “El día 1° de junio comeré con mi amigo.”?</p>
+                            <div>
+                                <input type="radio" name="p57" value="0">一日六月に友だちへたべます。<br>
+                                <input type="radio" name="p57" value="0">六月一日に友だちをたべます。<br>
+                                <input type="radio" name="p57" value="0">一月六日に友だちもたべます。<br>
+                                <input type="radio" name="p57" value="1">六月一日に友だちとたべます。<br>
+                                <input type="radio" name="p57" value="0">No sé
+                            </div>
+                        </div>
+
+                        <!-- Pregunta 13   -->
+                        <div class="mb-3">
+                            <p>58. ¿Qué oración es correcta?</p>
+                            <div>
+                                <input type="radio" name="p58" value="0">火曜日と水曜日はあさに父時半ごご九時まではたらきます。<br>
+                                <input type="radio" name="p58" value="0">火曜日も水曜日もあさ六時半にごご力時まではたらきます。<br>
+                                <input type="radio" name="p58" value="0">火曜日は水曜日もあさ父時半からごご力時まではたらきます。<br>
+                                <input type="radio" name="p58" value="1">火曜日と水曜日にあさ六時半からごご九時まではたらきます。<br>
+                                <input type="radio" name="p58" value="0">No sé
+                            </div>
+                        </div>
+
+                        <div class="d-flex justify-content-center mt-3">
+                            <button type="button" class="btn btn-secondary"
+                                onclick="window.location.href='intro3.html'">
+                                ← Anterior
+                            </button>
+
+                            <button type="button" class="btn btn-primari" onclick="guardarYContinuar('resultado.html')">
+                                Ver resultados
+                            </button>
+                        </div>
+                    </form>
                 </div>
             </div>
-
-            <!-- Pregunta 2-->
-            <div class="mb-3">
-                <p>47. ¿Qué verbo falta en la oración「パンを＿＿＿」?</p>
-                <div>
-                    <input type="radio" name="p47" value="0">のみます<br>
-                    <input type="radio" name="p47" value="0">よみます<br>
-                    <input type="radio" name="p47" value="1">たべます<br>
-                    <input type="radio" name="p47" value="0">たべます<br>
-                    <input type="radio" name="p47" value="0">No sé
-                </div>
-            </div>
-
-            <!-- Pregunta 3-->
-            <div class="mb-3">
-                <p>48. ¿Qué significa 「から」en la frase「九時から十一時まで」?</p>
-                <div>
-                    <input type="radio" name="p48" value="0">Hasta<br>
-                    <input type="radio" name="p48" value="1">Desde<br>
-                    <input type="radio" name="p48" value="0">En<br>
-                    <input type="radio" name="p48" value="0">Por<br>
-                    <input type="radio" name="p48" value="0">No sé
-                </div>
-            </div>
-
-            <!-- Pregunta 4-->
-            <div class="mb-3">
-                <p>49. ¿Qué opción es correcta?</p>
-                <div>
-                    <input type="radio" name="p49" value="0">ペンをやすみます<br>
-                    <input type="radio" name="p49" value="1">パンをかいます<br>
-                    <input type="radio" name="p49" value="0">パンをのみます<br>
-                    <input type="radio" name="p49" value="0">ペンをはなします<br>
-                    <input type="radio" name="p49" value="0">No sé
-                </div>
-            </div>
-
-            <!-- Pregunta 5 -->
-            <div class="mb-3">
-                <p>50. ¿Qué palabra significa “este mes”?</p>
-                <div>
-                    <input type="radio" name="p50" value="0">今日<br>
-                    <input type="radio" name="p50" value="1">今月<br>
-                    <input type="radio" name="p50" value="0">来日<br>
-                    <input type="radio" name="p50" value="0">来月<br>
-                    <input type="radio" name="p50" value="0">No sé
-                </div>
-            </div>
-
-            <!-- Pregunta 6 -->
-            <div class="mb-3">
-                <p>51. ¿Qué oración es correcta?</p>
-                <div>
-                    <input type="radio" name="p51" value="0">日曜日から金曜日と私は石だちとあそこに行きます。<br>
-                    <input type="radio" name="p51" value="0">日曜日から金曜日もで私は友だちとあそこに行きます。<br>
-                    <input type="radio" name="p51" value="1">日曜日から金曜日まで私は友だちとあそこへ行きます。<br>
-                    <input type="radio" name="p51" value="0">日曜日から金曜日まで私は父だちもあそこへ行きます。<br>
-                    <input type="radio" name="p51" value="0">No sé
-                </div>
-            </div>
-
-            <!-- Pregunta 7 -->
-            <div class="mb-3">
-                <p>52. ¿Cuál es la lectura correcta para「一分」?</p>
-                <div>
-                    <input type="radio" name="p52" value="0">いっぶん<br>
-                    <input type="radio" name="p52" value="0">いちふん<br>
-                    <input type="radio" name="p52" value="0">いっふん<br>
-                    <input type="radio" name="p52" value="1">いっぷん<br>
-                    <input type="radio" name="p52" value="0">No sé
-                </div>
-            </div>
-
-            <!-- Pregunta 8 -->
-            <div class="mb-3">
-                <p>53. ¿Qué significa「まいにち」?</p>
-                <div>
-                    <input type="radio" name="p53" value="0">Todas las semanas<br>
-                    <input type="radio" name="p53" value="0">Todos los meses<br>
-                    <input type="radio" name="p53" value="1">Todos los días<br>
-                    <input type="radio" name="p53" value="0">Todas las noches<br>
-                    <input type="radio" name="p53" value="0">No sé
-                </div>
-            </div>
-
-            <!-- Pregunta 9 -->
-            <div class="mb-3">
-                <p>54. ¿Qué significa en español「来年、日本へ行きます」?</p>
-                <div>
-                    <input type="radio" name="p54" value="0">Fui a Japón el año pasado<br>
-                    <input type="radio" name="p54" value="0">Estoy en Japón ahora<br>
-                    <input type="radio" name="p54" value="0">Voy a Japón cada año<br>
-                    <input type="radio" name="p54" value="1">Iré a Japón el próximo año<br>
-                    <input type="radio" name="p54" value="0">No sé
-                </div>
-            </div>
-
-            <!-- Pregunta 10 -->
-            <div class="mb-3">
-                <p>55. ¿Qué expresión indica tiempo futuro?</p>
-                <div>
-                    <input type="radio" name="p55" value="0">きのう<br>
-                    <input type="radio" name="p55" value="1">あした<br>
-                    <input type="radio" name="p55" value="0">おととい<br>
-                    <input type="radio" name="p55" value="0">きょう<br>
-                    <input type="radio" name="p55" value="0">No sé
-                </div>
-            </div>
-
-            <!-- Pregunta 11-->
-            <div class="mb-3">
-                <p>56. Conjuga el verbo「おわります」para que signifique “no terminaré” en lenguaje formal.</p>
-                <div>
-                    <input type="radio" name="p56" value="0">おわらない<br>
-                    <input type="radio" name="p56" value="0">おわった<br>
-                    <input type="radio" name="p56" value="0">おわりました<br>
-                    <input type="radio" name="p56" value="1">おわりません<br>
-                    <input type="radio" name="p56" value="0">No sé
-                </div>
-            </div>
-
-            <!-- Pregunta 12 -->
-            <div class="mb-3">
-                <p>57. ¿Qué oración significa “El día 1° de junio comeré con mi amigo.”?</p>
-                <div>
-                    <input type="radio" name="p57" value="0">一日六月に友だちへたべます。<br>
-                    <input type="radio" name="p57" value="0">六月一日に友だちをたべます。<br>
-                    <input type="radio" name="p57" value="0">一月六日に友だちもたべます。<br>
-                    <input type="radio" name="p57" value="1">六月一日に友だちとたべます。<br>
-                    <input type="radio" name="p57" value="0">No sé
-                </div>
-            </div>
-
-            <!-- Pregunta 13   -->
-            <div class="mb-3">
-                <p>58. ¿Qué oración es correcta?</p>
-                <div>
-                    <input type="radio" name="p58" value="0">火曜日と水曜日はあさに父時半ごご九時まではたらきます。<br>
-                    <input type="radio" name="p58" value="0">火曜日も水曜日もあさ六時半にごご力時まではたらきます。<br>
-                    <input type="radio" name="p58" value="0">火曜日は水曜日もあさ父時半からごご力時まではたらきます。<br>
-                    <input type="radio" name="p58" value="1">火曜日と水曜日にあさ六時半からごご九時まではたらきます。<br>
-                    <input type="radio" name="p58" value="0">No sé
-                </div>
-            </div>
-
-            <div class="d-flex justify-content-center mt-3">
-                <button type="button" class="btn btn-secondary" onclick="window.location.href='intro3.html'">
-                    ← Anterior
-                </button>
-
-                <button type="button" class="btn btn-success" onclick="guardarYContinuar('resultado.html')">
-                    Ver resultados
-                </button>
-            </div>
-
-        </form>
-
-    </div>
-
+    </section>
+    <footer id="footer"></footer> <!-- Footer Modularizado -->
+    <!--Importación de librerias de bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
     <script src="../../assets/js/examen.js"></script>
 
 

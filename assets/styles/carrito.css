@@ -1,0 +1,50 @@
+body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f9fa;
+            overflow-x: hidden;
+
+        }
+        .cart-container-main {
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+        .product-img-cart {
+            width: 70px;
+            height: 70px;
+            object-fit: cover;
+            border-radius: 10px;
+            background-color: #eee;
+        }
+        .cart-item {
+            transition: all 0.3s ease;
+        }
+        .info-item {
+            width: 100%;
+            justify-content: space-between;
+        }
+        @media (min-width: 768px) {
+            .info-item {
+                width: auto;
+            }
+        }
+        .btn-remove {
+            font-size: 0.85rem;
+            color: #dc3545;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .btn-remove:hover {
+            text-decoration: underline;
+        }
+        .summary-card {
+            border: none;
+            border-radius: 15px;
+            position: sticky;
+            top: 20px;
+        }
+
+        .payment-logo {
+        height: 28px;
+        width: auto;
+        opacity: 0.9;
+        }

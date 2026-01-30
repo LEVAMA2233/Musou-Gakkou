@@ -13,7 +13,7 @@
 
     <!--Importación de librerias de bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-		<link rel="stylesheet" href="/assets/styles/detalleCurso.css">
+		<link rel="stylesheet" href="/assets/styles/resenas.css">
       	<script type="module" src="/assets/js/main.js"></script>	
 
 		<!-- Librería de icon para las estrellas -->
@@ -22,7 +22,32 @@
 </head>
 <body>
     <header id="barra-navegacion" class="sticky-top"></header> <!-- HTML Modularizado -->
-    <footer id="footer"></footer> <!-- Footer Modularizado -->   
+    <div class="row">
+        <div class="col-1 lateral"></div>
+        <div class="col-10">
+            <h1>Reseñas</h1>
+            <i class="fa fa-instagram" style="font-size:24px"></i>
+            <p class="h4">Experiencias de nuestros alumnos</p>
+        
+        <div class="btn-group-toggle" data-toggle="buttons">
+            <input type="radio" class="btn-check" name="options-base" id="option1" autocomplete="off">
+            <label class="btn btn-filter" for="option1">
+                <span class="text-check">✓</span> Mejores calificaciones
+            </label>
+
+            <input type="radio" class="btn-check" name="options-base" id="option2" autocomplete="off">
+            <label class="btn btn-filter" for="option2">
+                <span class="text-check">✓</span> Más recientes
+            </label>
+        </div>
+        <div class="container row" id="contenedor-resenas">
+
+        </div>
+        </div>
+        <div class="col-1 lateral"></div>
+    </div>
+    <footer id="footer"></footer> <!-- Footer Modularizado -->
+    <script type="module" src="../assets/js/resenas.js"></script>   
     <!-- Script de Bootstrap -->
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script> <!--Importación de librerias de bootstrap-->
 </body>

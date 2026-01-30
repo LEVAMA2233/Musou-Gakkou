@@ -119,14 +119,9 @@ document.addEventListener('DOMContentLoaded', init);
             <h5 class="card-title">${curso.titulo}</h5> <!--Mostramos el nombre del curso-->
             <p class="card-text"> Modalidad ${curso.horario}</p> <!--Despliega su modalidad (Intensivo o sabatino)-->
             <p class="card-text fw-bold">$${curso.precio}</p> <!--Precio del curso-->
-            <p class="card-text">${curso.descripcion}</p>`; //Breve descripción
-          for(let j = 1;j<=curso.calificacion ;j++){ //Rellenar estrellas según su calificación
-            contenido += `<span class="fa fa-star checked"></span>`;
-          }
-          for(let j = curso.calificacion;j<5;j++){ // Mostrar estrellas faltantes
-            contenido += `<span class="fa fa-star"></span>`;
-          }
-          contenido +=`</div>
+            <p class="card-text">${curso.descripcion}</p>
+            <i data-star="${curso.calificacion}"></i> 
+        </div>
       </div>
       </a>
     </div>`;

@@ -51,9 +51,9 @@ button{
           <a href="/"><img class="flama-footer "src="https://github.com/LEVAMA2233/Musou-Gakkou/blob/imgs/img-logos/logo_flama.png?raw=true"></a>
         </div>
         <div class="container d-md-block d-none col-md-1 justify-items-around">
-          <div><a href=""><img src="https://github.com/LEVAMA2233/Musou-Gakkou/blob/imgs/img-logos/X_logo.svg?raw=true" alt="X Logo" class="logo-footer"></a></div>
-          <div><a href=""><img src="https://github.com/LEVAMA2233/Musou-Gakkou/blob/imgs/img-logos/instagram_logo.png?raw=true" alt="Instagram Logo" class="logo-footer"></a></div>
-          <div><a href=""><img src="https://github.com/LEVAMA2233/Musou-Gakkou/blob/imgs/img-logos/facebook_black_logo.png?raw=true" alt="Facebook Logo" class="logo-footer"></a></div>
+          <div><a href=""><i class="fa fa-twitter" style="font-size:24px; margin-top:15%;"></i></a></div>
+          <div><a href=""><i class="fa fa-instagram" style="font-size:24px; margin-top:15%;"></i></a></div>
+          <div><a href=""><i class="fa fa-facebook-f" style="font-size:24px; margin-top:15%;"></i></a></div>
         </div>
          <div class="d-none d-md-block col-md-2 text-center text-md-start">
           <a href="/pages/contacto.html"><p class="fw-bold">Contáctanos</p></a>
@@ -75,9 +75,9 @@ button{
         </div>
 
         <div class="col-3 col-2-sm d-md-none"></div>
-        <div class="col-2 col-1-sm d-md-none align-self-center"><a href=""><img src="https://github.com/LEVAMA2233/Musou-Gakkou/blob/imgs/img-logos/X_logo.svg?raw=true" alt="X Logo" class="logo-footer"></a></div>
-        <div class="col-2 col-1-sm d-md-none align-self-center"><a href=""><img src="https://github.com/LEVAMA2233/Musou-Gakkou/blob/imgs/img-logos/instagram_logo.png?raw=true" alt="Instagram Logo" class="logo-footer"></a></div>
-        <div class="col-2 col-1-sm d-md-none align-self-center"><a href=""><img src="https://github.com/LEVAMA2233/Musou-Gakkou/blob/imgs/img-logos/facebook_black_logo.png?raw=true" alt="Facebook Logo" class="logo-footer"></a></div>
+        <div class="col-2 col-1-sm d-md-none align-self-center"><a href=""><i class="fa fa-twitter" style="font-size:24px"></i></a></div>
+        <div class="col-2 col-1-sm d-md-none align-self-center"><a href=""><i class="fa fa-instagram" style="font-size:24px"></i></a></div>
+        <div class="col-2 col-1-sm d-md-none align-self-center"><a href=""><i class="fa fa-facebook" style="font-size:24px"></i></a></div>
       </div>
     </div>
 	`}

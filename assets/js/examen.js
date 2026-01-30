@@ -46,7 +46,7 @@ function calcularResultado() {
 
     document.getElementById("resultado").innerHTML = `
         <h4>Puntaje: ${total} / 58</h4>
-        <h3 class="text-primary">${nivel}</h3>
+        <h3 class="text subrrayado">${nivel}</h3>
     `;
 }
 
