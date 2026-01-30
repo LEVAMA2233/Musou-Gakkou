@@ -9,6 +9,7 @@
 		<style>
 			@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
 			</style>
+			<link rel="stylesheet" href="/assets/styles/carrito.css">
 
 			<!--Importación de librerias de bootstrap para la navbar-->
 			<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
@@ -19,6 +20,56 @@
 	</head>
 <body>
     <header id="barra-navegacion" class="sticky-top"></header> <!-- HTML Modularizado -->
+
+<div id="header-placeholder"></div>
+
+  <div class="container my-5">
+    <h1>Tu carrito</h1>
+
+    <a href="productos.html" class="btn btn-link mb-3">Seguir comprando</a>
+
+    <div class="row">
+      <div class="col-12 col-sm-6 col-md-9">
+        <div id="listaCarrito" class="mb-3"></div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-3">
+        <div class="total-amount card p-2">
+          <h3 class="mt-3">
+            Total: $<span id="total">0</span>
+          </h3>
+    
+          <div class="mt-3 metodos-pago">
+            <p>Métodos de pago aceptados:</p>
+            <div class="d-flex flex-column align-items-center gap-2">
+              <img class="payment-logo" src="src/img/paypal.png" alt="PayPal">
+              <img class="payment-logo" src="src/img/visa.png" alt="Visa">
+              <img class="payment-logo" src="src/img/mastercard.png" alt="MasterCard">
+            </div>
+          </div>
+    
+          <button id="comprar" class="btn btn-success mt-3">Finalizar compra</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <script src="/src/js/loadComponents.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="src/js/CarritoController.js"></script>
+  <script src="./src/js/key.js"></script>
+  <script src="src/js/carrito.js"></script>
+  <script src="/src/js/pageTransitions.js"></script>
+
+	
+
+
     <footer id="footer"></footer> <!-- Footer Modularizado -->
     		<!--Importación de librerias de bootstrap-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
