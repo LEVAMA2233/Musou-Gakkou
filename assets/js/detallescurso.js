@@ -1,5 +1,5 @@
 import { getProducts } from './productController.js'; //Para llamar a la data del JSON que ya se recolectó
-
+import { getCarrito } from './productController.js';
 //Ejemplo de un producto en JSON para referencia
  /* {
     "id": 1768868706812,
@@ -94,6 +94,21 @@ const appendAlert = (message, type) => {
 const alertTrigger = document.getElementById('liveAlertBtn')
 if (alertTrigger) {
   alertTrigger.addEventListener('click', () => {
+    const queryParams = new URLSearchParams(window.location.search); // Recupera la URL
+    const id = queryParams.get('id'); //Separa el ID del curso de la URL
     appendAlert('Producto añadido al carrito', 'secondary')
+    //console.log(id);
+    agregarCarrito(id);
   })
+}
+
+async function agregarCarrito(id){
+  const productos = await getProducts();
+  const cursoSeleccionado = productos.find(curso => curso.id == id);
+  let carrito = {}; // Esperamos la info
+  //let jsonObject = JSON.parse(carrito);
+  let productoJSON = JSON.stringify(cursoSeleccionado);
+  //console.log(cursoSeleccionado);
+  console.log(productoJSON);
+  carrito.push(productoJSON);
 }
