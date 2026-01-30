@@ -194,7 +194,7 @@
                           <form id="formRegistro" novalidate>
                             <div class="mb-3 text-start">
                               <label class="form-label">Numero de tarjeta: </label>
-                              <input type="number" id="numeroTarjeta" class="form-control input-cuenta" maxlength="16">
+                              <input type="text" inputmode="numeric" pattern="[0-9]*" maxlength="16" id="numeroTarjeta" class="form-control input-cuenta">
                               <div class="text-danger small"></div>
                             </div>
 
@@ -212,7 +212,7 @@
 
                             <div class="mb-3 text-start">
                               <label class="form-label">CVV: </label>
-                              <input type="number" id="cvv" class="form-control input-cuenta">
+                              <input type="text" inputmode="numeric" pattern="[0-9]*" maxlength="3"  id="cvv" class="form-control input-cuenta">
                               <div class="text-danger small"></div>
                             </div>
 
@@ -310,7 +310,38 @@
                   </div>  
                   
                   <!-- Ventana Recursos obtenidos -->
-                  <div id="recursos-obtenidos" class="content-section"></div>
+                  <div id="recursos-obtenidos" class="content-section">
+                    <h2 style="text-align: left;" >Recursos obtenidos</h2>
+                    <div class="row">
+                      <div class="col-sm-4 mb-3 mt-3 mb-sm-0">
+                        <div class="card tarjeta-recurso">
+                          <img src="../assets/img/img-recursos/katakana.png" class="img-recurso d-block mx-auto" alt="Recurso: Katakana">
+                          <div class="card-body">
+                            <h5 class="card-title" style="text-align: left;">Katakana</h5>
+                            <a href="#" class="btn btn-clase">Descargar</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-4 mb-3 mt-3 mb-sm-0">
+                        <div class="card tarjeta-recurso">
+                          <img src="https://github.com/LEVAMA2233/Musou-Gakkou/blob/imgs/img-Recursos/images.jpeg?raw=true" class="img-recurso d-block mx-auto" alt="Recurso: Particulas">
+                          <div class="card-body">
+                            <h5 class="card-title" style="text-align: left;">Particulas</h5>
+                            <a href="#" class="btn btn-clase">Descargar</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-4 mb-3 mt-3 mb-sm-0">
+                        <div class="card">
+                          <img src="../assets/img/img-recursos/kanji-n5.png" class="img-recurso d-block mx-auto" alt="Recurso: Plantilla de Kanji">
+                          <div class="card-body">
+                            <h5 class="card-title" style="text-align: left;">Plantillas de Kanji</h5>
+                            <a href="#" class="btn btn-clase">Descargar</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
 
