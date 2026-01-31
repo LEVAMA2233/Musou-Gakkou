@@ -1,90 +1,114 @@
 :root {
-    /*Variables fusiladas de la identidad visual*/
-    --rojo: #c91f13;
-    --gris: #D9D9D9;
-    --blanquino: #f5f3ec;
-    --Title-and-subtitles: "El Messiri", sans-serif;
-    --Content: "Source Sans 3", sans-serif;
+    /* 1. Colores de Identidad */
+    --clr-primary: #c91f13;   /* Rojo */
+    --clr-neutral: #D9D9D9;   /* Gris */
+    --clr-bg-light: #f5f3ec;  /* Blanquino */
+    --clr-dark: #000000;
+    --clr-dark-soft: #333333;
+
+    /* 2. Tipografía */
+    --font-titles: "El Messiri", sans-serif;
+    --font-content: "Source Sans 3", sans-serif;
+
+    /* 3. Escala Responsiva (La "llave" del diseño) */
+    --size-base: 3vmin;
+    --size-lg: 4vmin;
+    --size-xl: 7vmin;
+    
+    /* 4. Layout y Bordes */
+    --radius-lg: 25px;
+    --radius-pill: 50rem;
+    --spacing-sm: calc(var(--size-base) * 0.5);
+    --spacing-md: var(--size-base);
 }
 
-.carrito-section {
-    background-color: var(--rojo);
-}
-
-.contenedor-central {
+/* --- Estilos Globales --- */
+body {
+    font-family: var(--font-content);
     background-color: white;
-    width: 80%;
-    margin: auto;
-    text-align: left;
-    font-family: var(--Content);
-    padding: 3rem;
-
 }
+
 h1 {
-    font-family: var(--Title-and-subtitles);
-    text-align: left;
+    font-family: var(--font-titles);
+    color: var(--clr-dark);
+    text-align: center;
+    font-size: var(--size-xl);
+    padding: 35px 0; /* Simplificado */
+    margin-top: 30px;
 }
 
-.cart-container-main {
-    margin-top: 50px;
-    margin-bottom: 50px;
+h5 {
+    font-size: var(--size-lg);
 }
 
-.product-img-cart {
-    width: 70px;
-    height: 70px;
-    object-fit: cover;
-    border-radius: 10px;
-    background-color: #eee;
+/* --- Componentes --- */
+.lateral {
+    background-color: var(--clr-primary);
 }
 
-.cart-item {
-    transition: all 0.3s ease;
+.tarjeta-externa, 
+.img-producto {
+    border-radius: var(--radius-lg);
 }
 
-.info-item {
-    width: 100%;
-    justify-content: space-between;
-}
- .tarjeta-resumen {
-    width: 50%;
-}
-.tarjeta-carrito {
-    border: 1px solid var(--gris);
-    font-family: var(--Content);
-    border-radius: 25px; 
-    margin-top: 1rem;
-    padding: 1rem;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+.contenedor-nombre,
+.contenedor-precio {
+    font-size: var(--size-lg);
 }
 
-
-@media (min-width: 768px) {
-    .info-item {
-        width: auto;
-    }
+.conceptos {
+    font-size: var(--size-base);
 }
 
-.btn-remove {
-    font-size: 0.85rem;
-    color: #dc3545;
-    text-decoration: none;
-    cursor: pointer;
+/* --- Elementos de Interacción (Inputs y Botones) --- */
+.texto-descuento,
+.boton-descuento,
+.btn-continuar {
+    font-size: var(--size-base);
+    border-radius: var(--radius-pill);
+    height: auto;
 }
 
-.btn-remove:hover {
-    text-decoration: underline;
+.texto-descuento {
+    padding: var(--spacing-sm) var(--spacing-md);
 }
 
-.summary-card {
-    border: none;
-    border-radius: 15px;
-    position: sticky;
-    top: 20px;
+.boton-descuento {
+    padding: var(--spacing-sm) calc(var(--size-base) * 1.2);
+    white-space: nowrap;
 }
 
-.payment-logo {
-    height: 28px;
+/* --- Sección de Pagos --- */
+.payment-icons {
+    gap: var(--size-base);
+    margin-top: calc(var(--size-base) * 1.2);
+    display: flex; /* Aseguramos que el gap funcione */
+}
+
+.payment-icons img {
+    height: calc(var(--size-base) * 1.8);
     width: auto;
-    opacity: 0.9;
+    filter: grayscale(20%);
+    transition: transform 0.2s ease;
+}
+
+.payment-icons img:hover {
+    transform: scale(1.1);
+    filter: grayscale(0%);
+}
+
+/* --- Botón de Acción Principal --- */
+.btn-continuar {
+    padding: var(--spacing-sm) var(--spacing-md);
+    border: none;
+    background-color: var(--clr-dark);
+    color: white;
+    font-weight: 600;
+    width: 100%;
+    margin-top: calc(var(--size-base) * 1.5);
+    transition: background-color 0.3s ease;
+}
+
+.btn-continuar:hover {
+    background-color: var(--clr-dark-soft);
 }

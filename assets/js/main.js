@@ -28,7 +28,7 @@ import { validacionFormulario } from './components/validacionFormsContactanos.js
 
 
 window.addEventListener("load",()=>{
-  initApp();
+  initApp(window.location.pathname);
   console.log(window.location.pathname) //para debug
   if (window.location.pathname == '/pages/contacto.html'){ // Para ejecutar la validación del formulario solo en dicha página
       validacionFormulario();

@@ -135,6 +135,7 @@ const navbar = () =>{
 }
     
     </style>
+    <base href="../">
     <nav class="navbar navbar-expand-lg custom-navbar sticky-top" data-bs-theme="dark">
             <div class="container-fluid" style=" height: 100%; padding:1%;">
               <a class="navbar-brand" href="/" style="    color:var(--blanquino); margin: 0px;">
