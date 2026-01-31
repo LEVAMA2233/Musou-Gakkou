@@ -41,6 +41,10 @@ h5 {
     font-size: var(--size-lg);
 }
 
+h6{
+    font-size: var(--size-lg);
+}
+
 /* --- Componentes --- */
 .lateral {
     background-color: var(--clr-primary);
@@ -53,7 +57,8 @@ h5 {
 
 .contenedor-nombre,
 .contenedor-precio {
-    font-size: var(--size-lg);
+    font-size: var(--size-base);
+    word-break: break-word;
 }
 
 .conceptos {
