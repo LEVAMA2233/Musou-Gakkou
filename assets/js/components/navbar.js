@@ -139,7 +139,7 @@ const navbar = () =>{
     <nav class="navbar navbar-expand-lg custom-navbar sticky-top" data-bs-theme="dark">
             <div class="container-fluid" style=" height: 100%; padding:1%;">
               <a class="navbar-brand" href="/" style="    color:var(--blanquino); margin: 0px;">
-                <img src="/assets/img/img-acercade/logo-muso-transparente.png" id="logo-muso" alt="Logo de Musou" class="img-fluid" style="max-height: 12vh; max-width: 100%; margin: 0px;">
+                <img src="./assets/img/img-acercade/logo-muso.png" id="logo-muso" alt="Logo de Musou" class="img-fluid" style="max-height: 12vh; max-width: 100%; margin: 0px;">
               </a>
               <button class="navbar-toggler" style="color:#e6e6ff; margin-right: 20px;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon  mr-4"></span>
@@ -147,54 +147,54 @@ const navbar = () =>{
               <div class="collapse navbar-collapse " id="navbarSupportedContent">
                 <ul class="navbar-nav">
                   <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="/pages/cursos.html" >Cursos</a>
+                    <a class="nav-link" aria-current="page" href="./pages/cursos.html" >Cursos</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="/pages/recursos.html">Recursos</a>
+                    <a class="nav-link" aria-current="page" href="./pages/recursos.html">Recursos</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="/pages/cultura.html">Cultura</a>
+                    <a class="nav-link" aria-current="page" href="./pages/cultura.html">Cultura</a>
                   </li>
                   </li>
                   <!-- Menú dropdown solo se muestra en pantallas grandes -->
                   <li class="nav-item dropdown d-none d-lg-block">
                     <a class="nav-link dropdown-toggle" aria-current="page" href="/pages/acercaDe.html" role="button"  aria-expanded="false">Acerca de nosotros</a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="/pages/preguntasFrecuentes.html">Preguntas frecuentes</a></li>
-                        <li><a class="dropdown-item" href="/pages/contacto.html">Contáctanos</a></li>
+                        <li><a class="dropdown-item" href="./pages/preguntasFrecuentes.html">Preguntas frecuentes</a></li>
+                        <li><a class="dropdown-item" href="./pages/contacto.html">Contáctanos</a></li>
                     </ul>
 
                   </li>
                   <!-- Solo se muestran cuando la navbar colapsa -->
                   <li class="nav-item d-lg-none ms-1" >
-                    <a class="nav-link" href="/pages/acercaDe.html">Acerca de nosotros</a>
+                    <a class="nav-link" href="./pages/acercaDe.html">Acerca de nosotros</a>
                   </li>
                   <li class="nav-item d-lg-none ms-1" >
-                    <a class="nav-link" href="/pages/preguntasFrecuentes.html">Preguntas frecuentes </a>
+                    <a class="nav-link" href="./pages/preguntasFrecuentes.html">Preguntas frecuentes </a>
                   </li>
                   <li class="nav-item d-lg-none ms-1" >
-                    <a class="nav-link" href="/pages/contacto.html">Contáctanos</a>
+                    <a class="nav-link" href="./pages/contacto.html">Contáctanos</a>
                   </li>
                   <li class="nav-item d-lg-none ms-1" >
-                    <a class="nav-link" href="/pages/carrito.html">Carrito</a>
+                    <a class="nav-link" href="./pages/carrito.html">Carrito</a>
                   </li>
                   <li class="nav-item d-lg-none ms-1" >
-                    <a class="nav-link" href="/pages/logIn.html">Log in</a>
+                    <a class="nav-link" href="./pages/logIn.html">Log in</a>
                   </li>
                   <li class="nav-item d-lg-none ms-1">
-                    <a class="nav-link" href="/pages/registro.html">Regístrate</a>
+                    <a class="nav-link" href="./pages/registro.html">Regístrate</a>
                   </li>
                   <!-- Solo se muestran como botones en  caso de pantallas grandes-->
                   <li class="nav-item d-none d-lg-block">
-                    <a class="navbar-link" href="/pages/carrito.html">
+                    <a class="navbar-link" href="./pages/carrito.html">
                         <i class="fa fa-shopping-cart carrito"></i>
                     </a>
                   </li>
                   <li class="nav-item d-none d-lg-block">
-                    <a class="boton" id="btn-Log-in"  href="/pages/logIn.html">Log in</a>
+                    <a class="boton" id="btn-Log-in"  href="./pages/logIn.html">Log in</a>
                   </li>
                   <li class="nav-item d-none d-lg-block">
-                    <a class="boton" href="/pages/registro.html">Regístrate</a>
+                    <a class="boton" href="./pages/registro.html">Regístrate</a>
                   </li>
                 </ul>
                 
