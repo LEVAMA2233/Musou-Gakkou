@@ -1,5 +1,5 @@
 import { getProducts } from './productController.js'; //Para llamar a la data del JSON que ya se recolectó
-
+import { getCarrito } from './productController.js';
 //Ejemplo de un producto en JSON para referencia
  /* {
     "id": 1768868706812,
@@ -94,6 +94,41 @@ const appendAlert = (message, type) => {
 const alertTrigger = document.getElementById('liveAlertBtn')
 if (alertTrigger) {
   alertTrigger.addEventListener('click', () => {
-    appendAlert('Producto añadido al carrito', 'secondary')
+    const queryParams = new URLSearchParams(window.location.search); // Recupera la URL
+    const id = queryParams.get('id'); //Separa el ID del curso de la URL
+    //console.log(id);
+    //appendAlert('Producto añadido al carrito', 'secondary')
+    const storedCarrito = localStorage.getItem('miCarrito');
+    let carrito = storedCarrito ? JSON.parse(storedCarrito) : [];
+    let existe = false;
+  for(let i = 0; i<carrito.length;i++){
+    if (carrito[i].id == id)
+      existe = true;
+  }
+  if (!existe){
+      appendAlert('Producto añadido al carrito', 'secondary');
+      agregarCarrito(id,carrito)
+  }
+  else{
+      appendAlert('Ya existe en el carrito', 'danger');
+  }
+    //agregarCarrito(id,carrito)
   })
+}
+
+async function agregarCarrito(id,carrito){
+  //const alertTrigger = document.getElementById('liveAlertBtn')
+  const productos = await getProducts();
+  
+  //console.log("Carrito: "+ storedCarrito)
+  const cursoSeleccionado = productos.find(curso => curso.id == id);
+  carrito.push(cursoSeleccionado);
+  //let carrito = await getCarrito(); // Esperamos la info
+  
+  //let carrito = {};
+  //let jsonObject = JSON.parse(carrito);
+  //let productoJSON = JSON.stringify(cursoSeleccionado);
+  //Object.assign(carrito,cursoSeleccionado);
+  localStorage.setItem('miCarrito', JSON.stringify(carrito));
+
 }

@@ -169,5 +169,109 @@
       { "autor": "Inés M.", "calificacion": "3.8", "mensaje": "Contenido sólido, el ritmo sabatino ayuda a digerir los temas.", "fecha": "2025-05-10" },
       { "autor": "Felipe G.", "calificacion": "3.8", "mensaje": "Dificultad alta, ideal para traductores.", "fecha": "2025-05-15" }
     ]
-  }
+  },
+  {
+  "id": 1768868937889,
+  "tipo": "Recurso",
+  "titulo": "Planillas Kanji para N5",
+  "descripcion": "Domina los caracteres esenciales del nivel N5 con estas planillas de Kanji diseñadas para facilitar tu aprendizaje y escritura.",
+  "detalle": "Este recurso educativo incluye los kanjis fundamentales para aprobar el examen JLPT N5. Cada ficha presenta el orden de trazos, lecturas onyomi y kunyomi, y ejemplos prácticos de uso. Es la guía perfecta para que principiantes construyan una base sólida en la caligrafía y reconocimiento visual del japonés.",
+  "precio": 0,
+  "horario": "",
+  "fechaInicio": "",
+  "imagenUrl": "../assets/img/img-recursos/kanji-n5.png",
+  "calificacion": "3.8",
+  "resenas": [
+    { 
+      "autor": "Inés M.", 
+      "calificacion": "3.8", 
+      "mensaje": "Las planillas son muy claras; el orden de los trazos me ayudó mucho a memorizar los kanjis básicos.", 
+      "fecha": "2025-05-10" 
+    },
+    { 
+      "autor": "Felipe G.", 
+      "calificacion": "3.8", 
+      "mensaje": "Excelente material de apoyo para el N5. Los ejemplos de vocabulario por cada kanji son muy útiles.", 
+      "fecha": "2025-05-15" 
+    }
+  ]
+  },
+  {
+  "id": 1768868937890,
+  "tipo": "Recurso",
+  "titulo": "Guía Básica de Katakana",
+  "descripcion": "Aprende los fundamentos del Katakana con esta tabla clara y organizada que muestra las sílabas básicas y sus excepciones fonéticas.",
+  "detalle": "Este material visual está diseñado para dominar la lectura y escritura del segundo silabario japonés. Incluye una guía detallada de las vocales y consonantes principales, con énfasis especial en las variaciones fonéticas como shi, chi y tsu, permitiendo al estudiante escribir palabras extranjeras y préstamos lingüísticos correctamente.",
+  "precio": 0,
+  "horario": "",
+  "fechaInicio": "",
+  "imagenUrl": "../assets/img/img-recursos/katakana.png",
+  "calificacion": "4.2",
+  "resenas": [
+    { 
+      "autor": "Carla R.", 
+      "calificacion": "4.5", 
+      "mensaje": "Muy útil para diferenciar caracteres parecidos. La distinción visual de los sonidos especiales ayuda bastante.", 
+      "fecha": "2025-06-02" 
+    },
+    { 
+      "autor": "Marcos P.", 
+      "calificacion": "4.0", 
+      "mensaje": "Buen recurso para principiantes. Las fuentes son claras y fáciles de imitar al practicar en papel.", 
+      "fecha": "2025-06-12" 
+    }
+  ]
+},
+{
+  "id": 1768868937891,
+  "tipo": "Recurso",
+  "titulo": "Guía de partículas japonesas",
+  "descripcion": "Comprende el uso de conectores esenciales como ga, wa, ni y de para estructurar oraciones correctamente en japonés básico.",
+  "detalle": "Este material gramatical ofrece una tabla detallada de las partículas fundamentales, sus estructuras y ejemplos prácticos. Cubre desde marcadores de sujeto y objeto hasta indicadores de lugar, tiempo y dirección, siendo un recurso indispensable para entender la lógica detrás de la sintaxis japonesa en el nivel inicial.",
+  "precio": 0,
+  "horario": "",
+  "fechaInicio": "",
+  "imagenUrl": "https://github.com/LEVAMA2233/Musou-Gakkou/blob/imgs/img-Recursos/images.jpeg?raw=true",
+  "calificacion": "4.5",
+  "resenas": [
+    { 
+      "autor": "Ricardo T.", 
+      "calificacion": "4.8", 
+      "mensaje": "Los ejemplos de 'ga' y 'ni' para existencia son muy claros. Me ayudó a entender por fin cuándo usar cada una.", 
+      "fecha": "2025-07-20" 
+    },
+    { 
+      "autor": "Elena V.", 
+      "calificacion": "4.2", 
+      "mensaje": "Excelente resumen. La sección de partículas al final de la oración como 'ne' y 'yo' es muy útil para sonar más natural.", 
+      "fecha": "2025-08-05" 
+    }
+  ]
+},
+{
+  "id": 1768868937892,
+  "tipo": "Recurso",
+  "titulo": "Guía de clasificadores numéricos",
+  "descripcion": "Aprende a contar objetos, personas y edades correctamente utilizando los sufijos específicos según la forma y categoría de cada elemento.",
+  "detalle": "Este material explica la estructura fundamental de 'número + clasificador' necesaria para cuantificar en japonés. Incluye tablas comparativas para objetos planos (-mai), alargados (-hon), libros (-satsu), objetos pequeños (-ko/-tsu), así como personas (-nin) y edades (-sai). Es un recurso esencial para realizar compras y describir cantidades con precisión.",
+  "precio": 0,
+  "horario": "",
+  "fechaInicio": "",
+  "imagenUrl": "https://github.com/LEVAMA2233/Musou-Gakkou/blob/imgs/img-Recursos/numerosJAPA.png?raw=true",
+  "calificacion": "4.3",
+  "resenas": [
+    { 
+      "autor": "Sofía L.", 
+      "calificacion": "4.5", 
+      "mensaje": "Muy útil para no confundirse al pedir comida o comprar cosas. Los ejemplos con 'kudasai' son muy prácticos.", 
+      "fecha": "2025-09-10" 
+    },
+    { 
+      "autor": "Daniel K.", 
+      "calificacion": "4.1", 
+      "mensaje": "Las tablas de excepciones (como ippon o roppon) están muy bien explicadas. Me ayudó mucho con la tarea.", 
+      "fecha": "2025-09-22" 
+    }
+  ]
+}
 ]

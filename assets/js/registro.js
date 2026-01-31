@@ -59,15 +59,5 @@ document.getElementById("formRegistro").addEventListener("submit", function (e) 
 
     if (valido) {
         successMsg.textContent = "Usuario registrado con exito";
-        const usuario ={
-            name: document.getElementById("nombre").value.trim(),
-            lastname: document.getElementById("apellido").value.trim(),
-            telephone: document.getElementById("telefono").value.trim(),
-            email: document.getElementById("email").value.trim(),
-            password : document.getElementById("password").value,
-        }
-        usuarioJSON = JSON.stringify(usuario);
-        console.log(usuarioJSON);
-        console.log("Usuario registrado con éxito")
     }
 });
