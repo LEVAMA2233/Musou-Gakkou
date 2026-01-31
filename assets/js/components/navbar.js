@@ -138,7 +138,7 @@ const navbar = () =>{
     <nav class="navbar navbar-expand-lg custom-navbar sticky-top" data-bs-theme="dark">
             <div class="container-fluid" style=" height: 100%; padding:1%;">
               <a class="navbar-brand" href="/" style="    color:var(--blanquino); margin: 0px;">
-                <img src="./assets/img/img-acercade/logo-muso.png" id="logo-muso" alt="Logo de Musou" class="img-fluid" style="max-height: 12vh; max-width: 100%; margin: 0px;">
+                <img src="/assets/img/img-acercade/logo-muso.png" id="logo-muso" alt="Logo de Musou" class="img-fluid" style="max-height: 12vh; max-width: 100%; margin: 0px;">
               </a>
               <button class="navbar-toggler" style="color:#e6e6ff; margin-right: 20px;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon  mr-4"></span>
