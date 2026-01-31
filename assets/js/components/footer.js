@@ -63,15 +63,15 @@ button{
         </div>
 
         <div class="d-none d-md-block col-md-1 text-center text-md-start">
-          <a href="/pages/cursos.html"><p class="fw-bold">Cursos</p></a>
-          <a href="/pages/cursos.html"><p class="text-md-center">Clases</p></a>
-          <a href="/pages/cursos.html"><p class="text-md-center">Recursos</p></a>
+          <a href="./pages/cursos.html"><p class="fw-bold">Cursos</p></a>
+          <a href="./pages/cursos.html"><p class="text-md-center">Clases</p></a>
+          <a href="./pages/cursos.html"><p class="text-md-center">Recursos</p></a>
         </div>
         <div class="d-none d-md-block col-md-2 text-center">
-          <a href="/pages/cultura.html"><p class="fw-bold">Cultura/Galeria</p></a>
+          <a href="./pages/cultura.html"><p class="fw-bold">Cultura/Galeria</p></a>
         </div>
         <div class="d-none d-md-block col-md-2 text-center">
-          <a href="/pages/preguntasFrecuentes.html"><p class="fw-bold">Preguntas frecuentes</p></a>
+          <a href="./pages/preguntasFrecuentes.html"><p class="fw-bold">Preguntas frecuentes</p></a>
         </div>
 
         <div class="col-3 col-2-sm d-md-none"></div>
