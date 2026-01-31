@@ -9,87 +9,123 @@ const navbar = () =>{
     --Content:"Source Sans 3", sans-serif;
         }
 
-      .navbar {
-          padding-top: 5px !important;
-          padding-bottom: 5px !important;
-          min-height: 60px;
-      }
 
-      .nav-link, .dropdown-item {
-          color: var(--blanquino);
-          font-family: var(--Tittle-and-subtitles);
-          font-size: 1.1rem !important; /* Estaba en x-large, muy grande */
-          border-radius: 10px;
-      }
-      
-      .nav-item {
-          margin-right: 4px;
-      }
+.navbar{
+  background-color: black;
+  max-width:100%;
+  height: 100%;
+  padding: 0px;
+ }
 
-      .dropdown-menu {
-          background-color: black;
-          border: 0px;
-      }
+#logo-muso{
+  max-height: 90%; /* No permite que sea más alto que el contenedor */
+    width: auto;      /* Mantiene la proporción */
+    object-fit: contain; /* Asegura que la imagen quepa dentro del espacio sin deformarse */
+    display: block;
+}
+ .navbar-brand{
+    height: 100%;
+    margin: 0px;
+    padding:0px;
+ }
+ .navbar-nav{
+ flex: 1;
+ display:flex;
+ justify-content: space-around;
+  }
+ .nav-item{
+    margin-right: 4px;
+ }
+ .dropdown-item,
+ .nav-link{
+    color:var(--blanquino);
+    font-family:var(--Tittle-and-subtitles);
+    /* font-size: 1.5vw; */
+    font-size: 2vw;
+    border-radius: 10px;
+ }
+  .dropdown-menu{
+    background-color: black;
+    border: 0px;
+  }
+  .dropdown-item{
+    width: 100%;
+    border-radius:0px;
+  }
+ .navbar-brand:hover{
+    color:var(--rojo);
+ }
+.dropdown-item:hover,
+.nav-link:hover{
+     color:black;
+     background-color: #f5f3ec;
 
-      .dropdown-item {
-          width: 100%;
-          border-radius: 0px;
-      }
+}
+#logo-muso:hover{
+    transform: scale(1.1);
+}
+.carrito{
+  color: white;
+  font-size: 6vh;
+}
+.carrito:hover{
+    transform: scale(1.3);
+}
 
-      .navbar-brand:hover {
-          color: var(--rojo);
-      }
+.boton{
+    background-color: #2C2C2C;
+    color: var(--blanquino);
+    font-family: var(--Tittle-and-subtitles);
+    margin: 3px;
+    font-size: 2vw;
+    padding: 5px 10px;
+    border-radius: 10px;
+ }
+ #btn-Log-in{
+    background-color: #D9D9D9;
+    color: black;
+ }
 
-      .dropdown-item:hover,
-      .nav-link:hover {
-          color: black;
-          background-color: #f5f3ec;
-      }
+ .boton:hover{
+    background-color: #D9D9D9;
+    color: var(--rojo);
+ }
+ #btn-Log-in:hover{
+    background-color: var(--rojo);
+    color: var(--blanquino);
+ }
+ .navbar-toggler:hover{
+    color: var(--blanquino);
+    background-color: var(--rojo);
+ }
 
-      
-      /* Logo MUSO (Letras) */
-      #logo-muso {
-          max-height: 45px !important; /* Forzamos 45px. Antes tenías 70px */
-          width: auto;
-          transition: transform 0.3s;
-      }
-      
-      #logo-muso:hover {
-          transform: scale(1.1);
-      }
+ body {
+    text-align: center;
+}
+/* Solo para pantallas grandes (lg) */
+@media (min-width: 992px) {
+  .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; /* Evita que se cierre al mover el mouse al menú */
+  }
+}
+@media screen and (max-width: 991px) {
 
-      #logo-carrito {
-          height: 40px !important; /* Forzamos 40px. Antes tenías 75px */
-          width: 40px !important;
-          object-fit: contain;
-          transition: transform 0.3s;
-      }
+/*Hacemos que cada elemento del navbar ocupe el renglón completo cuando la pantalla es pequeña*/
+.nav-item{
+    width:100%;
+}
+/*Ahora cambia de color el renglón completo al seleccionar*/
+.nav-item:hover{
+    color:black;
+    background-color: white;
+}
 
-      #logo-carrito:hover {
-          transform: scale(1.1);
-      }
-
-      .boton {
-          background-color: #2C2C2C;
-          color: var(--blanquino);
-          font-family: var(--Tittle-and-subtitles);
-          margin: 3px;
-          font-size: 1rem !important;
-          padding: 5px 15px;
-          border-radius: 10px;
-          text-decoration: none;
-          display: inline-block;
-      }
-
-      #btn-Log-in {
-          background-color: #D9D9D9;
-          color: black;
-      }
-
-      .boton:hover {
-          background-color: #D9D9D9;
-          color: var(--rojo);
-      }
+/*Ajustamos el tamaño de fuente para que sea responsivo*/
+.nav-link{
+    font-size: large;
+    border-radius: 0px;
+ }
 
 }
 @container navbar (min-width: 700px) {
@@ -121,12 +157,11 @@ const navbar = () =>{
                   </li>
                   <!-- Menú dropdown solo se muestra en pantallas grandes -->
                   <li class="nav-item dropdown d-none d-lg-block">
-                      <a class="nav-link dropdown-toggle" href="/pages/acercaDe.html" role="button" aria-expanded="false">Acerca de nosotros</a>
-                      <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="/pages/preguntasFrecuentes.html">Preguntas frecuentes</a></li>
-                          <li><a class="dropdown-item" href="/pages/contacto.html">Contáctanos</a></li>
-                      </ul>
-                  </li>
+                    <a class="nav-link dropdown-toggle" aria-current="page" href="/pages/acercaDe.html" role="button"  aria-expanded="false">Acerca de nosotros</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="/pages/preguntasFrecuentes.html">Preguntas frecuentes</a></li>
+                        <li><a class="dropdown-item" href="/pages/contacto.html">Contáctanos</a></li>
+                    </ul>
 
                   </li>
                   <!-- Solo se muestran cuando la navbar colapsa -->
@@ -169,21 +204,11 @@ const navbar = () =>{
             </div>
           </nav><!--Termina la navbar-->
 
-                  <li class="nav-item d-none d-lg-block">
-                      <a class="navbar-link" href="/pages/carrito.html">
-                          <img src="/assets/img/img-acercade/carrito-logo.png" id="logo-carrito" alt="Logo de carrito">
-                      </a>
-                  </li>
-                  <li class="nav-item d-none d-lg-block">
-                      <a class="boton" id="btn-Log-in" href="/pages/logIn.html">Log in</a>
-                  </li>
-                  <li class="nav-item d-none d-lg-block">
-                      <a class="boton" href="/pages/registro.html">Regístrate</a>
-                  </li>
-              </ul>
-          </div>
-      </div>
-  </nav>
-  `;
+    
+    
+    
+    
+    
+    `
 }
-export { navbar };
+export {navbar};
