@@ -70,6 +70,8 @@
     width: 100%;
     box-sizing: border-box;
     font-family: var(--Content);
+    text-align: left;
+    padding-left: 3%;
 }
 .Input-formulario:focus{
     outline: none;
@@ -77,6 +79,16 @@
 #mensaje{
     height: 100px;
 }
+.Input-formulario-mensaje{
+    border: 0px var(--rojo); ;
+    border-radius: 5%;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: var(--Content);
+    text-align: center;
+    padding-left: 3%;
+}
+
 .Button-enviar{
     background-color: var(--rojo);
     color: var(--blanquino);

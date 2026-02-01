@@ -32,8 +32,8 @@ h1{
     margin-bottom: 1rem;
 }
 .btn-primary{
-  background-color: var(--gris);
-  color: black;
+  background-color: black;
+  color: white;
   border: none;
   display: block;
   margin: auto;
@@ -41,7 +41,7 @@ h1{
   border-radius: 20rem;
   }
 .btn-primary:hover{
-    background-color:black;
+    background-color:var(--rojo);
 }
 p{
     text-align: center;

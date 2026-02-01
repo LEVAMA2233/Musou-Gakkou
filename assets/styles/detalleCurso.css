@@ -46,8 +46,14 @@ h1{
 
 .agregar-carrito{
     border-radius: 20px;
-    background-color:var(--gris);
+    background-color:black;
+    color: white;
     width: 90%;
+}
+
+.agregar-carrito:hover{
+  background-color:var(--rojo);
+  color: white;
 }
 
 .accordion{
