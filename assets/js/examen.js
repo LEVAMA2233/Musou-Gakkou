@@ -58,7 +58,7 @@ function calcularResultado() {
    ================================ */
 function reiniciar() {
     localStorage.clear();
-    window.location.href = "intro1.html";
+    window.location.href = "./pages/examen/intro1.html";
 }
 
 
