@@ -135,10 +135,9 @@ const navbar = () =>{
 }
     
     </style>
-    <base href="../">
     <nav class="navbar navbar-expand-lg custom-navbar sticky-top" data-bs-theme="dark">
             <div class="container-fluid" style=" height: 100%; padding:1%;">
-              <a class="navbar-brand" href="/" style="    color:var(--blanquino); margin: 0px;">
+              <a class="navbar-brand" href="./" style="    color:var(--blanquino); margin: 0px;">
                 <img src="./assets/img/img-acercade/logo-muso.png" id="logo-muso" alt="Logo de Musou" class="img-fluid" style="max-height: 12vh; max-width: 100%; margin: 0px;">
               </a>
               <button class="navbar-toggler" style="color:#e6e6ff; margin-right: 20px;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -158,7 +157,7 @@ const navbar = () =>{
                   </li>
                   <!-- Menú dropdown solo se muestra en pantallas grandes -->
                   <li class="nav-item dropdown d-none d-lg-block">
-                    <a class="nav-link dropdown-toggle" aria-current="page" href="/pages/acercaDe.html" role="button"  aria-expanded="false">Acerca de nosotros</a>
+                    <a class="nav-link dropdown-toggle" aria-current="page" href="./pages/acercaDe.html" role="button"  aria-expanded="false">Acerca de nosotros</a>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="./pages/preguntasFrecuentes.html">Preguntas frecuentes</a></li>
                         <li><a class="dropdown-item" href="./pages/contacto.html">Contáctanos</a></li>
