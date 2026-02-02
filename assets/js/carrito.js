@@ -19,7 +19,7 @@ const total = document.getElementById('total'); */
 function init(){ // Función init se ejecuta cuando a cargado el resto del HTML
   const datosGuardados = localStorage.getItem('miCarrito'); //Cargamos el carrito de Local Storage para renderizarlo
   console.log(datosGuardados);
-  const productos = JSON.parse(datosGuardados);
+  const productos = JSON.parse(datosGuardados) || []; // Si no hay nada, devuelve un vector vacío.
   const contenedorProductos = document.getElementById("contenedor-productos"); //Obtenemos la referencia del contenedor
   const contenedorResumen = document.getElementById("contenedor-desglose");
   console.log(productos)
@@ -28,11 +28,11 @@ function init(){ // Función init se ejecuta cuando a cargado el resto del HTML
   let contenidoResumen = "";
   let precioFinal = 0;
   if(productos.length){
-    productos.forEach(producto => {
+    productos.forEach((producto, index) => {
       contenidoProductos += `
       <div class="card tarjeta-interna">
         <div class="card-body">
-          <button type="button" class="btn-close position-absolute top-0 end-0 m-2" style="font-size: 1vmax" aria-label="Close"></button>
+          <button type="button" onclick="eliminarProducto(${index})" class="btn-close position-absolute top-0 end-0 m-2" style="font-size: 1vmax" aria-label="Close"></button>
           <div class="row align-items-center">
             <div class="col-4">
               <img src="${producto.imagenUrl}" alt="${producto.titulo}" class="img-fluid img-producto">
@@ -77,9 +77,54 @@ function init(){ // Función init se ejecuta cuando a cargado el resto del HTML
     <p class="conceptos">Para ayudarte a comenzar, puedes revisar los cursos en la barra de navegación, ¡Tenemos cursos para todos los niveles!</p>
     <p class="conceptos">Si agregaste productos en otra sesión, es posible que estos ya se encuentren en tu cuenta.</p>`
     console.log("carrito vacío");
+    contenidoResumen = `
+      <div class="card border-0 shadow-sm p-4 text-center bg-light">
+        <div class="card-body">
+          <h5 class="fw-bold mb-3">Parece que aún no has añadido nada</h5>
+          <p class="text-secondary small mb-4">
+            Explora nuestro catálogo y descubre cursos diseñados por expertos para impulsar tu aprendizajes. 
+            ¡Tu próximo gran logro comienza con un solo clic!
+          </p>
+          
+          <a href="./pages/cursos.html" class="btn btn-dark w-100 rounded-pill py-2 fw-bold shadow-sm">
+            Ir a cursos
+          </a>
+          
+          <div class="mt-4 pt-3 border-top">
+            <p class="text-muted mb-1 small">¿Necesitas ayuda?</p>
+            <a href="./pages/contacto.html" class="text-decoration-none small text-primary">Formulario</a>
+          </div>
+        </div>
+      </div>`
+;
   }
   contenedorProductos.innerHTML = contenidoProductos;
   contenedorResumen.innerHTML = contenidoResumen;
   }
 
   document.addEventListener('DOMContentLoaded',init);
+
+  function eliminarProducto(index){
+    // 1. Lanzamos la alerta de confirmación
+    const confirmacion = confirm("¿Estás seguro de que deseas eliminar este producto de tu carrito?");
+
+    // 2. Si el usuario acepta (true), procedemos
+    if (confirmacion) {
+        const datosGuardados = localStorage.getItem('miCarrito');
+        let productos = JSON.parse(datosGuardados) || [];
+
+        // Eliminamos el elemento
+        productos.splice(index, 1);
+
+        // Actualizamos LocalStorage
+        localStorage.setItem('miCarrito', JSON.stringify(productos));
+
+        // Refrescamos la interfaz
+        init();
+        
+        console.log("Producto eliminado correctamente");
+    } else {
+        // Si cancela, no pasa nada
+        console.log("Acción cancelada por el usuario");
+    }
+}

@@ -117,3 +117,7 @@ h6{
 .btn-continuar:hover {
     background-color: var(--clr-dark-soft);
 }
+
+.boton-cursos{
+    background-color: #c91f13;
+}
