@@ -7,7 +7,7 @@ export async function getProducts() {
     //if (cache) return cache;
 
     try {
-        const response = await fetch("/assets/json/cursos.json"); //Ruta al JSON
+        const response = await fetch("./assets/json/cursos.json"); //Ruta al JSON
         if (!response.ok) throw new Error('Network response was not ok');
         
         cache = await response.json();
@@ -23,7 +23,7 @@ async function getCarrito(){
     //if (cache) return cache;
 
     try {
-        const response = await fetch("/assets/json/carrito.json"); //Ruta al JSON
+        const response = await fetch("./assets/json/carrito.json"); //Ruta al JSON
         if (!response.ok) throw new Error('Network response was not ok');
         
         cache = await response.json();
