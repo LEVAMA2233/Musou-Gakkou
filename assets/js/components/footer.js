@@ -46,7 +46,7 @@ const footer = () =>{
 		<div class="container-fluid">
       <div class="row" style="height: 100%">
         <div class="col-3 col-md-2 p-0 h-100">
-          <a href="/"><img class="flama-footer "src="https://github.com/LEVAMA2233/Musou-Gakkou/blob/imgs/img-logos/logo_flama.png?raw=true"></a>
+          <a href="./"><img class="flama-footer "src="https://github.com/LEVAMA2233/Musou-Gakkou/blob/imgs/img-logos/logo_flama.png?raw=true"></a>
         </div>
         <div class="d-none d-md-flex flex-column col-md-1 text-center text-md-center justify-content-around">
           <a class="d-block" href=""><i class="fa fa-twitter" style="font-size:4vmin;"></i></a>
@@ -54,10 +54,10 @@ const footer = () =>{
           <a class="d-block" href=""><i class="fa fa-facebook" style="font-size:4vmin;"></i></a>
         </div>
          <div class="d-none d-md-block col-md-2 text-center text-md-start">
-          <a href="/pages/contacto.html"><p class="fw-bold">Contáctanos</p></a>
+          <a href="./pages/contacto.html"><p class="fw-bold">Contáctanos</p></a>
         </div>
         <div class="d-none d-md-block col-md-2 text-center text-md-start">
-          <a href="/pages/acercaDe.html"><p class="fw-bold">Acerca de nosotros</p></a>
+          <a href="./pages/acercaDe.html"><p class="fw-bold">Acerca de nosotros</p></a>
         </div>
 
         <div class="d-none d-md-block col-md-1 text-center text-md-start ">
