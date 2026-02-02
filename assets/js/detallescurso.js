@@ -63,7 +63,7 @@ async function init() {
     for (const elemento of productosNoRepetidos){
         contenedoresExtra[i].innerHTML =
         `
-        <a href="/pages/detalleCurso.html?id=${elemento.id}">
+        <a href="./pages/detalleCurso.html?id=${elemento.id}">
             <div class="card tarjeta-curso">
                 <img src="${elemento.imagenUrl}" class="card-img-top imagen-curso-extra" alt="${elemento.titulo}">
                 <div class="card-body d-none d-lg-block">
