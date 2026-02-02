@@ -173,7 +173,8 @@ h2{
     }
 }
 
-@media screen and (max-width: 400px){
+
+@media screen and (max-width: 440x){
     .tarjeta-ittai{
         width: 40vw;
     }
