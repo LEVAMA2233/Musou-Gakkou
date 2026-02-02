@@ -10,7 +10,7 @@
     "horario": "Sabatino",
     "fechaInicio": "2026-01-23",
     "imagenUrl": "https://i.ibb.co/dwbsg2Sp/N5curso.jpg",
-    "imagenUrl": "/assets/img/img-cursos/n5.jpeg",
+    "imagenUrl": "./assets/img/img-cursos/n5.jpeg",
     "calificacion": "5",
     "resenas": [
       { "autor": "Blanca Perez", "calificacion": "5", "mensaje": "Contenido excelente, el maestro hizo la clase muy amena", "fecha": "2025-12-10" },
@@ -27,7 +27,7 @@
     "horario": "Intensivo",
     "fechaInicio": "2026-01-23",
     "imagenUrl": "https://i.ibb.co/dwbsg2Sp/N5curso.jpg",
-    "imagenUrl": "/assets/img/img-cursos/n5.jpeg",
+    "imagenUrl": "./assets/img/img-cursos/n5.jpeg",
     "calificacion": "5",
     "resenas": [
       { "autor": "Ricardo M.", "calificacion": "5", "mensaje": "Excelente para empezar desde cero.", "fecha": "2025-11-20" },
@@ -44,7 +44,7 @@
     "horario": "Sabatino",
     "fechaInicio": "2026-01-23",
     "imagenUrl": "https://i.ibb.co/dwbsg2Sp/N5curso.jpg",
-    "imagenUrl": "/assets/img/img-cursos/n4.jpeg",
+    "imagenUrl": "./assets/img/img-cursos/n4.jpeg",
     "calificacion": "4.3",
     "resenas": [
       { "autor": "Jorge L.", "calificacion": "4.6", "mensaje": "Buen curso, aunque la gramática es intensa.", "fecha": "2025-10-05" },
@@ -61,7 +61,7 @@
     "horario": "Intensivo",
     "fechaInicio": "2026-01-23",
     "imagenUrl": "https://i.ibb.co/dwbsg2Sp/N5curso.jpg",
-    "imagenUrl": "/assets/img/img-cursos/n4.jpeg",
+    "imagenUrl": "./assets/img/img-cursos/n4.jpeg",
     "calificacion": "4.8",
     "resenas": [
       { "autor": "Sofía Díaz", "calificacion": "4.8", "mensaje": "El formato intensivo es lo mejor para avanzar.", "fecha": "2025-09-15" },
@@ -78,7 +78,7 @@
     "horario": "Intensivo",
     "fechaInicio": "2026-01-23",
     "imagenUrl": "https://i.ibb.co/dwbsg2Sp/N5curso.jpg",
-    "imagenUrl": "/assets/img/img-cursos/n3.jpeg",
+    "imagenUrl": "./assets/img/img-cursos/n3.jpeg",
     "calificacion": "3.8",
     "resenas": [
       { "autor": "Andrés P.", "calificacion": "3.6", "mensaje": "Falta un poco de tiempo para conversación.", "fecha": "2025-08-10" },
@@ -95,7 +95,7 @@
     "horario": "Sabatino",
     "fechaInicio": "2026-01-23",
     "imagenUrl": "https://i.ibb.co/dwbsg2Sp/N5curso.jpg",
-    "imagenUrl": "/assets/img/img-cursos/n3.jpeg",
+    "imagenUrl": "./assets/img/img-cursos/n3.jpeg",
     "calificacion": "4.2",
     "resenas": [
       { "autor": "Daniela G.", "calificacion": "4.2", "mensaje": "Muy buen material de apoyo.", "fecha": "2025-07-05" },
@@ -112,7 +112,7 @@
     "horario": "Intensivo",
     "fechaInicio": "2026-01-26",
     "imagenUrl": "https://i.ibb.co/dwbsg2Sp/N5curso.jpg",
-    "imagenUrl": "/assets/img/img-cursos/n2.jpeg",
+    "imagenUrl": "./assets/img/img-cursos/n2.jpeg",
     "calificacion": "4.7",
     "resenas": [
       { "autor": "Brenda L.", "calificacion": "4.7", "mensaje": "Nivel avanzado real, muy útil para el examen.", "fecha": "2025-11-01" },
@@ -129,7 +129,7 @@
     "horario": "Sabatino",
     "fechaInicio": "2026-01-26",
     "imagenUrl": "https://i.ibb.co/dwbsg2Sp/N5curso.jpg",
-    "imagenUrl": "/assets/img/img-cursos/n2.jpeg",
+    "imagenUrl": "./assets/img/img-cursos/n2.jpeg",
     "calificacion": "4.4",
     "resenas": [
       { "autor": "Mónica T.", "calificacion": "4.4", "mensaje": "Gran enfoque en lectura comprensiva.", "fecha": "2025-12-15" },
@@ -146,7 +146,7 @@
     "horario": "Intensivo",
     "fechaInicio": "2026-01-26",
     "imagenUrl": "https://i.ibb.co/dwbsg2Sp/N5curso.jpg",
-    "imagenUrl": "/assets/img/img-cursos/n1.jpeg",
+    "imagenUrl": "./assets/img/img-cursos/n1.jpeg",
     "calificacion": "4",
     "resenas": [
       { "autor": "Samuel F.", "calificacion": "4.0", "mensaje": "Un reto total, pero el profesor es un experto.", "fecha": "2025-06-15" },
@@ -163,7 +163,7 @@
     "horario": "Sabatino",
     "fechaInicio": "2026-01-26",
     "imagenUrl": "https://i.ibb.co/dwbsg2Sp/N5curso.jpg",
-    "imagenUrl": "/assets/img/img-cursos/n1.jpeg",
+    "imagenUrl": "./assets/img/img-cursos/n1.jpeg",
     "calificacion": "3.8",
     "resenas": [
       { "autor": "Inés M.", "calificacion": "3.8", "mensaje": "Contenido sólido, el ritmo sabatino ayuda a digerir los temas.", "fecha": "2025-05-10" },
