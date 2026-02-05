@@ -1,29 +1,32 @@
 
-class coursesController{
-
-    constructor(){
-        this.items = [];
-        this.currentId = 0;
+class CursosController {
+    constructor() {
+        const almacenado = localStorage.getItem('cursos');
+        this.cursos = almacenado ? JSON.parse(almacenado) : [];
     }
-    addItem(name, description, imgRoute, cost, stars){
-        this.currentId++;
-        this.items.push({
-        id: this.currentId,
-        name,
-        description,
-        imgRoute,
-        cost,
-        stars})
+
+    agregarCurso({titulo, tipo, descripcion, detalle, precio, horario, calificacion, fechaInicio, imagenUrl}) {
+        const id = Date.now();
+        const curso = {id, titulo, tipo, descripcion, detalle, precio, horario, calificacion, fechaInicio, imagenUrl};
+        this.cursos.push(curso);
+        this.guardar();
+    }
+
+    guardar() {
+        localStorage.setItem('cursos', JSON.stringify(this.cursos));
+    }
+
+    obtenerTodos() {
+        return this.cursos;
+    }
+
+    importarCursos(arregloJson) {
+        this.cursos = arregloJson;
+        this.guardar();
+    }
+
+    exportarCursos() {
+        return JSON.stringify(this.cursos, null, 2);
     }
 }
-
-cursos = new coursesController();
-cursos.addItem("N5","Curso","https://github.com/LEVAMA2233/Musou-Gakkou/blob/develop/assets/img/img-cursos/n1.jpeg?raw=true",4000,4.5);
-cursos.addItem("N4","Curso","/assets/img/img-cursos/n4.jpeg",4500,4.7);
-cursos.addItem("N3","Curso","/assets/img/img-cursos/n3.jpeg",5000,4.9);
-cursos.addItem("N2","Curso","./assets/img/img-cursos/n2.jpeg",5500,4.5);
-cursos.addItem("N1","Curso","./assets/img/img-cursos/n1.jpeg",6000,4);
-cursos.addItem("Clase personalizada","Curso","./assets/img/img-cursos/clase-personalizada.jpeg",4500,4);
-console.log(cursos.items);
-
 

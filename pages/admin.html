@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&display=swap" rel="stylesheet">
+    <title>Panel Admin Cursos</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="../assets/img/img-acercade/llamaMuso.ico">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+  </style>
+  <base href="../">
+
+  <!--Importación de librerias de bootstrap para la navbar-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <!-- Librería de icon-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/styles/carrito.css">
+<!--   <link rel="stylesheet" href="./assets/styles/carrito.css">
+ -->  <script type="module" src="./assets/js/main.js"></script>
+</head>
+
+<body>
+    <header id="barra-navegacion" class="sticky-top w-100" style="height: 15%"></header> <!-- HTML Modularizado -->
+    <main>
+        <div class="row">
+            <div class="col-1 lateral"></div>
+            <div class="col-10 contenido">
+                <h1>Registrar Curso</h1>
+                <form id="nuevoCursoFormulario">
+                    <div class="form-group">
+                        <label for="tituloCurso">Título</label>
+                        <input type="text" id="tituloCurso" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label d-block">Tipo de Producto</label>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="tipoProducto" id="tipoCurso" value="curso" checked>
+                            <label class="form-check-label" for="tipoCurso">Curso</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="tipoProducto" id="tipoRecurso" value="recurso">
+                            <label class="form-check-label" for="tipoRecurso">Recurso</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="descripcionCurso">Descripción</label>
+                        <textarea id="descripcionCurso" class="form-control" placeholder="Descripción en una sola frase"required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="detalleCurso">Detalle</label>
+                        <textarea id="detalleCurso" class="form-control" placeholder="Agrega un poco más de detalle"required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="precioCurso">Precio</label>
+                        <input type="number" id="precioCurso" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="horarioCurso">Horario</label>
+                        <select id="horarioCurso" class="form-control">
+                            <option value="sabatino">Sabatino</option>
+                            <option value="entre semana">Intensivo</option>
+                            <option value="entre semana">Personalizado</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="fechaInicioCurso">Fecha de inicio</label>
+                        <input type="date" id="fechaInicioCurso" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="calificacionCurso">Calificación</label>
+                        <input type="number" id="calificacionCurso" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="imagenCurso">Imagen (URL)</label>
+                        <input type="url" id="imagenCurso" class="form-control" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Agregar Producto</button>
+                </form>
+                <hr>
+                <button id="exportarCursos" class="btn btn-success mb-3">Generar producto.json</button>
+                <input type="file" id="importarArchivo" accept=".json" class="form-control">
+                <div id="mensaje" class="mt-2"></div>
+            </div>
+            <div class="col-1 lateral"></div>
+        </div>
+    </main>
+      <footer id="footer"></footer> <!-- Footer Modularizado -->
+
+    <script src="/assets/js/coursesController.js"></script>
+    <script src="/assets/js/admin.js"></script>
+      <!--Importación de librerias de bootstrap-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
