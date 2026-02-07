@@ -64,7 +64,7 @@ async function init() {
         contenedoresExtra[i].innerHTML =
         `
         <a href="./pages/detalleCurso.html?id=${elemento.id}">
-            <div class="card tarjeta-curso">
+            <div class="card tarjeta-curso h-100">
                 <img src="${elemento.imagenUrl}" class="card-img-top imagen-curso-extra" alt="${elemento.titulo}">
                 <div class="card-body d-none d-lg-block">
                     <h5 class="card-title">${elemento.titulo} ${elemento.horario}</h5>

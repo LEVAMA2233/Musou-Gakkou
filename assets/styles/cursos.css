@@ -4,7 +4,23 @@
     --blanquino:#f5f3ec;
     --Tittle-and-subtitles:"El Messiri", sans-serif;
     --Content:"Source Sans 3", sans-serif;
+
+        /* 2. Tipografía */
+    --font-titles: "El Messiri", sans-serif;
+    --font-content: "Source Sans 3", sans-serif;
+
+    /* 3. Escala Responsiva (La "llave" del diseño) */
+    --size-base: 3vmin;
+    --size-lg: 4vmin;
+    --size-xl: 7vmin;
+    
+    /* 4. Layout y Bordes */
+    --radius-lg: 25px;
+    --radius-pill: 50rem;
+    --spacing-sm: calc(var(--size-base) * 0.5);
+    --spacing-md: var(--size-base);
 }
+
 body{
     font-family: var(--Content);
 }
@@ -14,6 +30,7 @@ h1{
     padding-top: 35px;
     padding-bottom: 35px;
     margin-top: 30px;
+    font-size: var(--size-xl)
 }
 
 .lateral{
@@ -32,8 +49,9 @@ h1{
             background-color: white;
 }
 .contenedor-busqueda{
-width: 100%;
-max-width:200px;
+    font-size: var(--size-base);
+    border-radius: var(--radius-pill);
+    height: auto;
 }
 .input-busqueda{
 /* Quitar el estilo por defecto del input */
@@ -42,7 +60,7 @@ max-width:200px;
             outline: none;
             width:90%;
             /*flex-grow: 1; *//* El input toma todo el espacio disponible */
-            font-size: 18px;
+            font-size: var(--size-base);
             color: #999;
             padding: 8px 0; 
 }
@@ -62,6 +80,9 @@ max-width:200px;
   border: none;
   padding: 8px 20px;
   margin: 5px;
+  font-size: var(--size-base);
+  border-radius: var(--radius-pill);
+  height: auto;
   transition: all 0.3s ease;
 }
 
@@ -102,6 +123,12 @@ max-width:200px;
 }
 .card-title{
   font-family: var(--Tittle-and-subtitles);
+  font-size: var(--size-lg);
+  text-wrap: balance;
+}
+.card-text{
+  font-size: var(--size-base);
+
 }
 .imagen-curso{
   border-radius:25px;
@@ -111,7 +138,7 @@ max-width:200px;
 
 [data-star] {
   text-align:left;
-  font-style:normal;
+  font-style:var(--size-base);
   display:inline-block;
   position: relative;
   unicode-bidi: bidi-override;

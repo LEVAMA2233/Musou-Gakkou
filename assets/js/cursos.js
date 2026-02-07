@@ -111,9 +111,9 @@ document.addEventListener('DOMContentLoaded', init);
     lista.forEach( curso =>{ //for each para cada "tarjeta" o producto
       contenido += `
       
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3"> <!--Responsividad con Bootstrap-->
+      <div class="col-12 col-sm-6 col-lg-4 p-3"> <!--Responsividad con Bootstrap-->
       <a href="./pages/detalleCurso.html?id=${curso.id}"> <!--Para que al hacer clic en el curso correspondiente mande a detalles del curso-->
-        <div class="card tarjeta-curso" id=${curso.titulo}>	<!--Cada tarjeta tiene el id del curso para css o si se necesita acceder con js	-->						
+        <div class="card tarjeta-curso h-100" id=${curso.titulo}>	<!--Cada tarjeta tiene el id del curso para css o si se necesita acceder con js	-->						
           <img src=${curso.imagenUrl} class="card-img-top imagen-curso" alt=${curso.titulo}> <!-- Llama a la imagen correspondiente del curso-->
           <div class="card-body">
             <h5 class="card-title">${curso.titulo}</h5> <!--Mostramos el nombre del curso-->

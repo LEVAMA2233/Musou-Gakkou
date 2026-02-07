@@ -16,12 +16,15 @@ const total = document.getElementById('total'); */
     "imagenUrl": "/assets/img/img-cursos/n5.jpeg",
     "calificacion" : "5"
   }*/
+// Variable global para guardar el índice temporalmente
+let indiceAEliminar = null; 
 function init(){ // Función init se ejecuta cuando a cargado el resto del HTML
   const datosGuardados = localStorage.getItem('miCarrito'); //Cargamos el carrito de Local Storage para renderizarlo
   console.log(datosGuardados);
   const productos = JSON.parse(datosGuardados) || []; // Si no hay nada, devuelve un vector vacío.
   const contenedorProductos = document.getElementById("contenedor-productos"); //Obtenemos la referencia del contenedor
   const contenedorResumen = document.getElementById("contenedor-desglose");
+
   console.log(productos)
   //Inicializamos variables de contenido y precio
   let contenidoProductos = ""; // El HTML del contenido inicia vacío
@@ -104,27 +107,37 @@ function init(){ // Función init se ejecuta cuando a cargado el resto del HTML
 
   document.addEventListener('DOMContentLoaded',init);
 
-  function eliminarProducto(index){
-    // 1. Lanzamos la alerta de confirmación
-    const confirmacion = confirm("¿Estás seguro de que deseas eliminar este producto de tu carrito?");
+function eliminarProducto(index) {
+    // 1. Guardamos el índice que recibimos del clic
+    indiceAEliminar = index;
+    
+    // 2. Inicializamos y mostramos el modal de Bootstrap
+    const modalElement = document.getElementById('deleteModal');
+    const modalBus = new bootstrap.Modal(modalElement);
+    modalBus.show();
+}
 
-    // 2. Si el usuario acepta (true), procedemos
-    if (confirmacion) {
+// 3. Escuchamos el clic del botón "Sí, eliminar" dentro del modal
+document.getElementById('confirmarEliminarBtn').addEventListener('click', () => {
+    if (indiceAEliminar !== null) {
         const datosGuardados = localStorage.getItem('miCarrito');
         let productos = JSON.parse(datosGuardados) || [];
 
         // Eliminamos el elemento
-        productos.splice(index, 1);
+        productos.splice(indiceAEliminar, 1);
 
         // Actualizamos LocalStorage
         localStorage.setItem('miCarrito', JSON.stringify(productos));
 
-        // Refrescamos la interfaz
+        // Refrescamos la interfaz llamando a tu función init
         init();
+
+        // Cerramos el modal manualmente
+        const modalElement = document.getElementById('deleteModal');
+        const modalInstance = bootstrap.Modal.getInstance(modalElement);
+        modalInstance.hide();
         
-        console.log("Producto eliminado correctamente");
-    } else {
-        // Si cancela, no pasa nada
-        console.log("Acción cancelada por el usuario");
+        // Limpiamos el índice
+        indiceAEliminar = null;
     }
-}
+});
