@@ -1,0 +1,134 @@
+:root{/*Variables fusiladas de la identidad visual*/
+    --rojo:#c91f13;
+    --gris:#D9D9D9;
+    --blanquino:#f5f3ec;
+    --Tittle-and-subtitles:"El Messiri", sans-serif;
+    --Content:"Source Sans 3", sans-serif;
+}
+
+.side-bar {
+  background-color: var(--rojo);
+}
+
+.content-window {
+  background-color: white;
+  border-radius: 25px;
+  box-shadow: 5px 10px 15px 2px rgba(0, 0, 0, 0.3);
+}
+
+.content-section {
+  display: none;
+}
+
+.content-section.active {
+  display: block;
+}
+
+.item-principal {
+  border: 0;
+  text-align: left;
+}
+
+.btn-cuenta {
+  background-color: var(--gris);
+  border-radius: 25px;
+  border-color: var(--gris);
+  color: black;
+  width: 200px;
+}
+
+.account-menu .list-group-item.active {
+  background-color: var(--gris);
+  border-color: var(--gris);
+  color: black;
+  font-weight: 500;
+}
+
+.account-menu .list-group-item:hover {
+  background-color: var(--gris);
+  color: #424242; 
+}
+
+.dropdown-toggle {
+  display: flex;
+  justify-content: flex-start;
+  border-radius: 25px;
+  border-color: var(--gris);
+  color: #424242;
+  font-weight: 500;
+}
+
+.dropdown-toggle:hover,
+.dropdown-toggle:focus {
+  background-color: var(--gris);
+  border-color: var(--gris);
+  color: black;
+}
+
+.dropdown-toggle.active {
+  background-color: var(--gris);
+  color: black;
+  border-color: var(--gris);
+}
+
+.dropdown-menu .dropdown-item.active {
+  background-color: var(--gris);
+  color: black;
+}
+
+@media (max-width: 767.98px) {
+  .mobile-img {
+    max-width: 60%;
+    height: auto;
+  }
+}
+
+.input-cuenta {
+  border-radius: 25px;
+}
+
+.item-card {
+  border: 0;
+  text-align: left;
+  color: gray;
+  padding: 0%;
+}
+
+.btn-clase {
+  background-color: var(--gris);
+  border-color: black;
+}
+
+.btn-clase:hover {
+  color: inherit !important;
+  background-color: rgb(159, 159, 159);
+  border-color: inherit !important;
+}   
+
+.icono{
+  width: 30px;
+  transform: rotate(180deg);
+}
+
+@media (max-width: 768px) {
+  .calendario-responsivo {
+    display: none;
+  }
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.tarjeta-recurso{ 
+  border-radius: 25px;
+}
+
+.img-recurso {
+  width: 250px;
+  height: 220px;
+  border-radius: 25px;
+  margin: 10px;
+}

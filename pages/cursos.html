@@ -5,33 +5,119 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&display=swap" rel="stylesheet">
-    <title>Musou Cursos</title>
+		<title>Cursos</title>
+		  <link rel="icon" href="../assets/img/img-acercade/llamaMuso.ico">
 		<style>
 			@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
-			</style>
+		</style>
+		<base href="../">
+		<!--Importación de librerias de bootstrap para la navbar-->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+		<script src="./assets/js/coursesController.js"></script>
+	  	<script src="./assets/js/index.js"></script>
+		<link rel="stylesheet" href="./assets/styles/cursos.css">
+      	<script type="module" src="./assets/js/main.js"></script>
 
-			<!--Importación de librerias de bootstrap para la navbar-->
-			<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-			<link rel="stylesheet" href="/pages/styles/cursos.css">
-      <script type="module" src="/js/main.js"></script>
+		<!-- Librería de icon-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 	</head>
 <body>
-    <header id="barra-navegacion" class="sticky-top"></header> <!-- HTML Modularizado -->
-		<div class="container-fluid">
+    <header id="barra-navegacion" class="sticky-top w-100" style="height: 15%"></header> <!-- HTML Modularizado -->
+	<div class="container-fluid">
 			<div class="row">
+				<!-- Línea lateral de color rojo -->
 				<div class="col-1 lateral"></div>
+				<!-- Contenido -->
 				<div class="col-10 contenido">
 					<h1>Cursos</h1>
 					<div class="row">
-						<div class="col-1"></div>
-						<div class="col-2">
+						<!-- Contenedor de barra de búsqueda -->
+						<div class="col-12 col-md-3">
 							<div class="contenedor-busqueda">
-								<input class="input-busqueda" placeholder="Búsqueda">
-								<img class="logo-lupa" src="https://github.com/LEVAMA2233/Musou-Gakkou/blob/imgs/lupa.png?raw=true">
-							</div>	
+								<input id="input-busqueda" class="input-busqueda" placeholder="Búsqueda">
+								<img id="boton-lupa" class="logo-lupa" src="https://github.com/LEVAMA2233/Musou-Gakkou/blob/imgs/lupa.png?raw=true" style="cursor:pointer">
+							</div>
+						</div>
+						<!-- Contenedor de filtros de búsqueda -->
+						<div class="col-12 col-md-9 text-start">
+							<div class="btn-group-toggle" data-toggle="buttons">
+								<input type="radio" class="btn-check" name="options-base" id="option1" autocomplete="off">
+								<label class="btn btn-filter" for="option1">
+									<span class="text-check">✓</span> Mejor valorados
+								</label>
+
+								<input type="radio" class="btn-check" name="options-base" id="option2" autocomplete="off">
+								<label class="btn btn-filter" for="option2">
+									<span class="text-check">✓</span> Menor precio
+								</label>
+
+								<input type="radio" class="btn-check" name="options-base" id="option3" autocomplete="off">
+								<label class="btn btn-filter" for="option3">
+									<span class="text-check">✓</span> Mayor precio
+								</label>
+							</div>
 						</div>
 					</div>
+					<!-- Contenedor de tarjetas de cursos -->
+					<div class="row container-fluid contenedor-cursos" id="contenedor-cursos">
+						<!-- <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+							<div class="card tarjeta-curso" id="cursoN5">
+								<img src="https://github.com/LEVAMA2233/Musou-Gakkou/blob/imgs/img-cursos/n5.jpeg?raw=true" class="card-img-top imagen-curso" alt="Curso N5">
+								<div class="card-body">
+									<h5 class="card-title">Curso N5</h5>
+									<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+							<div class="card tarjeta-curso" id="cursoN4">
+								<img src="https://github.com/LEVAMA2233/Musou-Gakkou/blob/imgs/img-cursos/n4.jpeg?raw=true" class="card-img-top imagen-curso" alt="Curso N4">
+								<div class="card-body">
+									<h5 class="card-title">Curso N4</h5>
+									<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+							<div class="card tarjeta-curso" id="cursoN3">
+								<img src="https://github.com/LEVAMA2233/Musou-Gakkou/blob/imgs/img-cursos/n3.jpeg?raw=true" class="card-img-top imagen-curso" alt="Curso N4">
+								<div class="card-body">
+									<h5 class="card-title">Curso N3</h5>
+									<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+							<div class="card tarjeta-curso" id="cursoN2">
+								<img src="https://github.com/LEVAMA2233/Musou-Gakkou/blob/imgs/img-cursos/n2.jpeg?raw=true" class="card-img-top imagen-curso" alt="Curso N4">
+								<div class="card-body">
+									<h5 class="card-title">Curso N2</h5>
+									<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+							<div class="card tarjeta-curso" id="cursoN1">
+								<img src="https://github.com/LEVAMA2233/Musou-Gakkou/blob/imgs/img-cursos/n1.jpeg?raw=true" class="card-img-top imagen-curso" alt="Curso N4">
+								<div class="card-body">
+									<h5 class="card-title">Curso N1</h5>
+									<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+							<div class="card tarjeta-curso" id="clasePersonalizada">
+								<img src="https://github.com/LEVAMA2233/Musou-Gakkou/blob/imgs/img-cursos/clase-personalizada.jpeg?raw=true" class="card-img-top imagen-curso" alt="Curso N4">
+								<div class="card-body">
+									<h5 class="card-title">Clase personalizada</h5>
+									<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+								</div>
+							</div>
+						</div> -->
+					</div>
 				</div>
+				<!-- Línea lateral de color rojo -->
 				<div class="col-1 lateral"></div>
 			</div>
 		</div>
@@ -41,6 +127,7 @@
 
 
     <footer id="footer"></footer> <!-- Footer Modularizado -->
+		<script type="module"src="./assets/js/cursos.js"></script> <!-- Script de interactividad -->
     		<!--Importación de librerias de bootstrap-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 

@@ -1,0 +1,277 @@
+
+[
+  {
+    "id": 1768868706812,
+    "tipo": "Curso",
+    "titulo": "N5 Principiante",
+    "descripcion": "Conoces los kanjis",
+    "detalle": "En este nivel inicial, desarrollarás la capacidad de comprender expresiones básicas y frases hechas de la vida cotidiana. Aprenderás a leer y escribir los alfabetos Hiragana, Katakana y aproximadamente 100 Kanjis esenciales, permitiéndote presentarte y realizar compras básicas.",
+    "precio": 2000,
+    "horario": "Sabatino",
+    "fechaInicio": "2026-01-23",
+    "imagenUrl": "https://i.ibb.co/dwbsg2Sp/N5curso.jpg",
+    "imagenUrl": "./assets/img/img-cursos/n5.jpeg",
+    "calificacion": "5",
+    "resenas": [
+      { "autor": "Blanca Perez", "calificacion": "5", "mensaje": "Contenido excelente, el maestro hizo la clase muy amena", "fecha": "2025-12-10" },
+      { "autor": "Tania Gayosso", "calificacion": "5", "mensaje": "Me gustó mucho el material didáctico", "fecha": "2025-01-10" }
+    ]
+  },
+  {
+    "id": 1768868706811,
+    "tipo": "Curso",
+    "titulo": "N5 Principiante",
+    "descripcion": "Conoces los kanjis",
+    "detalle": "Curso enfocado en la gramática elemental y la comprensión auditiva de conversaciones lentas. Al finalizar, el alumno podrá entender instrucciones sencillas y participar en diálogos breves sobre temas familiares, sentando las bases sólidas para el estudio del idioma.",
+    "precio": 1800,
+    "horario": "Intensivo",
+    "fechaInicio": "2026-01-23",
+    "imagenUrl": "https://i.ibb.co/dwbsg2Sp/N5curso.jpg",
+    "imagenUrl": "./assets/img/img-cursos/n5.jpeg",
+    "calificacion": "5",
+    "resenas": [
+      { "autor": "Ricardo M.", "calificacion": "5", "mensaje": "Excelente para empezar desde cero.", "fecha": "2025-11-20" },
+      { "autor": "Elena Soto", "calificacion": "5", "mensaje": "Muy dinámico y bien estructurado.", "fecha": "2025-11-25" }
+    ]
+  },
+  {
+    "id": 1768868745478,
+    "tipo": "Curso",
+    "titulo": "N4 Semi intermedio",
+    "descripcion": "Puedes escribir utilizando kanjis",
+    "detalle": "Este nivel profundiza en la gramática de nivel básico-medio. El estudiante adquiere la habilidad de leer y comprender pasajes sobre temas cotidianos utilizando un vocabulario de unos 300 Kanjis. Se enfatiza el uso de formas verbales más complejas y expresiones de cortesía.",
+    "precio": 1700,
+    "horario": "Sabatino",
+    "fechaInicio": "2026-01-23",
+    "imagenUrl": "https://i.ibb.co/dwbsg2Sp/N5curso.jpg",
+    "imagenUrl": "./assets/img/img-cursos/n4.jpeg",
+    "calificacion": "4.3",
+    "resenas": [
+      { "autor": "Jorge L.", "calificacion": "4.6", "mensaje": "Buen curso, aunque la gramática es intensa.", "fecha": "2025-10-05" },
+      { "autor": "Lucía H.", "calificacion": "4.0", "mensaje": "Me ayudó mucho con los kanjis del N4.", "fecha": "2025-10-12" }
+    ]
+  },
+  {
+    "id": 1768868745475,
+    "tipo": "Curso",
+    "titulo": "N4 Semi intermedio",
+    "descripcion": "Puedes escribir utilizando kanjis",
+    "detalle": "Al completar este curso, el alumno será capaz de entender conversaciones fluidas en situaciones diarias, siempre que el interlocutor hable con claridad. Se desarrollan habilidades para narrar experiencias pasadas y expresar deseos o planes a futuro de forma coherente.",
+    "precio": 1400,
+    "horario": "Intensivo",
+    "fechaInicio": "2026-01-23",
+    "imagenUrl": "https://i.ibb.co/dwbsg2Sp/N5curso.jpg",
+    "imagenUrl": "./assets/img/img-cursos/n4.jpeg",
+    "calificacion": "4.8",
+    "resenas": [
+      { "autor": "Sofía Díaz", "calificacion": "4.8", "mensaje": "El formato intensivo es lo mejor para avanzar.", "fecha": "2025-09-15" },
+      { "autor": "Mateo R.", "calificacion": "4.8", "mensaje": "Increíble la rapidez con la que aprendes.", "fecha": "2025-09-20" }
+    ]
+  },
+  {
+    "id": 1768868777821,
+    "tipo": "Curso",
+    "titulo": "N3 Intermedio",
+    "descripcion": "Puedes entablar una conversación sencilla",
+    "detalle": "El nivel N3 es el puente entre el japonés básico y el avanzado. Aprenderás a entender puntos específicos en artículos sobre temas generales y a captar ideas principales en noticias. El vocabulario se expande a unos 600 Kanjis, permitiendo una comunicación social más natural.",
+    "precio": 1600,
+    "horario": "Intensivo",
+    "fechaInicio": "2026-01-23",
+    "imagenUrl": "https://i.ibb.co/dwbsg2Sp/N5curso.jpg",
+    "imagenUrl": "./assets/img/img-cursos/n3.jpeg",
+    "calificacion": "3.8",
+    "resenas": [
+      { "autor": "Andrés P.", "calificacion": "3.6", "mensaje": "Falta un poco de tiempo para conversación.", "fecha": "2025-08-10" },
+      { "autor": "Valeria C.", "calificacion": "4.0", "mensaje": "Sólido pero requiere mucho estudio autónomo.", "fecha": "2025-08-15" }
+    ]
+  },
+  {
+    "id": 1768868777822,
+    "tipo": "Curso",
+    "titulo": "N3 Intermedio",
+    "descripcion": "Puedes entablar una conversación sencilla",
+    "detalle": "Se enfoca en la transición hacia un lenguaje más abstracto. El alumno aprenderá a parafrasear y explicar conceptos cuando no conoce la palabra exacta, además de comprender la cohesión de textos escritos y conversaciones a velocidad casi natural.",
+    "precio": 1900,
+    "horario": "Sabatino",
+    "fechaInicio": "2026-01-23",
+    "imagenUrl": "https://i.ibb.co/dwbsg2Sp/N5curso.jpg",
+    "imagenUrl": "./assets/img/img-cursos/n3.jpeg",
+    "calificacion": "4.2",
+    "resenas": [
+      { "autor": "Daniela G.", "calificacion": "4.2", "mensaje": "Muy buen material de apoyo.", "fecha": "2025-07-05" },
+      { "autor": "Tomás V.", "calificacion": "4.2", "mensaje": "El profesor explica muy bien los puntos difíciles.", "fecha": "2025-07-12" }
+    ]
+  },
+  {
+    "id": 1768868869794,
+    "tipo": "Curso",
+    "titulo": "N2 Avanzado",
+    "descripcion": "Eres capaz de mantener una conversación y manejar textos complejos",
+    "detalle": "Nivel de suficiencia para trabajar en entornos profesionales japoneses. Aprenderás a leer críticamente artículos, comentarios y críticas en periódicos o revistas. Dominarás aproximadamente 1,000 Kanjis y estructuras gramaticales complejas para expresar matices psicológicos y sociales.",
+    "precio": 1500,
+    "horario": "Intensivo",
+    "fechaInicio": "2026-01-26",
+    "imagenUrl": "https://i.ibb.co/dwbsg2Sp/N5curso.jpg",
+    "imagenUrl": "./assets/img/img-cursos/n2.jpeg",
+    "calificacion": "4.7",
+    "resenas": [
+      { "autor": "Brenda L.", "calificacion": "4.7", "mensaje": "Nivel avanzado real, muy útil para el examen.", "fecha": "2025-11-01" },
+      { "autor": "Hugo M.", "calificacion": "4.7", "mensaje": "Excelente contenido técnico.", "fecha": "2025-11-05" }
+    ]
+  },
+  {
+    "id": 1768868869795,
+    "tipo": "Curso",
+    "titulo": "N2 Avanzado",
+    "descripcion": "Eres capaz de mantener una conversación y manejar textos complejos",
+    "detalle": "Desarrolla la capacidad de comprender el flujo lógico de un discurso en diversos contextos, desde presentaciones hasta noticias de actualidad. El alumno podrá entablar conversaciones sobre una amplia variedad de temas con fluidez y naturalidad.",
+    "precio": 1800,
+    "horario": "Sabatino",
+    "fechaInicio": "2026-01-26",
+    "imagenUrl": "https://i.ibb.co/dwbsg2Sp/N5curso.jpg",
+    "imagenUrl": "./assets/img/img-cursos/n2.jpeg",
+    "calificacion": "4.4",
+    "resenas": [
+      { "autor": "Mónica T.", "calificacion": "4.4", "mensaje": "Gran enfoque en lectura comprensiva.", "fecha": "2025-12-15" },
+      { "autor": "Paola F.", "calificacion": "4.4", "mensaje": "Clases sabatinas muy productivas.", "fecha": "2025-12-20" }
+    ]
+  },
+  {
+    "id": 1768868937885,
+    "tipo": "Curso",
+    "titulo": "N1 Profesional",
+    "descripcion": "Puedes utilizar el idioma en cualquier contexto",
+    "detalle": "El nivel más alto del JLPT. Se centra en la capacidad de leer textos con profundidad lógica o abstracción en temas complejos como filosofía, economía y política. Dominio de 2,000 Kanjis y la capacidad de captar la intención del autor a través de matices lingüísticos sutiles.",
+    "precio": 1200,
+    "horario": "Intensivo",
+    "fechaInicio": "2026-01-26",
+    "imagenUrl": "https://i.ibb.co/dwbsg2Sp/N5curso.jpg",
+    "imagenUrl": "./assets/img/img-cursos/n1.jpeg",
+    "calificacion": "4",
+    "resenas": [
+      { "autor": "Samuel F.", "calificacion": "4.0", "mensaje": "Un reto total, pero el profesor es un experto.", "fecha": "2025-06-15" },
+      { "autor": "Karina B.", "calificacion": "4.0", "mensaje": "Perfecto para pulir los últimos detalles del idioma.", "fecha": "2025-06-20" }
+    ]
+  },
+  {
+    "id": 1768868937888,
+    "tipo": "Curso",
+    "titulo": "N1 Profesional",
+    "descripcion": "Puedes utilizar el idioma en cualquier contexto",
+    "detalle": "Perfeccionamiento de la comprensión auditiva en situaciones académicas y laborales de alta complejidad. El estudiante será capaz de seguir conferencias y debates a velocidad nativa, captando ironías, estados de ánimo y estructuras honoríficas de nivel experto.",
+    "precio": 1500,
+    "horario": "Sabatino",
+    "fechaInicio": "2026-01-26",
+    "imagenUrl": "https://i.ibb.co/dwbsg2Sp/N5curso.jpg",
+    "imagenUrl": "./assets/img/img-cursos/n1.jpeg",
+    "calificacion": "3.8",
+    "resenas": [
+      { "autor": "Inés M.", "calificacion": "3.8", "mensaje": "Contenido sólido, el ritmo sabatino ayuda a digerir los temas.", "fecha": "2025-05-10" },
+      { "autor": "Felipe G.", "calificacion": "3.8", "mensaje": "Dificultad alta, ideal para traductores.", "fecha": "2025-05-15" }
+    ]
+  },
+  {
+  "id": 1768868937889,
+  "tipo": "Recurso",
+  "titulo": "Planillas Kanji para N5",
+  "descripcion": "Domina los caracteres esenciales del nivel N5 con estas planillas de Kanji diseñadas para facilitar tu aprendizaje y escritura.",
+  "detalle": "Este recurso educativo incluye los kanjis fundamentales para aprobar el examen JLPT N5. Cada ficha presenta el orden de trazos, lecturas onyomi y kunyomi, y ejemplos prácticos de uso. Es la guía perfecta para que principiantes construyan una base sólida en la caligrafía y reconocimiento visual del japonés.",
+  "precio": 0,
+  "horario": "",
+  "fechaInicio": "",
+  "imagenUrl": "../assets/img/img-recursos/kanji-n5.png",
+  "calificacion": "3.8",
+  "resenas": [
+    { 
+      "autor": "Inés M.", 
+      "calificacion": "3.8", 
+      "mensaje": "Las planillas son muy claras; el orden de los trazos me ayudó mucho a memorizar los kanjis básicos.", 
+      "fecha": "2025-05-10" 
+    },
+    { 
+      "autor": "Felipe G.", 
+      "calificacion": "3.8", 
+      "mensaje": "Excelente material de apoyo para el N5. Los ejemplos de vocabulario por cada kanji son muy útiles.", 
+      "fecha": "2025-05-15" 
+    }
+  ]
+  },
+  {
+  "id": 1768868937890,
+  "tipo": "Recurso",
+  "titulo": "Guía Básica de Katakana",
+  "descripcion": "Aprende los fundamentos del Katakana con esta tabla clara y organizada que muestra las sílabas básicas y sus excepciones fonéticas.",
+  "detalle": "Este material visual está diseñado para dominar la lectura y escritura del segundo silabario japonés. Incluye una guía detallada de las vocales y consonantes principales, con énfasis especial en las variaciones fonéticas como shi, chi y tsu, permitiendo al estudiante escribir palabras extranjeras y préstamos lingüísticos correctamente.",
+  "precio": 0,
+  "horario": "",
+  "fechaInicio": "",
+  "imagenUrl": "../assets/img/img-recursos/katakana.png",
+  "calificacion": "4.2",
+  "resenas": [
+    { 
+      "autor": "Carla R.", 
+      "calificacion": "4.5", 
+      "mensaje": "Muy útil para diferenciar caracteres parecidos. La distinción visual de los sonidos especiales ayuda bastante.", 
+      "fecha": "2025-06-02" 
+    },
+    { 
+      "autor": "Marcos P.", 
+      "calificacion": "4.0", 
+      "mensaje": "Buen recurso para principiantes. Las fuentes son claras y fáciles de imitar al practicar en papel.", 
+      "fecha": "2025-06-12" 
+    }
+  ]
+},
+{
+  "id": 1768868937891,
+  "tipo": "Recurso",
+  "titulo": "Guía de partículas japonesas",
+  "descripcion": "Comprende el uso de conectores esenciales como ga, wa, ni y de para estructurar oraciones correctamente en japonés básico.",
+  "detalle": "Este material gramatical ofrece una tabla detallada de las partículas fundamentales, sus estructuras y ejemplos prácticos. Cubre desde marcadores de sujeto y objeto hasta indicadores de lugar, tiempo y dirección, siendo un recurso indispensable para entender la lógica detrás de la sintaxis japonesa en el nivel inicial.",
+  "precio": 0,
+  "horario": "",
+  "fechaInicio": "",
+  "imagenUrl": "https://github.com/LEVAMA2233/Musou-Gakkou/blob/imgs/img-Recursos/images.jpeg?raw=true",
+  "calificacion": "4.5",
+  "resenas": [
+    { 
+      "autor": "Ricardo T.", 
+      "calificacion": "4.8", 
+      "mensaje": "Los ejemplos de 'ga' y 'ni' para existencia son muy claros. Me ayudó a entender por fin cuándo usar cada una.", 
+      "fecha": "2025-07-20" 
+    },
+    { 
+      "autor": "Elena V.", 
+      "calificacion": "4.2", 
+      "mensaje": "Excelente resumen. La sección de partículas al final de la oración como 'ne' y 'yo' es muy útil para sonar más natural.", 
+      "fecha": "2025-08-05" 
+    }
+  ]
+},
+{
+  "id": 1768868937892,
+  "tipo": "Recurso",
+  "titulo": "Guía de clasificadores numéricos",
+  "descripcion": "Aprende a contar objetos, personas y edades correctamente utilizando los sufijos específicos según la forma y categoría de cada elemento.",
+  "detalle": "Este material explica la estructura fundamental de 'número + clasificador' necesaria para cuantificar en japonés. Incluye tablas comparativas para objetos planos (-mai), alargados (-hon), libros (-satsu), objetos pequeños (-ko/-tsu), así como personas (-nin) y edades (-sai). Es un recurso esencial para realizar compras y describir cantidades con precisión.",
+  "precio": 0,
+  "horario": "",
+  "fechaInicio": "",
+  "imagenUrl": "https://github.com/LEVAMA2233/Musou-Gakkou/blob/imgs/img-Recursos/numerosJAPA.png?raw=true",
+  "calificacion": "4.3",
+  "resenas": [
+    { 
+      "autor": "Sofía L.", 
+      "calificacion": "4.5", 
+      "mensaje": "Muy útil para no confundirse al pedir comida o comprar cosas. Los ejemplos con 'kudasai' son muy prácticos.", 
+      "fecha": "2025-09-10" 
+    },
+    { 
+      "autor": "Daniel K.", 
+      "calificacion": "4.1", 
+      "mensaje": "Las tablas de excepciones (como ippon o roppon) están muy bien explicadas. Me ayudó mucho con la tarea.", 
+      "fecha": "2025-09-22" 
+    }
+  ]
+}
+]

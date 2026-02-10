@@ -1,0 +1,184 @@
+:root {
+    /*Variables fusiladas de la identidad visual*/
+    --rojo: #c91f13;
+    --gris: #D9D9D9;
+    --blanquino: #f5f3ec;
+    --Tittle-and-subtitles: "El Messiri", sans-serif;
+    --Content: "Source Sans 3", sans-serif;
+}
+body{
+    max-width: 100%;
+}
+.container-fluido {
+    /*Encabezado*/
+    padding-bottom: 55px;
+}
+
+.lateral {
+    background-color: var(--rojo);
+    margin: 0px;
+}
+
+
+.Tarjetas-Recursos {
+    display: grid;
+    /* Crea columnas de mínimo 200px que se ajustan solas al ancho disponible */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    /* Espacio entre tarjetas */
+    width: 90%;
+    max-width: 1200px;
+    /* Ancho máximo de la cuadrícula */
+    margin: 0 auto;
+    padding: 20px 0;
+    border-radius: 25px;
+}
+
+.Tarjetas-Recursos:hover {
+    transform: translateY(-15px);
+}
+
+.Recursos {
+    flex: 1;
+    /* Ocupa todo el espacio disponible */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding-bottom: 60px;
+    /* Evita que la última fila toque el footer */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+
+.card-img-top {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    padding: 5px;
+}
+
+.card-img-top,
+.card-body {
+    position: relative;
+    z-index: 10;
+}
+
+.card-img-top {
+    border-radius: 10px;
+    object-fit:
+        contain;
+    width: 90%;
+    height: auto;
+    margin-top: 15px;
+}
+
+
+.card-body {
+    color: var(--rojo);
+    text-align: center;
+}
+
+
+.tarjeta-curso {
+    position: relative;
+    width: auto;
+    height: auto;
+    border-radius: 14px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+    max-width: 300px;
+    min-width: 100px;
+    margin: 10px;
+}
+
+.contenedor-tarjeta{
+    margin: 20px;
+}
+
+.bg {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    z-index: 2;
+    background: rgba(255, 255, 255, .95);
+    backdrop-filter: blur(24px);
+    border-radius: 10px;
+    overflow: hidden;
+    outline: 2px solid white;
+}
+
+.blob {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    width: 210px;
+    height: 290px;
+    border-radius: 50%;
+    background-color: var(--rojo);
+    opacity: 1;
+    filter: blur(12px);
+    animation: blob-bounce 7s infinite ease;
+}
+
+.texto-tarjetas {
+    position: relative;
+    z-index: 10;
+    /* Mayor que el z-index de .bg (2) y .blob (1) */
+    padding: 20px;
+    text-align: center;
+    color: var(--rojo);
+    font-family: var(--Content);
+}
+
+.texto-tarjetas h3 {
+    font-family: var(--Tittle-and-subtitles);
+    /* Fuente El Messiri */
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.texto-tarjetas p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: black;
+}
+
+@keyframes blob-bounce {
+    0% {
+        transform: translate(-100%, -100%) translate3d(0, 0, 0);
+    }
+
+    25% {
+        transform: translate(-100%, -100%) translate3d(100%, 0, 0);
+    }
+
+    50% {
+        transform: translate(-100%, -100%) translate3d(100%, 100%, 0);
+    }
+
+    75% {
+        transform: translate(-100%, -100%) translate3d(0, 100%, 0);
+    }
+
+    100% {
+        transform: translate(-100%, -100%) translate3d(0, 0, 0);
+    }
+}

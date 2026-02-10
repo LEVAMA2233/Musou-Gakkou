@@ -1,0 +1,78 @@
+:root{/*Variables fusiladas de la identidad visual*/
+    --rojo:#c91f13;
+    --gris:#D9D9D9;
+    --blanquino:#f5f3ec;
+    --Tittle-and-subtitles:"El Messiri", sans-serif;
+    --Content:"Source Sans 3", sans-serif;
+}
+body{
+    background-color: white;
+
+}
+.contenedor-login{
+    background-color: var(--rojo);
+    width: 100%;
+    margin: auto;
+}
+.contenedor-centrallogin{
+    background-color: white;
+    width: 80%;
+    margin: auto;
+    text-align: left;
+    font-family: var(--Tittle-and-subtitles);
+    padding: 5rem 20rem 10rem;
+}
+h1{
+    font-family: var(--Tittle-and-subtitles);
+    color: black;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    margin-top: 30px;
+    text-align: center;
+}
+.form-control{
+    margin-bottom: 1rem;
+    border-color: white;
+    border-bottom-color: black; 
+}
+.btn-primary{
+  background-color: black;
+  color: white;
+  border: none;
+  display: block;
+  margin: auto;
+  margin-top: 2rem;
+  padding:0.5rem 4rem;
+  border-radius: 20rem;
+  }
+.btn-primary:hover{
+    background-color:var(--rojo);
+}
+p{
+    text-align: center;
+}
+@media screen and (max-width: 576px) {
+.contenedor-centrallogin{
+    width:100% !important;
+    padding: 3rem 3rem 17rem 3rem !important;
+}
+    .btn-primary{
+        width: 65%;
+        padding: 0.8rem;
+        border-radius: 2rem;
+    }
+    p{
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .contenedor-centrallogin{
+        width: 80%;
+        padding: 2rem 6rem;
+    }
+     .btn-primary{
+        padding: 0.6rem 3rem;
+  }
+
+}

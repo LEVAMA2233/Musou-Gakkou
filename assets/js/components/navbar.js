@@ -7,23 +7,32 @@ const navbar = () =>{
     --blanquino:#f5f3ec;
     --Tittle-and-subtitles:"El Messiri", sans-serif;
     --Content:"Source Sans 3", sans-serif;
-}
+        }
 
 
 .navbar{
-    background-color: black;
-    width: 100vw;
+  background-color: black;
+  max-width:100%;
+  height: 100%;
+  padding: 0px;
  }
 
 #logo-muso{
-     max-height: 70px;
-     max-width: 150px;
-     margin-right: 0px;
+  max-height: 90%; /* No permite que sea más alto que el contenedor */
+    width: auto;      /* Mantiene la proporción */
+    object-fit: contain; /* Asegura que la imagen quepa dentro del espacio sin deformarse */
+    display: block;
 }
  .navbar-brand{
-    color:var(--blanquino);
+    height: 100%;
     margin: 0px;
+    padding:0px;
  }
+ .navbar-nav{
+ flex: 1;
+ display:flex;
+ justify-content: space-around;
+  }
  .nav-item{
     margin-right: 4px;
  }
@@ -32,7 +41,7 @@ const navbar = () =>{
     color:var(--blanquino);
     font-family:var(--Tittle-and-subtitles);
     /* font-size: 1.5vw; */
-    font-size: x-large;
+    font-size: 2vw;
     border-radius: 10px;
  }
   .dropdown-menu{
@@ -53,30 +62,31 @@ const navbar = () =>{
 
 }
 #logo-muso:hover{
-    transform: scale(1.3);
+    transform: scale(1.1);
 }
-#logo-carrito{
-  height: 80px;
-  width: 80px;
+.carrito{
+  color: white;
+  font-size: 6vh;
 }
-#logo-carrito:hover{
+.carrito:hover{
     transform: scale(1.3);
 }
 
-.btn{
+.boton{
     background-color: #2C2C2C;
     color: var(--blanquino);
     font-family: var(--Tittle-and-subtitles);
-    margin: 5px;
-    font-size: x-large;
-    padding: 3px 6px;
+    margin: 3px;
+    font-size: 2vw;
+    padding: 5px 10px;
+    border-radius: 10px;
  }
  #btn-Log-in{
     background-color: #D9D9D9;
     color: black;
  }
 
- .btn:hover{
+ .boton:hover{
     background-color: #D9D9D9;
     color: var(--rojo);
  }
@@ -118,68 +128,72 @@ const navbar = () =>{
  }
 
 }
-
+@container navbar (min-width: 700px) {
+  .nav-link {
+    font-size: 2em;
+  }
+}
     
     </style>
     <nav class="navbar navbar-expand-lg custom-navbar sticky-top" data-bs-theme="dark">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="/">
-                <img src="/img-acercade/logo-muso.png" id="logo-muso" alt="Logo de Musou" class="img-fluid">
+            <div class="container-fluid" style=" height: 100%; padding:1%;">
+              <a class="navbar-brand" href="./" style="    color:var(--blanquino); margin: 0px;">
+                <img src="./assets/img/img-acercade/logo-muso.png" id="logo-muso" alt="Logo de Musou" class="img-fluid" style="max-height: 12vh; max-width: 100%; margin: 0px;">
               </a>
               <button class="navbar-toggler" style="color:#e6e6ff; margin-right: 20px;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon  mr-4"></span>
               </button>
               <div class="collapse navbar-collapse " id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto align-items-center">
+                <ul class="navbar-nav">
                   <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="/pages/cursos.html" >Cursos</a>
+                    <a class="nav-link" aria-current="page" href="./pages/cursos.html" >Cursos</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="/pages/recursos.html">Recursos</a>
+                    <a class="nav-link" aria-current="page" href="./pages/recursos.html">Recursos</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="/pages/cultura.html">Cultura</a>
+                    <a class="nav-link" aria-current="page" href="./pages/cultura.html">Cultura</a>
                   </li>
                   </li>
                   <!-- Menú dropdown solo se muestra en pantallas grandes -->
                   <li class="nav-item dropdown d-none d-lg-block">
-                    <a class="nav-link dropdown-toggle" aria-current="page" href="/pages/acercaDe.html" role="button"  aria-expanded="false">Acerca de nosotros</a>
+                    <a class="nav-link dropdown-toggle" aria-current="page" href="./pages/acercaDe.html" role="button"  aria-expanded="false">Acerca de nosotros</a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="/pages/preguntasFrecuentes.html">Preguntas frecuentes</a></li>
-                        <li><a class="dropdown-item" href="/pages/contacto.html">Contáctanos</a></li>
+                        <li><a class="dropdown-item" href="./pages/preguntasFrecuentes.html">Preguntas frecuentes</a></li>
+                        <li><a class="dropdown-item" href="./pages/contacto.html">Contáctanos</a></li>
                     </ul>
 
                   </li>
                   <!-- Solo se muestran cuando la navbar colapsa -->
                   <li class="nav-item d-lg-none ms-1" >
-                    <a class="nav-link" href="/pages/acercaDe.html">Acerca de nosotros</a>
+                    <a class="nav-link" href="./pages/acercaDe.html">Acerca de nosotros</a>
                   </li>
                   <li class="nav-item d-lg-none ms-1" >
-                    <a class="nav-link" href="/pages/preguntasFrecuentes.html">Preguntas frecuentes </a>
+                    <a class="nav-link" href="./pages/preguntasFrecuentes.html">Preguntas frecuentes </a>
                   </li>
                   <li class="nav-item d-lg-none ms-1" >
-                    <a class="nav-link" href="/pages/contacto.html">Contáctanos</a>
+                    <a class="nav-link" href="./pages/contacto.html">Contáctanos</a>
                   </li>
                   <li class="nav-item d-lg-none ms-1" >
-                    <a class="nav-link" href="/pages/carrito.html">Carrito</a>
+                    <a class="nav-link" href="./pages/carrito.html">Carrito</a>
                   </li>
                   <li class="nav-item d-lg-none ms-1" >
-                    <a class="nav-link" href="/pages/logIn.html">Log in</a>
+                    <a class="nav-link" href="./pages/logIn.html">Log in</a>
                   </li>
                   <li class="nav-item d-lg-none ms-1">
-                    <a class="nav-link" href="/pages/registro.html">Regístrate</a>
+                    <a class="nav-link" href="./pages/registro.html">Regístrate</a>
                   </li>
                   <!-- Solo se muestran como botones en  caso de pantallas grandes-->
                   <li class="nav-item d-none d-lg-block">
-                    <a class="navbar-link" href="/pages/carrito.html">
-                        <img src="/img-acercade/carrito-logo.png" id="logo-carrito" alt="Logo de carrito" class="img-fluid">
+                    <a class="navbar-link" href="./pages/carrito.html">
+                        <i class="fa fa-shopping-cart carrito"></i>
                     </a>
                   </li>
                   <li class="nav-item d-none d-lg-block">
-                    <a class="btn" id="btn-Log-in"  href="/pages/logIn.html">Log in</a>
+                    <a class="boton" id="btn-Log-in"  href="./pages/logIn.html">Log in</a>
                   </li>
                   <li class="nav-item d-none d-lg-block">
-                    <a class="btn" href="/pages/registro.html">Regístrate</a>
+                    <a class="boton" href="./pages/registro.html">Regístrate</a>
                   </li>
                 </ul>
                 

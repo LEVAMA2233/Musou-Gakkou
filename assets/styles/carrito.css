@@ -1,0 +1,124 @@
+:root {
+    /* 1. Colores de Identidad */
+    --clr-primary: #c91f13;   /* Rojo */
+    --clr-neutral: #D9D9D9;   /* Gris */
+    --clr-bg-light: #f5f3ec;  /* Blanquino */
+    --clr-dark: #000000;
+    --clr-dark-soft: #333333;
+
+    /* 2. Tipografía */
+    --font-titles: "El Messiri", sans-serif;
+    --font-content: "Source Sans 3", sans-serif;
+
+    /* 3. Escala Responsiva (La "llave" del diseño) */
+    --size-base: 3vmin;
+    --size-lg: 4vmin;
+    --size-xl: 7vmin;
+    
+    /* 4. Layout y Bordes */
+    --radius-lg: 25px;
+    --radius-pill: 50rem;
+    --spacing-sm: calc(var(--size-base) * 0.5);
+    --spacing-md: var(--size-base);
+}
+
+/* --- Estilos Globales --- */
+body {
+    font-family: var(--font-content);
+    background-color: white;
+    font-size: var(--size-base);
+}
+
+h1 {
+    font-family: var(--font-titles);
+    color: var(--clr-dark);
+    text-align: center;
+    font-size: var(--size-xl);
+    padding: 35px 0; /* Simplificado */
+    margin-top: 30px;
+}
+
+h5 {
+    font-size: var(--size-lg);
+}
+
+h6{
+    font-size: var(--size-lg);
+}
+
+/* --- Componentes --- */
+.lateral {
+    background-color: var(--clr-primary);
+}
+
+.tarjeta-externa, 
+.img-producto {
+    border-radius: var(--radius-lg);
+}
+
+.contenedor-nombre,
+.contenedor-precio {
+    font-size: var(--size-base);
+    word-break: break-word;
+}
+
+.conceptos {
+    font-size: var(--size-base);
+}
+
+/* --- Elementos de Interacción (Inputs y Botones) --- */
+.texto-descuento,
+.boton-descuento,
+.btn-continuar {
+    font-size: var(--size-base);
+    border-radius: var(--radius-pill);
+    height: auto;
+}
+
+.texto-descuento {
+    padding: var(--spacing-sm) var(--spacing-md);
+}
+
+.boton-descuento {
+    padding: var(--spacing-sm) calc(var(--size-base) * 1.2);
+    white-space: nowrap;
+}
+
+/* --- Sección de Pagos --- */
+.payment-icons {
+    gap: var(--size-base);
+    margin-top: calc(var(--size-base) * 1.2);
+    display: flex; /* Aseguramos que el gap funcione */
+}
+
+.payment-icons img {
+    height: calc(var(--size-base) * 1.8);
+    width: auto;
+    filter: grayscale(20%);
+    transition: transform 0.2s ease;
+}
+
+.payment-icons img:hover {
+    transform: scale(1.1);
+    filter: grayscale(0%);
+}
+
+/* --- Botón de Acción Principal --- */
+.btn-continuar {
+    padding: var(--spacing-sm) var(--spacing-md);
+    border: none;
+    background-color: var(--clr-dark);
+    color: white;
+    font-weight: 600;
+    width: 100%;
+    margin-top: calc(var(--size-base) * 1.5);
+    transition: background-color 0.3s ease;
+}
+
+.btn-continuar:hover {
+    background-color: var(--clr-dark-soft);
+}
+
+.boton-cursos{
+    background-color: #c91f13;
+}

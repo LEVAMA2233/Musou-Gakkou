@@ -1,0 +1,136 @@
+:root{/*Variables fusiladas de la identidad visual*/
+    --rojo:#c91f13;
+    --gris:#D9D9D9;
+    --blanquino:#f5f3ec;
+    --Tittle-and-subtitles:"El Messiri", sans-serif;
+    --Content:"Source Sans 3", sans-serif;
+}
+body{
+    background-color: white;
+}
+.contenedor-cultura{
+    background-color: var(--rojo);
+    width: 100%;
+    margin: auto;
+}
+.contenedor-central{
+    background-color: white;
+    width: 80%;
+    margin: auto;
+    text-align: left;
+    font-family: var(--Tittle-and-subtitles);
+    padding: 2rem;
+}
+.carrusel-1{
+    width: 100%;
+    padding: 2rem;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px var(--gris);
+}
+.carrusel-texto-1{
+    font-family: var(--Content);
+    margin-top: 1rem;
+    text-align: justify;
+}
+.carrusel-texto{
+    box-shadow: 0 4px 8px var(--gris);
+    font-family: var(--Content);
+    margin-top: 1rem;
+    text-align: justify;
+    padding: 2rem;
+}
+#carrusel-2{
+    margin-top: 1rem;
+}
+ /* CARDS */
+    .museo-card {
+      width: 100%;
+      aspect-ratio: 16 / 9; /* Mantiene la proporción sin importar el ancho */
+      /* height: 200px; */
+      border-radius: 25px;
+      overflow: hidden;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+      margin-top: 1rem;
+      background-color: var(--gris); /* Color de carga */
+    }
+
+    .museo-card img {
+      height: 100%;
+      object-fit: cover;
+    }
+    #carrusel-4 {
+        margin-top: 1rem ;
+        
+    }
+    .carrusel-5 {
+        margin-top: 1rem ;
+        box-shadow: 0 4px 8px var(--gris);
+        border-radius: 25px;
+        padding: 1rem;
+        cursor: pointer;
+    }
+    h4 {
+        font-family: var(--Tittle-and-subtitles);
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    a:hover {
+        color: var(--rojo);
+    }
+    .museo-card:hover, .museo-card-5:hover {
+      transform: scale(1.01);
+    }
+    .museo-card-5 {
+    width: 100%;
+    aspect-ratio: 4 / 3; /* Proporción más cuadrada para el carrusel de 3 columnas */
+    border-radius: 25px;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+/* Ajuste de imagen para que llene el contenedor */
+.carousel-inner, .carousel-item, .carousel-item img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; /* Evita que la imagen se estire */
+}
+
+/* Mejora de espaciado en móviles */
+.carrusel-texto, .carrusel-texto-1 {
+    padding: 1rem;
+    font-family: var(--Content);
+    text-align: justify;
+}
+/* ===================================================
+   2. PANTALLAS MEDIANAS (TABLETS / IPADS) 
+   Desde 768px en adelante
+   =================================================== */
+@media (min-width: 768px) {
+    h4 {
+        font-size: 1.8rem;
+    }
+    
+    .museo-card-5 {
+        aspect-ratio: 4 / 3; /* Proporción un poco más rectangular */
+    }
+    
+    .carrusel-5 {
+        padding: 2rem; /* Más espacio interno */
+    }
+}
+
+/* ===================================================
+   3. PANTALLAS GRANDES (COMPUTADORAS / DESKTOPS) 
+   Desde 1024px en adelante
+   =================================================== */
+@media (min-width: 1024px) {
+    h4 {
+        font-size: 2.2rem;
+        text-align: left; /* Título alineado a la izquierda solo en PC */
+    }
+
+    .museo-card-5 {
+        aspect-ratio: 16 / 9; /* Formato panorámico para monitores */
+    }
+}

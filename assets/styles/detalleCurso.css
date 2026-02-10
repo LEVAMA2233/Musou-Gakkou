@@ -1,0 +1,135 @@
+:root{/*Variables de la identidad visual*/
+    --rojo:#c91f13;
+    --gris:#D9D9D9;
+    --blanquino:#f5f3ec;
+    --Tittle-and-subtitles:"El Messiri", sans-serif;
+    --Content:"Source Sans 3", sans-serif;
+
+        /* 2. Tipografía */
+    --font-titles: "El Messiri", sans-serif;
+    --font-content: "Source Sans 3", sans-serif;
+
+    /* 3. Escala Responsiva (La "llave" del diseño) */
+    --size-base: 3vmin;
+    --size-lg: 4vmin;
+    --size-xl: 7vmin;
+    
+    /* 4. Layout y Bordes */
+    --radius-lg: 25px;
+    --radius-pill: 50rem;
+    --spacing-sm: calc(var(--size-base) * 0.5);
+    --spacing-md: var(--size-base);
+}
+body{
+    font-family: var(--Content);
+    font-size: var(--size-base);
+}
+.contenido{
+    margin-top: 20px;
+}
+h1{
+    font-family: var(--Tittle-and-subtitles);
+    color: black;
+    padding-top: 15px;
+    padding-bottom: 35px;
+    margin-top: 10px;
+    font-size: var(--size-xl);
+}
+
+.lateral{
+    background-color: var(--rojo);
+    margin: 0px;
+}
+#contenedor-titulo{
+    font-size: var(--size-lg);
+}
+#contenedor-precio{
+    margin-top: 5px;
+    font-size: var(--size-lg);
+}
+
+.img-seleccionado{
+    width: 70%;
+    height: auto;
+    border-radius: 20px;
+
+}
+
+.resenas{
+    vertical-align: super;
+    padding:0;
+    border-radius: 20px;
+    background-color:var(--gris);
+    font-size: 2vmin;
+}
+
+.agregar-carrito{
+    border-radius: 20px;
+    background-color:black;
+    color: white;
+    width: 90%;
+    font-size: var(--size-base);
+}
+
+.agregar-carrito:hover{
+  background-color:var(--rojo);
+  color: white;
+}
+
+.accordion{
+    font-weight: var(--Content);
+    border: var(--gris);
+}
+.accordion-button{
+    width:95%;
+    background-color: white;
+    border: white;
+    font-family: var(--Content) !important;
+    font-size: var(--size-base);
+    margin: 5px 5px 5px 5px !important;
+    color: black !important;
+    font-weight: bold;
+}
+
+.accordion-body{
+    padding: 5px;
+}
+.accordion-button:focus{
+    border: none;
+    box-shadow: none;
+}
+.accordion-button:not(.collapsed){
+    background-color: white;
+}
+.accordion-item{
+    margin-top: 10px;
+    border: solid 1px var(--gris);
+}
+.texto-extras{
+    font-size: var(--size-base);
+}
+.tarjeta-curso{
+    padding: 10px;
+    border-radius:25px;
+}
+.imagen-curso-extra{
+    border-radius: 25px;
+}
+.contenedor-extras{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    width: 90%;
+}
+.tarjeta-curso:hover{
+  transform: translateY(-15px); 
+}
+h5{
+    font-size: var(--size-base);
+}
+/*Agregar Media Query para que cuando ver reseñas se recorra se vea como el botón de agregar al carrito*/
+@media (max-width: 392px){
+    .resenas{
+        width: 90%;
+    }
+}

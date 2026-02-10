@@ -1,0 +1,111 @@
+:root{/*Variables fusiladas de la identidad visual*/
+    --rojo:#c91f13;
+    --gris:#D9D9D9;
+    --blanquino:#f5f3ec;
+    --Tittle-and-subtitles:"El Messiri", sans-serif;
+    --Content:"Source Sans 3", sans-serif;
+}
+
+.banner {
+  width: 100%;
+  height: 350px; /* Mejor que padding fijo */
+  display: flex;
+  align-items: center;
+  padding: 4rem;
+  position: relative;
+}
+
+.banner-img{
+  display: none;
+}
+
+.banner::before {
+  content: "";
+  background-image: url('https://fotografias-neox.atresmedia.com/clipping/cmsimages01/2019/05/13/7A2B4217-677A-42A6-9E01-CF0BA7C49D75/97.jpg?crop=3000,1688,x0,y1&width=1600&height=900&optimize=high&format=webply');
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+
+@media (max-width: 767.98px) {
+  .banner {
+    height: 200px;
+    padding: 0;
+  }
+
+  .banner::before {
+    display: none;
+  }
+
+  .banner-img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .banner-title {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.2rem;
+    pointer-events: none;
+  }
+}
+
+
+.side-bar {
+  background-color: var(--rojo);
+}
+
+.left-bar {
+  border-right: 2px solid var(--rojo);
+}
+
+.right-bar {
+  border-left: 2px solid var(--rojo);
+}
+
+/* fondo para escritorio */
+@media (min-width: 768px) {
+  .content-area {
+    background-color: #ffffff;
+  }
+}
+
+/* fondo para dispositivos moviles */
+@media (max-width: 767.98px) {
+  .side-bar {
+    display: none;
+  }
+
+  .content-area {
+    background: var(--rojo);
+    color: white;
+    min-height: 100vh;
+  }
+
+  .contenedor{
+    font-size: small;
+  }
+}
+
+.principal{
+  font-family: var(--Content);
+  font-size: xx-large;
+}
+
+.tarjeta{
+  border-radius: 25px;
+  height: 200px;
+  background-color: var(--rojo);
+}
+
+.contenedor{
+  background-color: white;
+  color: black;
+  margin-bottom: 25px;
+}
